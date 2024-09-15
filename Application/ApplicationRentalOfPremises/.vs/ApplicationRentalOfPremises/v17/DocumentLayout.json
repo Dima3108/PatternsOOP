@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|q:\\github_repo\\patternsoop\\application\\applicationrentalofpremises\\models\\outleetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|solutionrelative:models\\outleetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|q:\\github_repo\\patternsoop\\application\\applicationrentalofpremises\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OutleetModel.cs",
+              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Models\\OutleetModel.cs",
+              "RelativeDocumentMoniker": "Models\\OutleetModel.cs",
+              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Models\\OutleetModel.cs",
+              "RelativeToolTip": "Models\\OutleetModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T11:37:43.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T11:28:11.807Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
