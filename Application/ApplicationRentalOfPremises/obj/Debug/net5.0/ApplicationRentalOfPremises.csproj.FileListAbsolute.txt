@@ -1,0 +1,16 @@
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\bin\Debug\net5.0\ApplicationRentalOfPremises.exe
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\bin\Debug\net5.0\ApplicationRentalOfPremises.deps.json
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\bin\Debug\net5.0\ApplicationRentalOfPremises.runtimeconfig.json
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\bin\Debug\net5.0\ApplicationRentalOfPremises.runtimeconfig.dev.json
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\bin\Debug\net5.0\ApplicationRentalOfPremises.dll
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\bin\Debug\net5.0\ApplicationRentalOfPremises.pdb
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ApplicationRentalOfPremises.GeneratedMSBuildEditorConfig.editorconfig
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ApplicationRentalOfPremises.AssemblyInfoInputs.cache
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ApplicationRentalOfPremises.AssemblyInfo.cs
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ApplicationRentalOfPremises.csproj.CoreCompileInputs.cache
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ApplicationRentalOfPremises.sourcelink.json
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ApplicationRentalOfPremises.dll
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\refint\ApplicationRentalOfPremises.dll
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ApplicationRentalOfPremises.pdb
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ApplicationRentalOfPremises.genruntimeconfig.cache
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ref\ApplicationRentalOfPremises.dll

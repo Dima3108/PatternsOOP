@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ApplicationRentalOfPremises.Models;
+using ApplicationRentalOfPremises.SeedData;
+using ApplicationRentalOfPremises.Storeges;
+using System;
 
 namespace ApplicationRentalOfPremises
 {
@@ -6,7 +9,19 @@ namespace ApplicationRentalOfPremises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            OutletModel[] outleets = new OutletModel[3];
+            OutletModelErrorStatus errorStatus = new OutletModelErrorStatus();
+            outleets[0]= new OutletModel(0, 1, 12, 1, 6, out errorStatus);
+            errorStatus.RunExceptionIFNotSUCCESS();
+            outleets[1]=new OutletModel(2,3, 12, 0,5, out errorStatus);
+            errorStatus.RunExceptionIFNotSUCCESS();
+            outleets[2]=new OutletModel(3,4,5,1,11,out  errorStatus);
+            errorStatus.RunExceptionIFNotSUCCESS();
+            SeedData.SeedData.SetStoregeOutleetModel(new CeshOutleetModelsStorege());
+            foreach (var model in outleets)
+            {
+                SeedData.SeedData.storegeOutleets.AddModel(model);
+            }
         }
     }
 }
