@@ -15,7 +15,7 @@ namespace ApplicationRentalOfPremises.Models
         }
         public int GetStorey()=>_outletModel.Storey;
         public int GetArea() => _outletModel.Area;
-        public int RentalCostPerDay()=>_outletModel.RentalCostPerDay;
+        //public int GetRentalCostPerDay()=>_outletModel.RentalCostPerDay;
         public int GetNumberOfWindows()=>_outletModel.NumberOfWindows;
     }
 }
