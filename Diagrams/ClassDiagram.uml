@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8"?><xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:default="http:///schemas/default/_De38oHi8Ee-Im_DWO8wpfQ/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.omg.org/spec/UML/20110701" xmi:version="2.1" xsi:schemaLocation="http://www.eclipse.org/uml2/3.0.0/UML http://schema.omg.org/spec/UML/20110701 http:///schemas/default/_De38oHi8Ee-Im_DWO8wpfQ/0 default.profile.uml#_DgEPd3i8Ee-Im_DWO8wpfQ">
+      
+    <uml:Model xmi:id="_DekaoHi8Ee-Im_DWO8wpfQ" name="project2">
+            
+        <eAnnotations xmi:id="_DekaoXi8Ee-Im_DWO8wpfQ" source="Objing">
+                  
+            <contents xmi:type="uml:Property" xmi:id="_Dekaoni8Ee-Im_DWO8wpfQ" name="exporterVersion">
+                        
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekao3i8Ee-Im_DWO8wpfQ" value="3.0.0"/>
+                      
+            </contents>
+                  
+            <contents xmi:type="uml:Property" xmi:id="_DekapHi8Ee-Im_DWO8wpfQ" name="isRoundTrip"/>
+                
+        </eAnnotations>
+            
+        <packagedElement xmi:type="uml:Class" xmi:id="_DekapXi8Ee-Im_DWO8wpfQ" name="OutletModel">
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Dekapni8Ee-Im_DWO8wpfQ" name="outletModelErrorStatus" visibility="public" type="_DekbLXi8Ee-Im_DWO8wpfQ" isUnique="false" aggregation="shared" association="_Deka7Hi8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_Dekap3i8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekaqHi8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekaqXi8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekaqni8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekaq3i8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekarHi8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekarXi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dekarni8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedAttribute>
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Dekar3i8Ee-Im_DWO8wpfQ" name="storegeOutleetModelInterface" visibility="public" type="_DekbLni8Ee-Im_DWO8wpfQ" isUnique="false" aggregation="shared" association="_Deka9ni8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DekasHi8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekasXi8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekasni8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekas3i8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekatHi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekatXi8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekatni8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dekat3i8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedAttribute>
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_DekauHi8Ee-Im_DWO8wpfQ" name="dataModelOutlet" visibility="public" type="_Dekbgni8Ee-Im_DWO8wpfQ" isUnique="false" aggregation="shared" association="_DekbAHi8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DekauXi8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekauni8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekau3i8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekavHi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekavXi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekavni8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekav3i8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekawHi8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedAttribute>
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_DekawXi8Ee-Im_DWO8wpfQ" name="Storey" visibility="public" isUnique="false">
+                        
+                <eAnnotations xmi:id="_Dekawni8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekaw3i8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekaxHi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekaxXi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekaxni8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekax3i8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekayHi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <ownedComment xmi:type="uml:Comment" xmi:id="_DekayXi8Ee-Im_DWO8wpfQ">
+                              
+                    <eAnnotations xmi:id="_Dekayni8Ee-Im_DWO8wpfQ" source="Objing">
+                                    
+                        <contents xmi:type="uml:Property" xmi:id="_Dekay3i8Ee-Im_DWO8wpfQ" name="NoteType_Name">
+                                          
+                            <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekazHi8Ee-Im_DWO8wpfQ" value="description"/>
+                                        
+                        </contents>
+                                  
+                    </eAnnotations>
+                              
+                    <body/>
+                            
+                </ownedComment>
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                      
+            </ownedAttribute>
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_DekazXi8Ee-Im_DWO8wpfQ" name="Area" visibility="public" isUnique="false">
+                        
+                <eAnnotations xmi:id="_Dekazni8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekaz3i8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka0Hi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka0Xi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka0ni8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka03i8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka1Hi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                      
+            </ownedAttribute>
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Deka1Xi8Ee-Im_DWO8wpfQ" name="RentalCostPerDay" visibility="public" type="_DeuLx3i8Ee-Im_DWO8wpfQ" isUnique="false">
+                        
+                <eAnnotations xmi:id="_Deka1ni8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka13i8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka2Hi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka2Xi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka2ni8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka23i8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka3Hi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                      
+            </ownedAttribute>
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Deka3Xi8Ee-Im_DWO8wpfQ" name="NumberOfWindows" visibility="public" isUnique="false">
+                        
+                <eAnnotations xmi:id="_Deka3ni8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka33i8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka4Hi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka4Xi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka4ni8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka43i8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka5Hi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                      
+            </ownedAttribute>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_Deka5Xi8Ee-Im_DWO8wpfQ" name="PrintFullObject" visibility="public"/>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_Deka5ni8Ee-Im_DWO8wpfQ" name="PrintSmallObject" visibility="public"/>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_Deka53i8Ee-Im_DWO8wpfQ" name="Operation" visibility="public">
+                        
+                <ownedParameter xmi:id="_Deka6Hi8Ee-Im_DWO8wpfQ" name="erros" type="_DekbLXi8Ee-Im_DWO8wpfQ" isUnique="false" direction="out">
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Deka6Xi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Deka6ni8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka63i8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Association" xmi:id="_Deka7Hi8Ee-Im_DWO8wpfQ" memberEnd="_Dekapni8Ee-Im_DWO8wpfQ _Deka7Xi8Ee-Im_DWO8wpfQ">
+                  
+            <ownedEnd xmi:type="uml:Property" xmi:id="_Deka7Xi8Ee-Im_DWO8wpfQ" visibility="public" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false" association="_Deka7Hi8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_Deka7ni8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka73i8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka8Hi8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka8Xi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka8ni8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka83i8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka9Hi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Deka9Xi8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedEnd>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Association" xmi:id="_Deka9ni8Ee-Im_DWO8wpfQ" memberEnd="_Dekar3i8Ee-Im_DWO8wpfQ _Deka93i8Ee-Im_DWO8wpfQ">
+                  
+            <ownedEnd xmi:type="uml:Property" xmi:id="_Deka93i8Ee-Im_DWO8wpfQ" visibility="public" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false" association="_Deka9ni8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_Deka-Hi8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka-Xi8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka-ni8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka-3i8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka_Hi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Deka_Xi8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Deka_ni8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Deka_3i8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedEnd>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Association" xmi:id="_DekbAHi8Ee-Im_DWO8wpfQ" memberEnd="_DekauHi8Ee-Im_DWO8wpfQ _DekbAXi8Ee-Im_DWO8wpfQ">
+                  
+            <ownedEnd xmi:type="uml:Property" xmi:id="_DekbAXi8Ee-Im_DWO8wpfQ" visibility="public" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false" association="_DekbAHi8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DekbAni8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbA3i8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbBHi8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbBXi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbBni8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbB3i8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbCHi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbCXi8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedEnd>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Class" xmi:id="_DekbCni8Ee-Im_DWO8wpfQ" name="FacadeOutleetSmallModel">
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_DekbC3i8Ee-Im_DWO8wpfQ" name="outleetModels" visibility="public" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false" aggregation="shared" association="_DekbI3i8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DekbDHi8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbDXi8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbDni8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbD3i8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbEHi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbEXi8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbEni8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbE3i8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedAttribute>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DekbFHi8Ee-Im_DWO8wpfQ" name="GetStorey" visibility="public">
+                        
+                <ownedParameter xmi:id="_DekbFXi8Ee-Im_DWO8wpfQ" isUnique="false" direction="return">
+                              
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DekbFni8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbF3i8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbGHi8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DekbGXi8Ee-Im_DWO8wpfQ" name="GetArea" visibility="public">
+                        
+                <ownedParameter xmi:id="_DekbGni8Ee-Im_DWO8wpfQ" isUnique="false" direction="return">
+                              
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DekbG3i8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbHHi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbHXi8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DekbHni8Ee-Im_DWO8wpfQ" name="GetNumberOfWindows" visibility="public">
+                        
+                <ownedParameter xmi:id="_DekbH3i8Ee-Im_DWO8wpfQ" isUnique="false" direction="return">
+                              
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DekbIHi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbIXi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbIni8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Association" xmi:id="_DekbI3i8Ee-Im_DWO8wpfQ" memberEnd="_DekbC3i8Ee-Im_DWO8wpfQ _DekbJHi8Ee-Im_DWO8wpfQ">
+                  
+            <ownedEnd xmi:type="uml:Property" xmi:id="_DekbJHi8Ee-Im_DWO8wpfQ" visibility="public" type="_DekbCni8Ee-Im_DWO8wpfQ" isUnique="false" association="_DekbI3i8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DekbJXi8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbJni8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbJ3i8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbKHi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbKXi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbKni8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbK3i8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbLHi8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedEnd>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Class" xmi:id="_DekbLXi8Ee-Im_DWO8wpfQ" name="OutletModelErrorStatus"/>
+            
+        <packagedElement xmi:type="uml:Interface" xmi:id="_DekbLni8Ee-Im_DWO8wpfQ" name="StoregeOutleetModelInterface" isAbstract="true">
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DekbL3i8Ee-Im_DWO8wpfQ" name="AddModel" visibility="public" isAbstract="true">
+                        
+                <ownedParameter xmi:id="_DekbMHi8Ee-Im_DWO8wpfQ" name="model" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false">
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DekbMXi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbMni8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbM3i8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DekbNHi8Ee-Im_DWO8wpfQ" name="GetAllModels" visibility="public" isAbstract="true">
+                        
+                <ownedParameter xmi:id="_DekbNXi8Ee-Im_DWO8wpfQ" type="_DekbOXi8Ee-Im_DWO8wpfQ" isUnique="false" direction="return">
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DekbNni8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbN3i8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbOHi8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_DekbOXi8Ee-Im_DWO8wpfQ" name="List&lt;OutletModel&gt;">
+                  
+            <eAnnotations xmi:id="_DekbOni8Ee-Im_DWO8wpfQ" source="Objing">
+                        
+                <contents xmi:type="uml:Property" xmi:id="_DekbO3i8Ee-Im_DWO8wpfQ" name="isPrimitive"/>
+                      
+            </eAnnotations>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Class" xmi:id="_DekbPHi8Ee-Im_DWO8wpfQ" name="CeshOutleetModelsStorege" clientDependency="_DekbPXi8Ee-Im_DWO8wpfQ">
+                  
+            <interfaceRealization xmi:id="_DekbPXi8Ee-Im_DWO8wpfQ" name="InterfaceRealization" supplier="_DekbLni8Ee-Im_DWO8wpfQ" client="_DekbPHi8Ee-Im_DWO8wpfQ" contract="_DekbLni8Ee-Im_DWO8wpfQ"/>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DekbPni8Ee-Im_DWO8wpfQ" name="AddModel" visibility="public">
+                        
+                <ownedParameter xmi:id="_DekbP3i8Ee-Im_DWO8wpfQ" name="model" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false">
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DekbQHi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbQXi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbQni8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DekbQ3i8Ee-Im_DWO8wpfQ" name="GetAllModels" visibility="public">
+                        
+                <ownedParameter xmi:id="_DekbRHi8Ee-Im_DWO8wpfQ" type="_DekbOXi8Ee-Im_DWO8wpfQ" isUnique="false" direction="return">
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DekbRXi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbRni8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbR3i8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Interface" xmi:id="_DekbSHi8Ee-Im_DWO8wpfQ" name="OutleetModelParserInterface" isAbstract="true">
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_DekbSXi8Ee-Im_DWO8wpfQ" name="outletModel" visibility="public" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false" aggregation="shared" association="_DekbZHi8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DekbSni8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbS3i8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbTHi8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbTXi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbTni8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbT3i8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbUHi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbUXi8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedAttribute>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DekbUni8Ee-Im_DWO8wpfQ" name="Parse" visibility="public" isAbstract="true">
+                        
+                <ownedParameter xmi:id="_DekbU3i8Ee-Im_DWO8wpfQ" name="content" isUnique="false">
+                              
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DekbVHi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbVXi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbVni8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                        
+                <ownedParameter xmi:id="_DekbV3i8Ee-Im_DWO8wpfQ" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false" direction="return">
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DekbWHi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbWXi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbWni8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DekbW3i8Ee-Im_DWO8wpfQ" name="ConvertTo" visibility="public">
+                        
+                <ownedParameter xmi:id="_DekbXHi8Ee-Im_DWO8wpfQ" name="model" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false">
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DekbXXi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbXni8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbX3i8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                        
+                <ownedParameter xmi:id="_DekbYHi8Ee-Im_DWO8wpfQ" isUnique="false" direction="return">
+                              
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DekbYXi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbYni8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbY3i8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Association" xmi:id="_DekbZHi8Ee-Im_DWO8wpfQ" memberEnd="_DekbSXi8Ee-Im_DWO8wpfQ _DekbZXi8Ee-Im_DWO8wpfQ">
+                  
+            <ownedEnd xmi:type="uml:Property" xmi:id="_DekbZXi8Ee-Im_DWO8wpfQ" visibility="public" type="_DekbSHi8Ee-Im_DWO8wpfQ" isUnique="false" association="_DekbZHi8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DekbZni8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbZ3i8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbaHi8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbaXi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekbani8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekba3i8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbbHi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbbXi8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedEnd>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Class" xmi:id="_Dekbbni8Ee-Im_DWO8wpfQ" name="JsonOutleetModelParser" clientDependency="_Dekbb3i8Ee-Im_DWO8wpfQ">
+                  
+            <interfaceRealization xmi:id="_Dekbb3i8Ee-Im_DWO8wpfQ" name="InterfaceRealization" supplier="_DekbSHi8Ee-Im_DWO8wpfQ" client="_Dekbbni8Ee-Im_DWO8wpfQ" contract="_DekbSHi8Ee-Im_DWO8wpfQ"/>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DekbcHi8Ee-Im_DWO8wpfQ" name="Parse" visibility="public">
+                        
+                <ownedParameter xmi:id="_DekbcXi8Ee-Im_DWO8wpfQ" name="content" isUnique="false">
+                              
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dekbcni8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dekbc3i8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbdHi8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                        
+                <ownedParameter xmi:id="_DekbdXi8Ee-Im_DWO8wpfQ" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false" direction="return">
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dekbdni8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dekbd3i8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbeHi8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DekbeXi8Ee-Im_DWO8wpfQ" name="ConvertTo" visibility="public">
+                        
+                <ownedParameter xmi:id="_Dekbeni8Ee-Im_DWO8wpfQ" name="model" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false">
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dekbe3i8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbfHi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbfXi8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                        
+                <ownedParameter xmi:id="_Dekbfni8Ee-Im_DWO8wpfQ" isUnique="false" direction="return">
+                              
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dekbf3i8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbgHi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbgXi8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Class" xmi:id="_Dekbgni8Ee-Im_DWO8wpfQ" name="DataModelOutlet" visibility="private">
+                  
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Dekbg3i8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DekbhHi8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbhXi8Ee-Im_DWO8wpfQ" name="NoteType_Name">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekbhni8Ee-Im_DWO8wpfQ" value="description"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <body>&lt;Enter note text here&gt;</body>
+                      
+            </ownedComment>
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Dekbh3i8Ee-Im_DWO8wpfQ" name="jsonOutleetModelParser" visibility="public" type="_Dekbbni8Ee-Im_DWO8wpfQ" isUnique="false" aggregation="composite" association="_Dekbqni8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DekbiHi8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbiXi8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekbini8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekbi3i8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbjHi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbjXi8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekbjni8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dekbj3i8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedAttribute>
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_DekbkHi8Ee-Im_DWO8wpfQ" name="textOutleetModelParser" visibility="public" type="_DeuLs3i8Ee-Im_DWO8wpfQ" isUnique="false" aggregation="composite" association="_DeuLoHi8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DekbkXi8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekbkni8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekbk3i8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekblHi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekblXi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekblni8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekbl3i8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekbmHi8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedAttribute>
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_DekbmXi8Ee-Im_DWO8wpfQ" name="outletModel" visibility="public" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false" aggregation="shared" association="_DeuLqXi8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_Dekbmni8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekbm3i8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbnHi8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbnXi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekbnni8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekbn3i8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekboHi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DekboXi8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedAttribute>
+                  
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Dekboni8Ee-Im_DWO8wpfQ" name="ID" visibility="public" isUnique="false">
+                        
+                <eAnnotations xmi:id="_Dekbo3i8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbpHi8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbpXi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekbpni8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekbp3i8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbqHi8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbqXi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#Integer"/>
+                      
+            </ownedAttribute>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Association" xmi:id="_Dekbqni8Ee-Im_DWO8wpfQ" memberEnd="_Dekbh3i8Ee-Im_DWO8wpfQ _Dekbq3i8Ee-Im_DWO8wpfQ">
+                  
+            <ownedEnd xmi:type="uml:Property" xmi:id="_Dekbq3i8Ee-Im_DWO8wpfQ" visibility="public" type="_Dekbgni8Ee-Im_DWO8wpfQ" isUnique="false" association="_Dekbqni8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DekbrHi8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbrXi8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekbrni8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_Dekbr3i8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DekbsHi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DekbsXi8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dekbsni8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                      
+            </ownedEnd>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Association" xmi:id="_DeuLoHi8Ee-Im_DWO8wpfQ" memberEnd="_DekbkHi8Ee-Im_DWO8wpfQ _DeuLoXi8Ee-Im_DWO8wpfQ">
+                  
+            <ownedEnd xmi:type="uml:Property" xmi:id="_DeuLoXi8Ee-Im_DWO8wpfQ" visibility="public" type="_Dekbgni8Ee-Im_DWO8wpfQ" isUnique="false" association="_DeuLoHi8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DeuLoni8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DeuLo3i8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DeuLpHi8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DeuLpXi8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DeuLpni8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DeuLp3i8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DeuLqHi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                      
+            </ownedEnd>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Association" xmi:id="_DeuLqXi8Ee-Im_DWO8wpfQ" memberEnd="_DekbmXi8Ee-Im_DWO8wpfQ _DeuLqni8Ee-Im_DWO8wpfQ">
+                  
+            <ownedEnd xmi:type="uml:Property" xmi:id="_DeuLqni8Ee-Im_DWO8wpfQ" visibility="public" type="_Dekbgni8Ee-Im_DWO8wpfQ" isUnique="false" association="_DeuLqXi8Ee-Im_DWO8wpfQ">
+                        
+                <eAnnotations xmi:id="_DeuLq3i8Ee-Im_DWO8wpfQ" source="Objing">
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DeuLrHi8Ee-Im_DWO8wpfQ" name="MultiMin">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DeuLrXi8Ee-Im_DWO8wpfQ" value="0"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DeuLrni8Ee-Im_DWO8wpfQ" name="MultiMax">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DeuLr3i8Ee-Im_DWO8wpfQ" value="1"/>
+                                  
+                    </contents>
+                              
+                    <contents xmi:type="uml:Property" xmi:id="_DeuLsHi8Ee-Im_DWO8wpfQ" name="AccessMode">
+                                    
+                        <defaultValue xmi:type="uml:LiteralString" xmi:id="_DeuLsXi8Ee-Im_DWO8wpfQ" value="no_access"/>
+                                  
+                    </contents>
+                            
+                </eAnnotations>
+                        
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DeuLsni8Ee-Im_DWO8wpfQ"/>
+                      
+            </ownedEnd>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:Class" xmi:id="_DeuLs3i8Ee-Im_DWO8wpfQ" name="TextOutleetModelParser" clientDependency="_DeuLtHi8Ee-Im_DWO8wpfQ">
+                  
+            <interfaceRealization xmi:id="_DeuLtHi8Ee-Im_DWO8wpfQ" name="InterfaceRealization" supplier="_DekbSHi8Ee-Im_DWO8wpfQ" client="_DeuLs3i8Ee-Im_DWO8wpfQ" contract="_DekbSHi8Ee-Im_DWO8wpfQ"/>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DeuLtXi8Ee-Im_DWO8wpfQ" name="Parse" visibility="public">
+                        
+                <ownedParameter xmi:id="_DeuLtni8Ee-Im_DWO8wpfQ" name="content" isUnique="false">
+                              
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DeuLt3i8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DeuLuHi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DeuLuXi8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                        
+                <ownedParameter xmi:id="_DeuLuni8Ee-Im_DWO8wpfQ" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false" direction="return">
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DeuLu3i8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DeuLvHi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DeuLvXi8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                  
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DeuLvni8Ee-Im_DWO8wpfQ" name="ConvertTo" visibility="public">
+                        
+                <ownedParameter xmi:id="_DeuLv3i8Ee-Im_DWO8wpfQ" name="model" type="_DekapXi8Ee-Im_DWO8wpfQ" isUnique="false">
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DeuLwHi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DeuLwXi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DeuLwni8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                        
+                <ownedParameter xmi:id="_DeuLw3i8Ee-Im_DWO8wpfQ" isUnique="false" direction="return">
+                              
+                    <type xmi:type="uml:PrimitiveType" href="http://www.omg.org/spec/UML/20110701/PrimitiveTypes.xmi#String"/>
+                              
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DeuLxHi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DeuLxXi8Ee-Im_DWO8wpfQ" value="1"/>
+                              
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_DeuLxni8Ee-Im_DWO8wpfQ" value=""/>
+                            
+                </ownedParameter>
+                      
+            </ownedOperation>
+                
+        </packagedElement>
+            
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_DeuLx3i8Ee-Im_DWO8wpfQ" name="Decimal">
+                  
+            <eAnnotations xmi:id="_DeuLyHi8Ee-Im_DWO8wpfQ" source="Objing">
+                        
+                <contents xmi:type="uml:Property" xmi:id="_DeuLyXi8Ee-Im_DWO8wpfQ" name="isPrimitive"/>
+                      
+            </eAnnotations>
+                
+        </packagedElement>
+            
+        <profileApplication xmi:type="uml:ProfileApplication" xmi:applyingPackage="_DekaoHi8Ee-Im_DWO8wpfQ" xmi:id="_Do2YAHi8Ee-Im_DWO8wpfQ">
+                  
+            <eAnnotations xmi:id="_Do2YAXi8Ee-Im_DWO8wpfQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                        
+                <references xmi:type="ecore:EPackage" href="default.profile.uml#_DgEPd3i8Ee-Im_DWO8wpfQ"/>
+                      
+            </eAnnotations>
+                  
+            <appliedProfile xmi:type="uml:Profile" xmi:applyingPackage="_Do2YAHi8Ee-Im_DWO8wpfQ" href="default.profile.uml#_DgEPcHi8Ee-Im_DWO8wpfQ"/>
+                
+        </profileApplication>
+          
+    </uml:Model>
+      
+    <default:create xmi:id="_Do2YAni8Ee-Im_DWO8wpfQ" base_Operation="_Deka53i8Ee-Im_DWO8wpfQ"/>
+    
+</xmi:XMI>

@@ -107,8 +107,8 @@ namespace ApplicationRentalOfPremises.Models
         /// </summary>
         //[Required]
         //[Range(0, int.MaxValue)]
-        public int RentalCostPerDay {  get;private set; }  
-        private void SetRentalCostPerDay(int RCPD)
+        public decimal RentalCostPerDay {  get;private set; }  
+        private void SetRentalCostPerDay(decimal RCPD)
         {
             /*if (RCPD < 0)
                 return -1;*/
@@ -138,14 +138,14 @@ namespace ApplicationRentalOfPremises.Models
             this.NumberOfWindows=NumberOfWindows;
             return true;
         }
-        public bool ValideAndSetRentalCostPerDay(int RCPD)
+        public bool ValideAndSetRentalCostPerDay(decimal RCPD)
         {
             if(RCPD < 0)
                 return false;
             SetRentalCostPerDay(RCPD);
             return true;
         }
-        public OutletModel(int ID,int Storey,int Area,short PresenceOfAirConditining,int RentalCostPerDay,
+        public OutletModel(int ID,int Storey,int Area,short PresenceOfAirConditining,decimal RentalCostPerDay,
             double AllocatedPowerKilowatts_,int NumberOfWindows_, out OutletModelErrorStatus errors)
         {
             errors = new OutletModelErrorStatus();
@@ -161,6 +161,29 @@ namespace ApplicationRentalOfPremises.Models
         {
 
         }*/
+        internal OutletModel(Parsers.JsonOutleetModelParser.DataModelOutlet dataModelOutlet, out OutletModelErrorStatus errors)
+        {
+            errors = new OutletModelErrorStatus();
+            errors.StoreyStatus = ValideAndSetStorey(dataModelOutlet.Storey);
+            errors.AreaStatus = ValideAndSetArea(dataModelOutlet.Area);
+            errors.PresenceOfAirConditioningStatus = ValideAndSetPresenceOfAirConditioning(dataModelOutlet.PresenceOfAirConditining);
+            errors.RentalCostPerDayStatus = ValideAndSetRentalCostPerDay(dataModelOutlet.RentalCostPerDay);
+            errors.AllocatedPowerKilowattsStatus = ValideAndSetAllocatedPowerKilowatts(dataModelOutlet.AllocatedPowerKilowatts);
+            errors.NumberOfWindowsStatus = ValidAndSetNumberOfWindows(dataModelOutlet.NumberOfWindows);
+            SetID(ID);
+        }
+        public OutletModel(Infrastructure.OutleetModelParserInterface parser,string content)
+        {
+            //this.=parser.Parse(content);
+            var t=parser.Parse(content);    
+            this.ID=t.ID;   
+            this.NumberOfWindows=t.NumberOfWindows;
+            this.RentalCostPerDay=t.RentalCostPerDay;
+            this.Area=t.Area;
+            this.AllocatedPowerKilowatts=t.AllocatedPowerKilowatts;
+            this.PresenceOfAirConditioning=t.PresenceOfAirConditioning;
+            this.Storey=t.Storey;
+        }
         public void PrintFullObject()
         {
             Console.WriteLine($"{nameof(ID)}:{ID},{nameof(Storey)}:{Storey},{nameof(Area)}:{Area}," +
@@ -174,7 +197,8 @@ namespace ApplicationRentalOfPremises.Models
                 $"{RentalCostPerDay}");
         }
         public static bool operator==(OutletModel lhs, OutletModel rhs)=>lhs.ID==rhs.ID&&lhs.Storey==lhs.Storey
-            && lhs.Area==rhs.Area&&lhs.RentalCostPerDay==rhs.RentalCostPerDay&&lhs.PresenceOfAirConditioning==rhs.PresenceOfAirConditioning;
+            && lhs.Area==rhs.Area&&lhs.RentalCostPerDay==rhs.RentalCostPerDay&&lhs.PresenceOfAirConditioning==rhs.PresenceOfAirConditioning
+            &&lhs.AllocatedPowerKilowatts==rhs.AllocatedPowerKilowatts&&lhs.NumberOfWindows==rhs.NumberOfWindows;
         public static bool operator !=(OutletModel lhs, OutletModel rhs) => !(lhs == rhs);
     }
 }

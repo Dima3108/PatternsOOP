@@ -31,8 +31,7 @@ namespace ApplicationRentalOfPremises.Parsers
             outlet.RentalCostPerDay = int.Parse(cont[4]);
             outlet.AllocatedPowerKilowatts=double.Parse(cont[5]);
             outlet.NumberOfWindows=int.Parse(cont[6]);
-            OutletModel outletModel = new OutletModel(outlet.ID, outlet.Storey, outlet.Area, outlet.PresenceOfAirConditining
-                , outlet.RentalCostPerDay, outlet.AllocatedPowerKilowatts, outlet.NumberOfWindows, out OutletModelErrorStatus error);
+            OutletModel outletModel = new OutletModel(outlet, out OutletModelErrorStatus error);
             error.RunExceptionIFNotSUCCESS();
             return outletModel;
             //OutletModel outletModel=new OutletModel()
