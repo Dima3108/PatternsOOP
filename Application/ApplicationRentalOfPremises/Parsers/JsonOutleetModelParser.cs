@@ -18,15 +18,17 @@ namespace ApplicationRentalOfPremises.Parsers
             public decimal RentalCostPerDay { get; set; }
             public double AllocatedPowerKilowatts { get; set; }
             public int NumberOfWindows { get; set; }
+            public int InventoryNumber {  get; set; }
             internal DataModelOutlet(OutletModel outlet)
             {
-                this.ID = outlet.ID;
+                this.ID =(int) outlet.ID;
                 this.AllocatedPowerKilowatts = outlet.AllocatedPowerKilowatts;
-                this.RentalCostPerDay = outlet.RentalCostPerDay;
+                this.RentalCostPerDay = outlet.GetRentalCostPerDay();
                 this.NumberOfWindows = outlet.NumberOfWindows;
                 this.Area = outlet.Area;
                 this.PresenceOfAirConditining = outlet.PresenceOfAirConditioning;
-                this.Storey = outlet.Storey;
+                this.Storey = outlet.GetStorey();
+                this.InventoryNumber = outlet.GetInventoryNumber();
 
             }
             public DataModelOutlet()
@@ -37,8 +39,8 @@ namespace ApplicationRentalOfPremises.Parsers
         public OutletModel Parse(string content)
         {
             DataModelOutlet outlet = JsonSerializer.Deserialize<DataModelOutlet>(content);
-            OutletModel outletModel = new OutletModel(outlet, out OutletModelErrorStatus error);
-            error.RunExceptionIFNotSUCCESS();
+            OutletModel outletModel = new OutletModel(outlet);
+            //error.RunExceptionIFNotSUCCESS();
             return outletModel;
             //OutletModel outletModel=new OutletModel()
         }
