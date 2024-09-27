@@ -44,10 +44,29 @@ namespace ApplicationRentalOfPremises.Parsers
             return outletModel;
             //OutletModel outletModel=new OutletModel()
         }
+        public OutleetModel[] ParseArray(string content)
+        {
+            DataModelOutleet[] outlet = JsonSerializer.Deserialize<DataModelOutleet[]>(content);
+            OutleetModel[]models=new OutleetModel[outlet.Length];
+            Parallel.For(0, models.Length, i => models[i]=new OutleetModel(outlet[i])); 
+            return models;
+            //OutleetModel outletModel = new OutleetModel(outlet);
+            //error.RunExceptionIFNotSUCCESS();
+            //return outletModel;
+            //OutletModel outletModel=new OutletModel()
+        }
         public string ConvertTo(OutleetModel model)
         {
             DataModelOutleet dataModelOutlet = new DataModelOutleet(model);
             return JsonSerializer.Serialize(dataModelOutlet);
+        }
+        public string ConvertTo(OutleetModel[] models)
+        {
+            /*DataModelOutleet dataModelOutlet = new DataModelOutleet(model);
+            return JsonSerializer.Serialize(dataModelOutlet);*/
+            DataModelOutleet[]dOutlets=new DataModelOutleet[models.Length];
+            Parallel.For(0, dOutlets.Length, i => dOutlets[i] = new DataModelOutleet(models[i]));
+            return JsonSerializer.Serialize(dOutlets);
         }
     }
 }

@@ -10,6 +10,8 @@ namespace ApplicationRentalOfPremises.Infrastructure
     public interface OutleetModelParserInterface
     {
         OutleetModel Parse(string content);
+        OutleetModel[]ParseArray(string content);
         string ConvertTo(OutleetModel model);
+        string ConvertTo(OutleetModel[] models);
     }
 }

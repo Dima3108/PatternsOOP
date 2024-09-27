@@ -31,10 +31,36 @@ namespace ApplicationRentalOfPremises.Parsers
             outlet.RentalCostPerDay = int.Parse(cont[4]);
             outlet.AllocatedPowerKilowatts=double.Parse(cont[5]);
             outlet.NumberOfWindows=int.Parse(cont[6]);
+            outlet.InventoryNumber=int.Parse(cont[7]);
             OutleetModel outletModel = new OutleetModel(outlet);
             //error.RunExceptionIFNotSUCCESS();
             return outletModel;
             //OutletModel outletModel=new OutletModel()
+        }
+        public OutleetModel[] ParseArray(string content)
+        {
+            string[]cont_=content.Split("<");
+            const int attribute_count = 8;
+            OutleetModel[] o = new OutleetModel[cont_.Length / attribute_count] ;
+            for(int i = 0; i < o.Length; i++)
+            {
+                string v=cont_[i*attribute_count];
+                if (v.Contains("<") == false)
+                    v = "<" + v;
+                for(int j = 1; j < attribute_count; j++)
+                {
+                    if (cont_[(i*attribute_count) + j].Contains("<") == false)
+                    {
+                        v += "<" + cont_[(i * attribute_count) + j];
+                    }
+                    else
+                    {
+                        v += cont_[(i * attribute_count) + j];
+                    }
+                }
+                o[i] = Parse(v);
+            }
+            return o;
         }
         public string ConvertTo(OutleetModel model)
         {
@@ -47,8 +73,18 @@ namespace ApplicationRentalOfPremises.Parsers
             data_ += $"<{dataModelOutlet.RentalCostPerDay}";
             data_ += $"<{dataModelOutlet.AllocatedPowerKilowatts}";
             data_ += $"<{dataModelOutlet.NumberOfWindows}";
+            data_ += $"<{dataModelOutlet.InventoryNumber}";
             return data_ ;
            // return JsonSerializer.Serialize(dataModelOutlet);
+        }
+        public string ConvertTo(OutleetModel[] models)
+        {
+            string s = "";
+            foreach (var mod in models)
+            {
+                s += ConvertTo(mod);
+            }
+            return s;
         }
     }
 }
