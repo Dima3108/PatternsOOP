@@ -11,9 +11,9 @@ namespace ApplicationRentalOfPremises.Parsers
 {
     public class TextOutleetModelParser:Infrastructure.OutleetModelParserInterface
     {
-        public OutletModel Parse(string content)
+        public OutleetModel Parse(string content)
         {
-            DataModelOutlet outlet = new DataModelOutlet();
+            DataModelOutleet outlet = new DataModelOutleet();
             string[] cont = content.Split("<");
             /*
              * data_ += $"{dataModelOutlet.ID}";
@@ -31,14 +31,14 @@ namespace ApplicationRentalOfPremises.Parsers
             outlet.RentalCostPerDay = int.Parse(cont[4]);
             outlet.AllocatedPowerKilowatts=double.Parse(cont[5]);
             outlet.NumberOfWindows=int.Parse(cont[6]);
-            OutletModel outletModel = new OutletModel(outlet);
+            OutleetModel outletModel = new OutleetModel(outlet);
             //error.RunExceptionIFNotSUCCESS();
             return outletModel;
             //OutletModel outletModel=new OutletModel()
         }
-        public string ConvertTo(OutletModel model)
+        public string ConvertTo(OutleetModel model)
         {
-            DataModelOutlet dataModelOutlet = new DataModelOutlet(model);
+            DataModelOutleet dataModelOutlet = new DataModelOutleet(model);
             string data_ = "";
             data_ += $"{dataModelOutlet.ID}";
             data_ += $"<{dataModelOutlet.Storey}";

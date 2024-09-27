@@ -9,7 +9,7 @@ namespace ApplicationRentalOfPremises.Storeges
 {
     public interface StoregeOutleetModelInterface
     {
-        void AddModel(OutletModel model);
-        List<OutletModel> GetAllModels();
+        void AddModel(OutleetModel model);
+        List<OutleetModel> GetAllModels();
     }
 }

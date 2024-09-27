@@ -9,12 +9,12 @@ namespace ApplicationRentalOfPremises.Storeges
 {
     public class CeshOutleetModelsStorege:StoregeOutleetModelInterface
     {
-        private List<OutletModel>models=new List<OutletModel>();
+        private List<OutleetModel>models=new List<OutleetModel>();
         public CeshOutleetModelsStorege()
         {
 
         }
-        public void AddModel(OutletModel model)=>models.Add(model);
-        public List<OutletModel> GetAllModels() => models;
+        public void AddModel(OutleetModel model)=>models.Add(model);
+        public List<OutleetModel> GetAllModels() => models;
     }
 }
