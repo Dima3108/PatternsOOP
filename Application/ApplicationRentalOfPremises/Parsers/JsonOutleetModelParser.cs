@@ -9,7 +9,7 @@ namespace ApplicationRentalOfPremises.Parsers
 {
     public class JsonOutleetModelParser : Infrastructure.OutleetModelParserInterface
     {
-        internal class DataModelOutlet
+        internal class DataModelOutleet
         {
             public int ID { get; set; }
             public int Storey { get; set; }
@@ -19,7 +19,7 @@ namespace ApplicationRentalOfPremises.Parsers
             public double AllocatedPowerKilowatts { get; set; }
             public int NumberOfWindows { get; set; }
             public int InventoryNumber {  get; set; }
-            internal DataModelOutlet(OutletModel outlet)
+            internal DataModelOutleet(OutleetModel outlet)
             {
                 this.ID =(int) outlet.ID;
                 this.AllocatedPowerKilowatts = outlet.AllocatedPowerKilowatts;
@@ -31,22 +31,22 @@ namespace ApplicationRentalOfPremises.Parsers
                 this.InventoryNumber = outlet.GetInventoryNumber();
 
             }
-            public DataModelOutlet()
+            public DataModelOutleet()
             {
 
             }
         }
-        public OutletModel Parse(string content)
+        public OutleetModel Parse(string content)
         {
-            DataModelOutlet outlet = JsonSerializer.Deserialize<DataModelOutlet>(content);
-            OutletModel outletModel = new OutletModel(outlet);
+            DataModelOutleet outlet = JsonSerializer.Deserialize<DataModelOutleet>(content);
+            OutleetModel outletModel = new OutleetModel(outlet);
             //error.RunExceptionIFNotSUCCESS();
             return outletModel;
             //OutletModel outletModel=new OutletModel()
         }
-        public string ConvertTo(OutletModel model)
+        public string ConvertTo(OutleetModel model)
         {
-            DataModelOutlet dataModelOutlet = new DataModelOutlet(model);
+            DataModelOutleet dataModelOutlet = new DataModelOutleet(model);
             return JsonSerializer.Serialize(dataModelOutlet);
         }
     }

@@ -42,7 +42,7 @@ namespace ApplicationRentalOfPremises.Models
     /// <summary>
     /// Торговая точка
     /// </summary>
-    public class OutletModel:OutleetSmallModel
+    public class OutleetModel:OutleetSmallModel
     {
         //[Required]
         public int? ID { get; private set; }
@@ -69,7 +69,7 @@ namespace ApplicationRentalOfPremises.Models
         //[Required]
         //[Range(0,int.MaxValue)]
         public int Area { get; private set; }
-        private void SetArea(int area)
+        public void SetArea(int area)
         {
             /*if (Area < 0)
                 return -1;*/
@@ -80,7 +80,7 @@ namespace ApplicationRentalOfPremises.Models
         }
         public bool ValidArea(int area)
         {
-            if (Area < 0)
+            if (Area <= 0)
                 return false;
             // SetArea(area);
             return true;
@@ -91,7 +91,7 @@ namespace ApplicationRentalOfPremises.Models
         //[Required]
         //[Range(0, 1)]
         public short PresenceOfAirConditioning { get; private set; }
-        private void SetPresenceOfAirConditioning(short POAC)
+        public void SetPresenceOfAirConditioning(short POAC)
         {
             /*if (POAC > 1 || POAC < 0)
                 return -1;*/
@@ -164,7 +164,7 @@ namespace ApplicationRentalOfPremises.Models
             return true;
         }
 
-        public OutletModel( int Storey, int Area, short PresenceOfAirConditining, decimal RentalCostPerDay,
+        public OutleetModel( int Storey, int Area, short PresenceOfAirConditining, decimal RentalCostPerDay,
             double AllocatedPowerKilowatts_, int NumberOfWindows_
             ,int InventoryNumber,
             //out OutletModelErrorStatus errors, 
@@ -184,7 +184,7 @@ namespace ApplicationRentalOfPremises.Models
         {
 
         }*/
-        internal OutletModel(Parsers.JsonOutleetModelParser.DataModelOutlet dataModelOutlet):this(dataModelOutlet.Storey,dataModelOutlet.Area,
+        internal OutleetModel(Parsers.JsonOutleetModelParser.DataModelOutleet dataModelOutlet):this(dataModelOutlet.Storey,dataModelOutlet.Area,
             dataModelOutlet.PresenceOfAirConditining,dataModelOutlet.RentalCostPerDay,dataModelOutlet.AllocatedPowerKilowatts,dataModelOutlet.NumberOfWindows,
             dataModelOutlet.InventoryNumber,dataModelOutlet.ID)
          {
@@ -222,10 +222,10 @@ namespace ApplicationRentalOfPremises.Models
                 $"{nameof(InventoryNumber)}:{InventoryNumber}"
                 ;
         }
-        public static bool operator ==(OutletModel lhs, OutletModel rhs) =>  lhs.Storey == lhs.Storey
+        public static bool operator ==(OutleetModel lhs, OutleetModel rhs) =>  lhs.Storey == lhs.Storey
             && lhs.Area == rhs.Area && lhs.RentalCostPerDay == rhs.RentalCostPerDay && lhs.PresenceOfAirConditioning == rhs.PresenceOfAirConditioning
             && lhs.AllocatedPowerKilowatts == rhs.AllocatedPowerKilowatts && lhs.NumberOfWindows == rhs.NumberOfWindows&&rhs.InventoryNumber == rhs.InventoryNumber
             ;
-        public static bool operator !=(OutletModel lhs, OutletModel rhs) => !(lhs == rhs);
+        public static bool operator !=(OutleetModel lhs, OutleetModel rhs) => !(lhs == rhs);
     }
 }

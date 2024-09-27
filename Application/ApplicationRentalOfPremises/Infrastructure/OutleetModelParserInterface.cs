@@ -9,7 +9,7 @@ namespace ApplicationRentalOfPremises.Infrastructure
 {
     public interface OutleetModelParserInterface
     {
-        OutletModel Parse(string content);
-        string ConvertTo(OutletModel model);
+        OutleetModel Parse(string content);
+        string ConvertTo(OutleetModel model);
     }
 }
