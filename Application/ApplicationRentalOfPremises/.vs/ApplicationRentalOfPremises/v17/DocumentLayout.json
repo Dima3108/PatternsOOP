@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|q:\\github_repo\\patternsoop\\application\\applicationrentalofpremises\\storeges\\reps\\outleetmodel_rep_yaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|solutionrelative:storeges\\reps\\outleetmodel_rep_yaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|q:\\github_repo\\patternsoop\\application\\applicationrentalofpremises\\storeges\\reps\\outleetmodel_rep_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|solutionrelative:storeges\\reps\\outleetmodel_rep_json.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|q:\\github_repo\\patternsoop\\application\\applicationrentalofpremises\\parsers\\yamloutleetmodelparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|solutionrelative:parsers\\yamloutleetmodelparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|q:\\github_repo\\patternsoop\\application\\applicationrentalofpremises\\storeges\\reps\\outleetmodel_rep_yaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|solutionrelative:storeges\\reps\\outleetmodel_rep_yaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|q:\\github_repo\\patternsoop\\application\\applicationrentalofpremises\\infrastructure\\outleetmodelparserinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -69,7 +69,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -83,32 +83,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "outleetmodel_rep_yaml.cs",
               "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Storeges\\Reps\\outleetmodel_rep_yaml.cs",
               "RelativeDocumentMoniker": "Storeges\\Reps\\outleetmodel_rep_yaml.cs",
               "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Storeges\\Reps\\outleetmodel_rep_yaml.cs",
               "RelativeToolTip": "Storeges\\Reps\\outleetmodel_rep_yaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAABbAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T12:48:12.448Z"
+              "WhenOpened": "2024-09-29T12:48:12.448Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "outleetmodel_rep_json.cs",
               "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Storeges\\Reps\\outleetmodel_rep_json.cs",
               "RelativeDocumentMoniker": "Storeges\\Reps\\outleetmodel_rep_json.cs",
               "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Storeges\\Reps\\outleetmodel_rep_json.cs",
               "RelativeToolTip": "Storeges\\Reps\\outleetmodel_rep_json.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-29T12:27:34.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FileStoregeAdapter.cs",
               "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Storeges\\FileStoregeAdapter.cs",
               "RelativeDocumentMoniker": "Storeges\\FileStoregeAdapter.cs",
@@ -116,12 +117,11 @@
               "RelativeToolTip": "Storeges\\FileStoregeAdapter.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAABtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T17:35:48.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-27T17:35:48.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "YamlOutleetModelParser.cs",
               "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Parsers\\YamlOutleetModelParser.cs",
               "RelativeDocumentMoniker": "Parsers\\YamlOutleetModelParser.cs",
