@@ -14,3 +14,6 @@ Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net
 Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ApplicationRentalOfPremises.pdb
 Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ApplicationRentalOfPremises.genruntimeconfig.cache
 Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ref\ApplicationRentalOfPremises.dll
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\bin\Debug\net5.0\YamlDotNet.dll
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\ApplicationRentalOfPremises.csproj.AssemblyReference.cache
+Q:\github_repo\PatternsOOP\Application\ApplicationRentalOfPremises\obj\Debug\net5.0\Applicat.4055CD83.Up2Date

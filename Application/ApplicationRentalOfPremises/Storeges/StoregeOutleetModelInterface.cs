@@ -11,5 +11,6 @@ namespace ApplicationRentalOfPremises.Storeges
     {
         void AddModel(OutleetModel model);
         List<OutleetModel> GetAllModels();
+        //List<OutleetModel> SortModelsByPrice();
     }
 }

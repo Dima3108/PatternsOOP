@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationRentalOfPremises.Storeges
 {
-    abstract class FileStoregeAdapter : StoregeOutleetModelInterface
+    public abstract class FileStoregeAdapter : StoregeOutleetModelInterface
     {
         protected string FileName { get; private set; }
         protected Infrastructure.OutleetModelParserInterface parserInterface { get; private set; }
@@ -18,10 +18,18 @@ namespace ApplicationRentalOfPremises.Storeges
             FileName = fileName;
             this.parserInterface = parserInterface;
             cesh = new List<OutleetModel>();
+            ReadFileContent();
         }
         protected void ReadFileContent()
         {
-            cesh = parserInterface.ParseArray(System.IO.File.ReadAllText(FileName)).ToList();
+            if (File.Exists(FileName))
+            {
+                cesh = parserInterface.ParseArray(System.IO.File.ReadAllText(FileName)).ToList();
+            }
+            else
+            {
+                cesh = new List<OutleetModel>();
+            }
         }
         protected void WriteFileContent()
         {
@@ -65,6 +73,14 @@ namespace ApplicationRentalOfPremises.Storeges
                 cesh.Remove(cesh.Find(t => t.ID == id));
                 WriteFileContent() ;
             }
+        }
+        public int get_count() => cesh.Count;
+        public List<OutleetModel> get_k_n_short_list(int k,int n)
+        {
+            List<OutleetModel>l= new List<OutleetModel>();
+            for(int offset=k;offset<Math.Min(k+n, cesh.Count);offset++)
+                l.Add(cesh[offset]);
+            return l;
         }
     }
 }

@@ -19,7 +19,7 @@ namespace ApplicationRentalOfPremises.Parsers
         {
             //DataModelOutleet outlet = JsonSerializer.Deserialize<DataModelOutleet>(content);
             var deserializer = new DeserializerBuilder()
-    .WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
+    //.WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
     .Build();
             DataModelOutleet outleet = deserializer.Deserialize<DataModelOutleet>(content);
             OutleetModel outletModel = new OutleetModel(outleet);
@@ -30,7 +30,7 @@ namespace ApplicationRentalOfPremises.Parsers
         public OutleetModel[]ParseArray(string content)
         {
             var deserializer = new DeserializerBuilder()
-    .WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
+    //.WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
     .Build();
             DataModelOutleet[] outleet = deserializer.Deserialize<DataModelOutleet[]>(content);
             OutleetModel[] outletModels = new OutleetModel[outleet.Length];
@@ -47,7 +47,7 @@ namespace ApplicationRentalOfPremises.Parsers
             DataModelOutleet dataModelOutlet = new DataModelOutleet(model);
             // return JsonSerializer.Serialize(dataModelOutlet);
             var serializer = new SerializerBuilder()
-     .WithNamingConvention(CamelCaseNamingConvention.Instance)
+     //.WithNamingConvention(CamelCaseNamingConvention.Instance)
      .Build();
             var yaml = serializer.Serialize(dataModelOutlet);
             return yaml;
@@ -59,7 +59,7 @@ namespace ApplicationRentalOfPremises.Parsers
             Parallel.For(0, dOutleets.Length, i => dOutleets[i] = new DataModelOutleet(models[i]));
             // return JsonSerializer.Serialize(dataModelOutlet);
             var serializer = new SerializerBuilder()
-     .WithNamingConvention(CamelCaseNamingConvention.Instance)
+     //.WithNamingConvention(CamelCaseNamingConvention.Instance)
      .Build();
             var yaml = serializer.Serialize(dOutleets);
             return yaml;

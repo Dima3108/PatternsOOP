@@ -22,6 +22,30 @@ namespace ApplicationRentalOfPremises
             {
                 SeedData.SeedData.storegeOutleets.AddModel(model);
             }
+            Storeges.Reps.outleetmodel_fasade_rep_json outleetmodel_Fasade_Rep_Json = new Storeges.Reps.outleetmodel_fasade_rep_json("content.json");
+            if (outleetmodel_Fasade_Rep_Json.get_count() <= 0)
+            {
+                foreach (var model in outleets)
+                    outleetmodel_Fasade_Rep_Json.AddModel(model);
+            }
+            else
+            {
+                var objects=outleetmodel_Fasade_Rep_Json.GetAllModels();
+                foreach(var obj in objects)
+                    Console.WriteLine(obj.ToString());
+            }
+            Storeges.Reps.outleetmodel_fasade_rep_yaml outleetmodel_Fasade_Rep_Yaml = new Storeges.Reps.outleetmodel_fasade_rep_yaml("content.yaml");
+            if (outleetmodel_Fasade_Rep_Yaml.get_count() <= 0)
+            {
+                foreach (var model in outleets)
+                    outleetmodel_Fasade_Rep_Yaml.AddModel(model);
+            }
+            else
+            {
+                var objects = outleetmodel_Fasade_Rep_Yaml.GetAllModels();
+                foreach (var obj in objects)
+                    Console.WriteLine(obj.ToString());
+            }
         }
     }
 }
