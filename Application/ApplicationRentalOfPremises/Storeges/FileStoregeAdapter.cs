@@ -20,7 +20,7 @@ namespace ApplicationRentalOfPremises.Storeges
             cesh = new List<OutleetModel>();
             ReadFileContent();
         }
-        protected void ReadFileContent()
+        public void ReadFileContent()
         {
             if (File.Exists(FileName))
             {
@@ -31,7 +31,7 @@ namespace ApplicationRentalOfPremises.Storeges
                 cesh = new List<OutleetModel>();
             }
         }
-        protected void WriteFileContent()
+        public void WriteFileContent()
         {
             File.Delete(FileName);
             System.IO.File.WriteAllText(FileName, parserInterface.ConvertTo(cesh.ToArray()));
@@ -54,7 +54,7 @@ namespace ApplicationRentalOfPremises.Storeges
         }
         public List<OutleetModel> GetAllModels() => GetAllModelsDefault();
         protected List<OutleetModel> GetAllModelsDefault() => cesh;
-        public OutleetModel? GetModelById(int id) => cesh.Find(t => t.ID == id);
+        public OutleetModel GetModelById(int id) => cesh.Find(t => t.ID == id);
         public void UpdateModelById(int id, OutleetModel model)
         {
             lock (cesh)
