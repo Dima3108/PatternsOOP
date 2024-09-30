@@ -10,7 +10,8 @@ using static ApplicationRentalOfPremises.Parsers.JsonOutleetModelParser;
 
 namespace ApplicationRentalOfPremises.Storeges.DB
 {
-    public class outleetmodel_adapter_rep_DB:FileStoregeAdapter
+    public class outleetmodel_adapter_rep_DB
+        //:FileStoregeAdapter
     {
         private MySqlConnection _connection;
         private string table_name;
