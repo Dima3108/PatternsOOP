@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace ApplicationRentalOfPremises.Storeges
 {
-    public abstract class FileStoregeAdapter : StoregeOutleetModelInterface
+    public abstract class FileStoregeAdapter 
+        //: StoregeOutleetModelInterface
     {
         protected string FileName { get; private set; }
         protected Infrastructure.OutleetModelParserInterface parserInterface { get; private set; }
