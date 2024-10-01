@@ -21,7 +21,7 @@ namespace ApplicationRentalOfPremises.Models
         /// </summary>
         protected int Storey { get; set; }
         public int GetStorey() => Storey;
-        public bool ValidStorey(int st)
+        public static bool ValidStorey(int st)
         {
             if(st<-1)
                 return false;
@@ -34,11 +34,11 @@ namespace ApplicationRentalOfPremises.Models
         }
         protected int InventoryNumber {  get; set; }    
         public int GetInventoryNumber() => InventoryNumber;
-        public bool ValidInventoryNumber(int numb)
+        public static bool ValidInventoryNumber(int numb)
         {
             return numb >= 0;
         } 
-        public void SetInventoryNumber(int numb)
+        public  void SetInventoryNumber(int numb)
         {
             if(!ValidInventoryNumber(numb))
                 throw new ArgumentException(nameof(InventoryNumber));
@@ -49,7 +49,7 @@ namespace ApplicationRentalOfPremises.Models
         /// </summary>
         protected decimal RentalCostPerDay {  get; set; }
         public decimal GetRentalCostPerDay() => RentalCostPerDay;
-        public bool ValidRentalCostPerDay(decimal rcpd) => rcpd > 0;
+        public static bool ValidRentalCostPerDay(decimal rcpd) => rcpd > 0;
         public void SetRentalCostPerDay(Decimal rcpd)
         {
             if(!ValidRentalCostPerDay(rcpd))

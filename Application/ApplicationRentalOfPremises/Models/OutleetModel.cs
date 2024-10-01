@@ -78,9 +78,9 @@ namespace ApplicationRentalOfPremises.Models
                 throw new ArgumentException(nameof(Area));
             //return 0;
         }
-        public bool ValidArea(int area)
+        public static bool ValidArea(int area)
         {
-            if (Area <= 0)
+            if (area <= 0)
                 return false;
             // SetArea(area);
             return true;
@@ -100,7 +100,7 @@ namespace ApplicationRentalOfPremises.Models
             this.PresenceOfAirConditioning = POAC;
             //return 0;
         }
-        public bool ValidPresenceOfAirConditioning(short POAC)
+        public static bool ValidPresenceOfAirConditioning(short POAC)
         {
             if (POAC > 1 || POAC < 0)
                 return false;
@@ -138,7 +138,7 @@ namespace ApplicationRentalOfPremises.Models
                 throw new ArgumentException(nameof(AllocatedPowerKilowatts));
             this.AllocatedPowerKilowatts = AllocatedPowerKilowatts;
         }
-        public bool ValidAllocatedPowerKilowatts(double AllocatedPowerKilowatts)
+        public static bool ValidAllocatedPowerKilowatts(double AllocatedPowerKilowatts)
         {
             if (AllocatedPowerKilowatts <= 0)
                 return false;
@@ -156,7 +156,7 @@ namespace ApplicationRentalOfPremises.Models
                 throw new ArgumentException(nameof(NumberOfWindows));
             this.NumberOfWindows = NOW;
         }
-        public bool ValidNumberOfWindows(int NumberOfWindows)
+        public static bool ValidNumberOfWindows(int NumberOfWindows)
         {
             if (NumberOfWindows < 0)
                 return false;
