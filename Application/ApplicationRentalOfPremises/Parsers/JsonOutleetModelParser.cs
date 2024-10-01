@@ -9,7 +9,14 @@ namespace ApplicationRentalOfPremises.Parsers
 {
     public class JsonOutleetModelParser : Infrastructure.OutleetModelParserInterface
     {
-        internal class DataModelOutleet
+        private class JsonParserException : Exception
+        {
+            public JsonParserException() : base("JsonOutleetModelParser exception")
+            {
+
+            }
+        }
+        /*internal class DataModelOutleet
         {
             public int ID { get; set; }
             public int Storey { get; set; }
@@ -35,21 +42,33 @@ namespace ApplicationRentalOfPremises.Parsers
             {
 
             }
-        }
+        }*/
         public OutleetModel Parse(string content)
         {
-            DataModelOutleet outlet = JsonSerializer.Deserialize<DataModelOutleet>(content);
-            OutleetModel outletModel = new OutleetModel(outlet);
+            var outlet = JsonSerializer.Deserialize<OutleetModel>(content);
+            if(!OutleetModel.ValidOutleetModel(outlet)
+                )
+            {
+                throw new JsonParserException();
+            }
+            //OutleetModel outletModel = new OutleetModel(outlet);
             //error.RunExceptionIFNotSUCCESS();
-            return outletModel;
+            return outlet;
             //OutletModel outletModel=new OutletModel()
         }
         public OutleetModel[] ParseArray(string content)
         {
-            DataModelOutleet[] outlet = JsonSerializer.Deserialize<DataModelOutleet[]>(content);
-            OutleetModel[]models=new OutleetModel[outlet.Length];
-            Parallel.For(0, models.Length, i => models[i]=new OutleetModel(outlet[i])); 
-            return models;
+            var outlet = JsonSerializer.Deserialize<OutleetModel[]>(content);
+            bool[]s=new bool[outlet.Length];
+            //OutleetModel[]models=new OutleetModel[outlet.Length];
+            Parallel.For(0, outlet.Length, i =>
+            {
+                s[i]=OutleetModel.ValidOutleetModel(outlet[i]); 
+            }); 
+            foreach(var e in s)
+                if (!e)
+                    throw new JsonParserException();
+            return outlet;
             //OutleetModel outletModel = new OutleetModel(outlet);
             //error.RunExceptionIFNotSUCCESS();
             //return outletModel;
@@ -57,16 +76,16 @@ namespace ApplicationRentalOfPremises.Parsers
         }
         public string ConvertTo(OutleetModel model)
         {
-            DataModelOutleet dataModelOutlet = new DataModelOutleet(model);
-            return JsonSerializer.Serialize(dataModelOutlet);
+           // DataModelOutleet dataModelOutlet = new DataModelOutleet(model);
+            return JsonSerializer.Serialize(model);
         }
         public string ConvertTo(OutleetModel[] models)
         {
             /*DataModelOutleet dataModelOutlet = new DataModelOutleet(model);
             return JsonSerializer.Serialize(dataModelOutlet);*/
-            DataModelOutleet[]dOutlets=new DataModelOutleet[models.Length];
-            Parallel.For(0, dOutlets.Length, i => dOutlets[i] = new DataModelOutleet(models[i]));
-            return JsonSerializer.Serialize(dOutlets);
+           // DataModelOutleet[]dOutlets=new DataModelOutleet[models.Length];
+            //Parallel.For(0, dOutlets.Length, i => dOutlets[i] = new DataModelOutleet(models[i]));
+            return JsonSerializer.Serialize(models);
         }
     }
 }

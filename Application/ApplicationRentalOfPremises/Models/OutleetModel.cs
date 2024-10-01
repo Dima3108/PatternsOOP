@@ -45,7 +45,7 @@ namespace ApplicationRentalOfPremises.Models
     public class OutleetModel:OutleetSmallModel
     {
         //[Required]
-        public int? ID { get; private set; }
+        public int? ID { get; set; }
         public void SetID(int? id) => this.ID = id;
        /*
         public int Storey { get; private set; }
@@ -68,7 +68,7 @@ namespace ApplicationRentalOfPremises.Models
         /// </summary>
         //[Required]
         //[Range(0,int.MaxValue)]
-        public int Area { get; private set; }
+        public int Area { get; set; }
         public void SetArea(int area)
         {
             /*if (Area < 0)
@@ -90,7 +90,7 @@ namespace ApplicationRentalOfPremises.Models
         /// </summary>
         //[Required]
         //[Range(0, 1)]
-        public short PresenceOfAirConditioning { get; private set; }
+        public short PresenceOfAirConditioning { get; set; }
         public void SetPresenceOfAirConditioning(short POAC)
         {
             /*if (POAC > 1 || POAC < 0)
@@ -131,7 +131,7 @@ namespace ApplicationRentalOfPremises.Models
         /// <summary>
         /// Число выделенных киловат
         /// </summary>
-        public double AllocatedPowerKilowatts { get; private set; }
+        public double AllocatedPowerKilowatts { get; set; }
         public void SetAllocatedPowerKilowatts(double AllocatedPowerKilowatts)
         {
             if (!ValidAllocatedPowerKilowatts(AllocatedPowerKilowatts))
@@ -149,7 +149,7 @@ namespace ApplicationRentalOfPremises.Models
         /// <summary>
         /// Число окон
         /// </summary>
-        public int NumberOfWindows { get; private set; }
+        public int NumberOfWindows { get;  set; }
         public void SetNumberOfWindows(int NOW)
         {
             if (!ValidNumberOfWindows(NOW))
@@ -163,7 +163,7 @@ namespace ApplicationRentalOfPremises.Models
             //this.NumberOfWindows = NumberOfWindows;
             return true;
         }
-
+        public OutleetModel() { }
         public OutleetModel( int Storey, int Area, short PresenceOfAirConditining, decimal RentalCostPerDay,
             double AllocatedPowerKilowatts_, int NumberOfWindows_
             ,int InventoryNumber,
@@ -184,12 +184,12 @@ namespace ApplicationRentalOfPremises.Models
         {
 
         }*/
-        internal OutleetModel(Parsers.JsonOutleetModelParser.DataModelOutleet dataModelOutlet):this(dataModelOutlet.Storey,dataModelOutlet.Area,
+        /*internal OutleetModel(Parsers.JsonOutleetModelParser.DataModelOutleet dataModelOutlet):this(dataModelOutlet.Storey,dataModelOutlet.Area,
             dataModelOutlet.PresenceOfAirConditining,dataModelOutlet.RentalCostPerDay,dataModelOutlet.AllocatedPowerKilowatts,dataModelOutlet.NumberOfWindows,
             dataModelOutlet.InventoryNumber,dataModelOutlet.ID)
          {
             
-         }
+         }*/
         /*public OutletModel(Infrastructure.OutleetModelParserInterface parser, string content)
         {
             //this.=parser.Parse(content);
@@ -202,18 +202,7 @@ namespace ApplicationRentalOfPremises.Models
             this.PresenceOfAirConditioning = t.PresenceOfAirConditioning;
             this.Storey = t.Storey;
         }*/
-        /*public void PrintFullObject()
-        {
-            Console.WriteLine($"{nameof(ID)}:{ID},{nameof(Storey)}:{Storey},{nameof(Area)}:{Area}," +
-                $"{nameof(PresenceOfAirConditioning)}:{PresenceOfAirConditioning}," +
-                $"{nameof(RentalCostPerDay)}:{RentalCostPerDay}");
-        }
-        public void PrintSmallObject()
-        {
-            Console.WriteLine($"{ID},{Storey},{Area}," +
-                $"{PresenceOfAirConditioning}," +
-                $"{RentalCostPerDay}");
-        }*/
+       
         public override string ToString()
         {
             return $"{nameof(ID)}:{ID},{nameof(Storey)}:{Storey},{nameof(Area)}:{Area}," +
@@ -227,5 +216,15 @@ namespace ApplicationRentalOfPremises.Models
             && lhs.AllocatedPowerKilowatts == rhs.AllocatedPowerKilowatts && lhs.NumberOfWindows == rhs.NumberOfWindows&&rhs.InventoryNumber == rhs.InventoryNumber
             ;
         public static bool operator !=(OutleetModel lhs, OutleetModel rhs) => !(lhs == rhs);
+        public static bool ValidOutleetModel(OutleetModel outleetModel)
+        {
+            if(!ValidSmallOutleetModel(outleetModel)) return false;     
+            if(!ValidPresenceOfAirConditioning(outleetModel.PresenceOfAirConditioning)) return false;
+            if(!ValidNumberOfWindows(outleetModel.NumberOfWindows)) return false;
+            if(!ValidAllocatedPowerKilowatts(outleetModel.AllocatedPowerKilowatts))return false;
+            if(!ValidArea(outleetModel.Area)) return false;
+
+            return true;
+        }
     }
 }

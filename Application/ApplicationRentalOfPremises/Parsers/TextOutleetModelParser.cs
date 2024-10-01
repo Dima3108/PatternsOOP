@@ -13,7 +13,7 @@ namespace ApplicationRentalOfPremises.Parsers
     {
         public OutleetModel Parse(string content)
         {
-            DataModelOutleet outlet = new DataModelOutleet();
+            var outlet = new OutleetModel();
             string[] cont = content.Split("<");
             /*
              * data_ += $"{dataModelOutlet.ID}";
@@ -27,14 +27,14 @@ namespace ApplicationRentalOfPremises.Parsers
             outlet.ID=int.Parse(cont[0]);
             outlet.Storey=int.Parse(cont[1]);
             outlet.Area=int.Parse(cont[2]);
-            outlet.PresenceOfAirConditining=short.Parse(cont[3]);
+            outlet.PresenceOfAirConditioning=short.Parse(cont[3]);
             outlet.RentalCostPerDay = int.Parse(cont[4]);
             outlet.AllocatedPowerKilowatts=double.Parse(cont[5]);
             outlet.NumberOfWindows=int.Parse(cont[6]);
             outlet.InventoryNumber=int.Parse(cont[7]);
-            OutleetModel outletModel = new OutleetModel(outlet);
+           // OutleetModel outletModel = new OutleetModel(outlet);
             //error.RunExceptionIFNotSUCCESS();
-            return outletModel;
+            return outlet;
             //OutletModel outletModel=new OutletModel()
         }
         public OutleetModel[] ParseArray(string content)
@@ -64,12 +64,12 @@ namespace ApplicationRentalOfPremises.Parsers
         }
         public string ConvertTo(OutleetModel model)
         {
-            DataModelOutleet dataModelOutlet = new DataModelOutleet(model);
+            var dataModelOutlet = model;
             string data_ = "";
             data_ += $"{dataModelOutlet.ID}";
             data_ += $"<{dataModelOutlet.Storey}";
             data_ += $"<{dataModelOutlet.Area}";
-            data_ += $"<{dataModelOutlet.PresenceOfAirConditining}";
+            data_ += $"<{dataModelOutlet.PresenceOfAirConditioning}";
             data_ += $"<{dataModelOutlet.RentalCostPerDay}";
             data_ += $"<{dataModelOutlet.AllocatedPowerKilowatts}";
             data_ += $"<{dataModelOutlet.NumberOfWindows}";

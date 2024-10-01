@@ -33,11 +33,11 @@ namespace ApplicationRentalOfPremises.Parsers
                 {
                     while (reader.Read())
                     {
-                        DataModelOutleet dataModelOutleet=new DataModelOutleet();
+                        var dataModelOutleet = new OutleetModel();
                         dataModelOutleet.ID= reader.GetInt32(0);
-                        dataModelOutleet.Storey = reader.GetInt32(1);
+                        dataModelOutleet.Storey=( reader.GetInt32(1));
                         dataModelOutleet.Area = reader.GetInt32(2);
-                        dataModelOutleet.PresenceOfAirConditining = reader.GetInt16(3);
+                        dataModelOutleet.PresenceOfAirConditioning = reader.GetInt16(3);
                         dataModelOutleet.RentalCostPerDay=reader.GetDecimal(4); 
                         dataModelOutleet.NumberOfWindows=reader.GetInt32(5);
                         dataModelOutleet.AllocatedPowerKilowatts=reader.GetDouble(6);

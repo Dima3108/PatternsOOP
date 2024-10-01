@@ -16,10 +16,11 @@ namespace ApplicationRentalOfPremises.Models
             SetInventoryNumber(InventoryNumber);
             SetRentalCostPerDay(RentalCostPerDay);
         }
+        public OutleetSmallModel() { }
         /// <summary>
         /// Этаж
         /// </summary>
-        protected int Storey { get; set; }
+        public int Storey { get; set; }
         public int GetStorey() => Storey;
         public static bool ValidStorey(int st)
         {
@@ -32,7 +33,7 @@ namespace ApplicationRentalOfPremises.Models
             if (!ValidStorey(st))
                 throw new ArgumentException(nameof(Storey));
         }
-        protected int InventoryNumber {  get; set; }    
+        public int InventoryNumber {  get; set; }    
         public int GetInventoryNumber() => InventoryNumber;
         public static bool ValidInventoryNumber(int numb)
         {
@@ -47,9 +48,16 @@ namespace ApplicationRentalOfPremises.Models
         /// <summary>
         /// Стоимость аренды в день
         /// </summary>
-        protected decimal RentalCostPerDay {  get; set; }
+        public decimal RentalCostPerDay {  get; set; }
         public decimal GetRentalCostPerDay() => RentalCostPerDay;
         public static bool ValidRentalCostPerDay(decimal rcpd) => rcpd > 0;
+        public static bool ValidSmallOutleetModel(OutleetSmallModel model)
+        {
+            if(!ValidInventoryNumber(model.InventoryNumber)) return false;
+            if(!ValidRentalCostPerDay(model.RentalCostPerDay)) return false;
+            if(!ValidStorey(model.Storey)) return false;
+            return true;
+        }
         public void SetRentalCostPerDay(Decimal rcpd)
         {
             if(!ValidRentalCostPerDay(rcpd))
