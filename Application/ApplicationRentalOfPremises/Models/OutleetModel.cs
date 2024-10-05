@@ -186,8 +186,10 @@ namespace ApplicationRentalOfPremises.Models
         {
             return $"{nameof(ID)}:{ID},{nameof(Storey)}:{Storey},{nameof(Area)}:{Area}," +
                 $"{nameof(PresenceOfAirConditioning)}:{PresenceOfAirConditioning}," +
-                $"{nameof(RentalCostPerDay)}:{RentalCostPerDay}"+
-                $"{nameof(InventoryNumber)}:{InventoryNumber}"
+                $"{nameof(RentalCostPerDay)}:{RentalCostPerDay},"+
+                $"{nameof(InventoryNumber)}:{InventoryNumber}," +
+                $"{nameof(AllocatedPowerKilowatts)}:{AllocatedPowerKilowatts}," +
+                $"{nameof(NumberOfWindows)}:{NumberOfWindows}"
                 ;
         }
         public static bool operator ==(OutleetModel lhs, OutleetModel rhs) =>  lhs.Storey == lhs.Storey
