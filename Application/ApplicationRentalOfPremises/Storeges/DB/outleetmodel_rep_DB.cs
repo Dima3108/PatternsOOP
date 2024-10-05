@@ -82,5 +82,46 @@ namespace ApplicationRentalOfPremises.Storeges.DB
             command.CommandText = $"DELETE FROM {table_name} WHERE id={id}"; 
             command.ExecuteNonQuery();
         }
+        public int get_count()
+        {
+            MySqlCommand command = new MySqlCommand();
+            command.Connection = _connection;
+            command.CommandText = $"count(SELECT * FROM {table_name})";
+            return (int)command.ExecuteScalar();
+        }
+        public void UpdateById(OutleetModel outleetModel)
+        {
+            MySqlCommand command = new MySqlCommand();
+            command.Connection = _connection;
+            command.CommandText = $"UPDATE  {table_name} SET NumberOfWindows=,{outleetModel.NumberOfWindows}" +
+                $",PresenceOfAirConditioning={outleetModel.PresenceOfAirConditioning},InventoryNumber={outleetModel.InventoryNumber}" +
+                $",Area={outleetModel.Area},Storey={outleetModel.Storey}" +
+                $",AllocatedPowerKilowatts={outleetModel.AllocatedPowerKilowatts}," +
+                $"RentalCostPerDay={outleetModel.RentalCostPerDay}" +
+                $" WHERE ID={outleetModel.ID}";
+        }
+        public List<OutleetSmallModel> get_k_n_short_list(int k,int n)
+        {
+            List<OutleetSmallModel> models = new List<OutleetSmallModel>();
+            MySqlCommand command = new MySqlCommand();
+            command.Connection = _connection;
+            command.CommandText = $"SELECT ID,Storey,InventoryNumber,RentalCostPerDay FROM {table_name} LIMIT {n} OFFSET {k}";
+            using (var reader = command.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    while (reader.Read())
+                    {
+                        OutleetSmallModel outleetSmallModel = new OutleetSmallModel();
+                        outleetSmallModel.SetID((int)reader.GetInt32(0));
+                        outleetSmallModel.SetStorey(reader.GetInt32(1));
+                        outleetSmallModel.SetInventoryNumber(reader.GetInt32(2));
+                        outleetSmallModel.SetRentalCostPerDay(reader.GetDecimal(3));
+                        models.Add(outleetSmallModel);
+                    }
+                }
+            }
+            return models;
+        }
     }
 }

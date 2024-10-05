@@ -45,8 +45,7 @@ namespace ApplicationRentalOfPremises.Models
     public class OutleetModel:OutleetSmallModel
     {
         //[Required]
-        public int? ID { get; set; }
-        public void SetID(int? id) => this.ID = id;
+        
        /*
         public int Storey { get; private set; }
         public void SetStorey(int St)
@@ -168,11 +167,11 @@ namespace ApplicationRentalOfPremises.Models
             double AllocatedPowerKilowatts_, int NumberOfWindows_
             ,int InventoryNumber,
             //out OutletModelErrorStatus errors, 
-            int? ID = null):base(Storey,InventoryNumber,RentalCostPerDay)
+            int? ID = null):base(Storey,InventoryNumber,RentalCostPerDay,ID)
         {
            
             
-            SetID(ID);
+            //SetID(ID);
             //SetStorey(Storey);
             SetArea(Area);
             SetPresenceOfAirConditioning(PresenceOfAirConditining);
@@ -180,28 +179,8 @@ namespace ApplicationRentalOfPremises.Models
             SetAllocatedPowerKilowatts(AllocatedPowerKilowatts_);
 
         }
-        /*public OutletModel(string json)
-        {
-
-        }*/
-        /*internal OutleetModel(Parsers.JsonOutleetModelParser.DataModelOutleet dataModelOutlet):this(dataModelOutlet.Storey,dataModelOutlet.Area,
-            dataModelOutlet.PresenceOfAirConditining,dataModelOutlet.RentalCostPerDay,dataModelOutlet.AllocatedPowerKilowatts,dataModelOutlet.NumberOfWindows,
-            dataModelOutlet.InventoryNumber,dataModelOutlet.ID)
-         {
-            
-         }*/
-        /*public OutletModel(Infrastructure.OutleetModelParserInterface parser, string content)
-        {
-            //this.=parser.Parse(content);
-            var t = parser.Parse(content);
-            this.ID = t.ID;
-            this.NumberOfWindows = t.NumberOfWindows;
-            this.RentalCostPerDay = t.RentalCostPerDay;
-            this.Area = t.Area;
-            this.AllocatedPowerKilowatts = t.AllocatedPowerKilowatts;
-            this.PresenceOfAirConditioning = t.PresenceOfAirConditioning;
-            this.Storey = t.Storey;
-        }*/
+        
+        
        
         public override string ToString()
         {

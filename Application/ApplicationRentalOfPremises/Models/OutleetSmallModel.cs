@@ -9,9 +9,11 @@ namespace ApplicationRentalOfPremises.Models
 {
     public class OutleetSmallModel:Infrastructure.OutleetModelInterface
     {
-        
-        public OutleetSmallModel(int Storey,int InventoryNumber,decimal RentalCostPerDay)
+        public int? ID { get; set; }
+        public void SetID(int? id) => this.ID = id;
+        public OutleetSmallModel(int Storey,int InventoryNumber,decimal RentalCostPerDay,int? id=null)
         {
+            SetID(id);
             SetStorey(Storey);
             SetInventoryNumber(InventoryNumber);
             SetRentalCostPerDay(RentalCostPerDay);
