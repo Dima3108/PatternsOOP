@@ -76,9 +76,9 @@ namespace ApplicationRentalOfPremises.Storeges
             }
         }
         public int get_count() => cesh.Count;
-        public List<OutleetModel> get_k_n_short_list(int k,int n)
+        public List<OutleetSmallModel> get_k_n_short_list(int k,int n)
         {
-            List<OutleetModel>l= new List<OutleetModel>();
+            var l= new List<OutleetSmallModel>();
             for(int offset=k;offset<Math.Min(k+n, cesh.Count);offset++)
                 l.Add(cesh[offset]);
             return l;

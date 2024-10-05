@@ -17,11 +17,11 @@ namespace ApplicationRentalOfPremises
             //errorStatus.RunExceptionIFNotSUCCESS();
             outleets[2]=new OutleetModel(4,5,1,11,0.3,0,11,3);
             //errorStatus.RunExceptionIFNotSUCCESS();
-            SeedData.SeedData.SetStoregeOutleetModel(new CeshOutleetModelsStorege());
-            foreach (var model in outleets)
+            //SeedData.SeedData.SetStoregeOutleetModel(new CeshOutleetModelsStorege());
+            /*foreach (var model in outleets)
             {
                 SeedData.SeedData.storegeOutleets.AddModel(model);
-            }
+            }*/
             Storeges.Reps.outleetmodel_fasade_rep_json outleetmodel_Fasade_Rep_Json = new Storeges.Reps.outleetmodel_fasade_rep_json("content.json");
             if (outleetmodel_Fasade_Rep_Json.get_count() <= 0)
             {

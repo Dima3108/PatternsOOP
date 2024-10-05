@@ -3,6 +3,7 @@ using ApplicationRentalOfPremises.Storeges.Reps;
 using MySqlConnector;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,12 +11,13 @@ using static ApplicationRentalOfPremises.Parsers.JsonOutleetModelParser;
 
 namespace ApplicationRentalOfPremises.Storeges.DB
 {
-    public class outleetmodel_rep_DB
+    public abstract class outleetmodel_rep_DB
         //:FileStoregeAdapter
     {
-        private MySqlConnection _connection;
-        private string table_name;
-        public outleetmodel_rep_DB(MySqlConnection connection,string table_name="outleet")//:base("",new Parsers.MySQLOutleetModelParserAdapter(connection,table_name))
+        protected DbConnection _connection;
+        protected DbCommand command;
+        protected string table_name;
+        /*public outleetmodel_rep_DB(MySqlConnection connection,string table_name="outleet")//:base("",new Parsers.MySQLOutleetModelParserAdapter(connection,table_name))
         {
             _connection = connection;
             this.table_name = table_name;
@@ -33,11 +35,11 @@ namespace ApplicationRentalOfPremises.Storeges.DB
                 $"PRIMARY KEY (ID)," +
                 $"UNIQUE INDEX InventoryNumber_UNIQUE(InventoryNumber ASC) VISIBLE)";
             command.ExecuteNonQuery();
-        }
+        }*/
         public  void AddModel(OutleetModel outleetModel)
         {
             var dataModelOutleet = outleetModel;
-            MySqlCommand command = new MySqlCommand();
+            //var command = new DbCommand();
             command.Connection = _connection;
             command.CommandText = $"INSERT INTO {table_name}(Storey,Area,PresenceOfAirConditioning,RentalCostPerDay,AllocatedPowerKilowatts,InventoryNumber,NumberOfWindows) " +
                 $"VALUES({dataModelOutleet.Storey},{dataModelOutleet.Area}," +
@@ -48,7 +50,7 @@ namespace ApplicationRentalOfPremises.Storeges.DB
         }
         public OutleetModel GetModelById(int id)
         {
-            MySqlCommand command = new MySqlCommand();
+            //MySqlCommand command = new MySqlCommand();
             command.Connection = _connection;
             command.CommandText = $"SELECT * FROM {table_name} WHERE ID={id}";
             using (var reader = command.ExecuteReader())
@@ -58,13 +60,13 @@ namespace ApplicationRentalOfPremises.Storeges.DB
                     while (reader.Read())
                     {
                         int id_=reader.GetInt32(0);
-                        int storey_ = (int)reader.GetUInt32(1);
+                        int storey_ = (int)reader.GetInt32(1);
                         int area_=(int)reader.GetInt32(2);
-                        short PresenceOfAirConditioning_=(short)reader.GetUInt16(3);
+                        short PresenceOfAirConditioning_=(short)reader.GetInt16(3);
                         decimal RentalCostPerDay_=reader.GetDecimal(4);
                         double AllocatedPowerKilowatts_=reader.GetDouble(5);
-                        int NumberOfWindows_ = (int)reader.GetUInt32(6);
-                        int InventoryNumber_=(int)reader.GetUInt32(7);
+                        int NumberOfWindows_ = (int)reader.GetInt32(6);
+                        int InventoryNumber_=(int)reader.GetInt32(7);
                         var model = new OutleetModel(storey_,area_,PresenceOfAirConditioning_,
                             RentalCostPerDay_,AllocatedPowerKilowatts_,NumberOfWindows_,InventoryNumber_
                             ,id_);
@@ -77,21 +79,21 @@ namespace ApplicationRentalOfPremises.Storeges.DB
         }
         public void RemoveById(int id)
         {
-            MySqlCommand command = new MySqlCommand();
+            //MySqlCommand command = new MySqlCommand();
             command.Connection = _connection;
             command.CommandText = $"DELETE FROM {table_name} WHERE id={id}"; 
             command.ExecuteNonQuery();
         }
         public int get_count()
         {
-            MySqlCommand command = new MySqlCommand();
+            //MySqlCommand command = new MySqlCommand();
             command.Connection = _connection;
             command.CommandText = $"count(SELECT * FROM {table_name})";
             return (int)command.ExecuteScalar();
         }
         public void UpdateById(OutleetModel outleetModel)
         {
-            MySqlCommand command = new MySqlCommand();
+            //MySqlCommand command = new MySqlCommand();
             command.Connection = _connection;
             command.CommandText = $"UPDATE  {table_name} SET NumberOfWindows=,{outleetModel.NumberOfWindows}" +
                 $",PresenceOfAirConditioning={outleetModel.PresenceOfAirConditioning},InventoryNumber={outleetModel.InventoryNumber}" +
@@ -103,7 +105,7 @@ namespace ApplicationRentalOfPremises.Storeges.DB
         public List<OutleetSmallModel> get_k_n_short_list(int k,int n)
         {
             List<OutleetSmallModel> models = new List<OutleetSmallModel>();
-            MySqlCommand command = new MySqlCommand();
+            //MySqlCommand command = new MySqlCommand();
             command.Connection = _connection;
             command.CommandText = $"SELECT ID,Storey,InventoryNumber,RentalCostPerDay FROM {table_name} LIMIT {n} OFFSET {k}";
             using (var reader = command.ExecuteReader())
