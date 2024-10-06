@@ -2,7 +2,7 @@
 using ApplicationRentalOfPremises.SeedData;
 using ApplicationRentalOfPremises.Storeges;
 using System;
-
+using MySqlConnector;
 namespace ApplicationRentalOfPremises
 {
     internal class Program
@@ -46,6 +46,30 @@ namespace ApplicationRentalOfPremises
                 foreach (var obj in objects)
                     Console.WriteLine(obj.ToString());
             }
+#if true
+using var connection = new MySqlConnection("Server=localhost;User ID=dbuser;Password=d23ttFF8k;Database=myapps");
+connection.Open();
+            SeedData.SeedData.SetSqlConnection(connection);
+            var mydbs=new Storeges.DB.outleetmodel_mysql_db(connection);
+            if (mydbs.get_count() <= 0)
+            {
+                foreach (var el in outleets)
+                {
+
+                    mydbs.AddModel(el);
+                    Console.WriteLine("@");
+                }
+            }
+            var mod = mydbs.get_k_n_short_list(0,mydbs.get_count());
+            Console.WriteLine();
+            Console.WriteLine(mydbs.get_count());
+            Console.WriteLine();
+            foreach(var m in mod)
+            {
+                Console.WriteLine(m.ToString());
+            }
+
+#endif
         }
     }
 }

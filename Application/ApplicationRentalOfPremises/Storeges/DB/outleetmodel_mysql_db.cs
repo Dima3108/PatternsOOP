@@ -15,15 +15,15 @@ namespace ApplicationRentalOfPremises.Storeges.DB
             command = new MySqlCommand();
             this.table_name = table_name;
             command.Connection = _connection;
-            command.CommandText = $"CREATE TABLE IF NOT EXISTS{table_name}(" +
-                $"ID INT GENERATED ALWAYS AS () VIRTUAL," +
-                $"storey INT UNSIGNED NOT NULL COMMENT 'этаж'," +
-                $"area INT NOT NULL COMMENT 'Площадь'," +
-                $"PresenceOfAirConditioning TINYINT UNSIGNED NOT NULL COMMENT 'Наличие кондиционера'," +
-                $"RentalCostPerDay DECIMAL UNSIGNED NOT NULL COMMENT 'Стоимость аренды в день'," +
-                $"AllocatedPowerKilowatts DOUBLE UNSIGNED NOT NULL COMMENT 'Число выделенных киловат'," +
-                $"NumberOfWindows INT UNSIGNED NOT NULL COMMENT 'Число окон'," +
-                $"InventoryNumber INT UNSIGNED NOT NULL COMMENT 'Инвертарный номер'," +
+            command.CommandText = $"CREATE TABLE IF NOT EXISTS {table_name} (" +
+                $"ID INT NOT NULL AUTO_INCREMENT," +
+                $"storey INT UNSIGNED NOT NULL ," +
+                $"area INT NOT NULL ," +
+                $"PresenceOfAirConditioning TINYINT UNSIGNED NOT NULL ," +
+                $"RentalCostPerDay DECIMAL UNSIGNED NOT NULL ," +
+                $"AllocatedPowerKilowatts DOUBLE(9,5)  NOT NULL ," +
+                $"NumberOfWindows INT UNSIGNED NOT NULL ," +
+                $"InventoryNumber INT UNSIGNED NOT NULL ," +
                 $"PRIMARY KEY (ID)," +
                 $"UNIQUE INDEX InventoryNumber_UNIQUE(InventoryNumber ASC) VISIBLE)";
             command.ExecuteNonQuery();

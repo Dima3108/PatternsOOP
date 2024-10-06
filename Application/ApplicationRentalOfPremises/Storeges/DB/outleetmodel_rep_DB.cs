@@ -39,12 +39,18 @@ namespace ApplicationRentalOfPremises.Storeges.DB
         public  void AddModel(OutleetModel outleetModel)
         {
             var dataModelOutleet = outleetModel;
+            Console.WriteLine(dataModelOutleet.AllocatedPowerKilowatts);
             //var command = new DbCommand();
             command.Connection = _connection;
             command.CommandText = $"INSERT INTO {table_name}(Storey,Area,PresenceOfAirConditioning,RentalCostPerDay,AllocatedPowerKilowatts,InventoryNumber,NumberOfWindows) " +
-                $"VALUES({dataModelOutleet.Storey},{dataModelOutleet.Area}," +
-                $"{dataModelOutleet.PresenceOfAirConditioning},{dataModelOutleet.RentalCostPerDay}," +
-                $"{dataModelOutleet.AllocatedPowerKilowatts},{dataModelOutleet.InventoryNumber},{dataModelOutleet.NumberOfWindows}" +
+                $"VALUES(" +
+                $"'{dataModelOutleet.Storey}'," +
+                $"'{dataModelOutleet.Area}'," +
+                $"'{dataModelOutleet.PresenceOfAirConditioning}'," +
+                $"'{dataModelOutleet.RentalCostPerDay}'," +
+                $"'{dataModelOutleet.AllocatedPowerKilowatts.ToString().Replace(",",".")}'," +
+                $"'{dataModelOutleet.InventoryNumber}'," +
+                $"'{dataModelOutleet.NumberOfWindows}'" +
                 $")";
             command.ExecuteNonQuery();
         }
@@ -81,26 +87,26 @@ namespace ApplicationRentalOfPremises.Storeges.DB
         {
             //MySqlCommand command = new MySqlCommand();
             command.Connection = _connection;
-            command.CommandText = $"DELETE FROM {table_name} WHERE id={id}"; 
+            command.CommandText = $"DELETE FROM {table_name} WHERE id='{id}'"; 
             command.ExecuteNonQuery();
         }
         public int get_count()
         {
             //MySqlCommand command = new MySqlCommand();
             command.Connection = _connection;
-            command.CommandText = $"count(SELECT * FROM {table_name})";
-            return (int)command.ExecuteScalar();
+            command.CommandText = $"SELECT COUNT( * ) FROM {table_name}";
+            return Convert.ToInt32(command.ExecuteScalar());
         }
         public void UpdateById(OutleetModel outleetModel)
         {
             //MySqlCommand command = new MySqlCommand();
             command.Connection = _connection;
-            command.CommandText = $"UPDATE  {table_name} SET NumberOfWindows=,{outleetModel.NumberOfWindows}" +
-                $",PresenceOfAirConditioning={outleetModel.PresenceOfAirConditioning},InventoryNumber={outleetModel.InventoryNumber}" +
-                $",Area={outleetModel.Area},Storey={outleetModel.Storey}" +
-                $",AllocatedPowerKilowatts={outleetModel.AllocatedPowerKilowatts}," +
-                $"RentalCostPerDay={outleetModel.RentalCostPerDay}" +
-                $" WHERE ID={outleetModel.ID}";
+            command.CommandText = $"UPDATE  {table_name} SET NumberOfWindows='{outleetModel.NumberOfWindows}'" +
+                $",PresenceOfAirConditioning='{outleetModel.PresenceOfAirConditioning}',InventoryNumber='{outleetModel.InventoryNumber}'" +
+                $",Area='{outleetModel.Area}',Storey='{outleetModel.Storey}'" +
+                $",AllocatedPowerKilowatts='{outleetModel.AllocatedPowerKilowatts}'," +
+                $"RentalCostPerDay='{outleetModel.RentalCostPerDay}'" +
+                $" WHERE ID='{outleetModel.ID}'";
         }
         public List<OutleetSmallModel> get_k_n_short_list(int k,int n)
         {

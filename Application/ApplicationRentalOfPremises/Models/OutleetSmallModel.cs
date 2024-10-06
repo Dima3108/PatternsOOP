@@ -70,7 +70,7 @@ namespace ApplicationRentalOfPremises.Models
         {
             return $"{nameof(RentalCostPerDay)}:{RentalCostPerDay}\n" +
                 $"{nameof(InventoryNumber)}:{InventoryNumber}\n" +
-                $"{nameof(Storey)}:{Storey}";
+                $"{nameof(Storey)}:{Storey}\n";
         }
     }
 }
