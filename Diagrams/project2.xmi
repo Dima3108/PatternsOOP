@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:default="http:///schemas/default/_G4R5YIPpEe-fl51G3X0t3w/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/default/_G4R5YIPpEe-fl51G3X0t3w/0 default.profile.xmi#_G5eMN4PpEe-fl51G3X0t3w">
+  <uml:Model xmi:id="_G31NcIPpEe-fl51G3X0t3w" name="project2">
+    <eAnnotations xmi:id="_G31NcYPpEe-fl51G3X0t3w" source="Objing">
+      <contents xmi:type="uml:Property" xmi:id="_G31NcoPpEe-fl51G3X0t3w" name="exporterVersion">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31Nc4PpEe-fl51G3X0t3w" value="3.0.0"/>
+      </contents>
+      <contents xmi:type="uml:Property" xmi:id="_G31NdIPpEe-fl51G3X0t3w" name="isRoundTrip"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G31NdYPpEe-fl51G3X0t3w" name="OutleetSmallModel" clientDependency="_G31NjoPpEe-fl51G3X0t3w">
+      <ownedAttribute xmi:id="_G31NdoPpEe-fl51G3X0t3w" name="Storey" visibility="protected" isUnique="false">
+        <eAnnotations xmi:id="_G31Nd4PpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31NeIPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NeYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31NeoPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31Ne4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31NfIPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NfYPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G31NfoPpEe-fl51G3X0t3w" name="InventoryNumber" visibility="protected" isUnique="false">
+        <eAnnotations xmi:id="_G31Nf4PpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31NgIPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NgYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31NgoPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31Ng4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31NhIPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NhYPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G31NhoPpEe-fl51G3X0t3w" name="RentalCostPerDay" visibility="protected" isUnique="false">
+        <eAnnotations xmi:id="_G31Nh4PpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31NiIPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NiYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31NioPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31Ni4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31NjIPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NjYPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_G31NjoPpEe-fl51G3X0t3w" name="InterfaceRealization" supplier="_G31Ov4PpEe-fl51G3X0t3w" client="_G31NdYPpEe-fl51G3X0t3w" contract="_G31Ov4PpEe-fl51G3X0t3w"/>
+      <ownedOperation xmi:id="_G31Nj4PpEe-fl51G3X0t3w" name="GetStorey" visibility="public">
+        <ownedParameter xmi:id="_G31NkIPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31NkYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31NkoPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31Nk4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31NlIPpEe-fl51G3X0t3w" name="GetInventoryNumber" visibility="public">
+        <ownedParameter xmi:id="_G31NlYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31NloPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31Nl4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NmIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31NmYPpEe-fl51G3X0t3w" name="GetRentalCostPerDay" visibility="public">
+        <ownedParameter xmi:id="_G31NmoPpEe-fl51G3X0t3w" type="_G31OLoPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Nm4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31NnIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NnYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31NnoPpEe-fl51G3X0t3w" name="ValidStorey" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_G31Nn4PpEe-fl51G3X0t3w" name="st" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31NoIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31NoYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NooPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31No4PpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31NpIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31NpYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NpoPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31Np4PpEe-fl51G3X0t3w" name="ValidInventoryNumber" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_G31NqIPpEe-fl51G3X0t3w" name="numb" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31NqYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31NqoPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31Nq4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31NrIPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31NrYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31NroPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31Nr4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31NsIPpEe-fl51G3X0t3w" name="ValidRentalCostPerDay" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_G31NsYPpEe-fl51G3X0t3w" name="rcpd" type="_G31OLoPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31NsoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31Ns4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NtIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31NtYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31NtoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31Nt4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NuIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31NuYPpEe-fl51G3X0t3w" name="SetStorey" visibility="public">
+        <ownedParameter xmi:id="_G31NuoPpEe-fl51G3X0t3w" name="st" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Nu4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31NvIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NvYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31NvoPpEe-fl51G3X0t3w" name="SetInventoryNumber" visibility="public">
+        <ownedParameter xmi:id="_G31Nv4PpEe-fl51G3X0t3w" name="numb" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31NwIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31NwYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NwoPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31Nw4PpEe-fl51G3X0t3w" name="SetRentalCostPerDay" visibility="public">
+        <ownedParameter xmi:id="_G31NxIPpEe-fl51G3X0t3w" name="rcpd" type="_G31OLoPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31NxYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31NxoPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31Nx4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31NyIPpEe-fl51G3X0t3w" name="OutleetSmallModel" visibility="public">
+        <ownedParameter xmi:id="_G31NyYPpEe-fl51G3X0t3w" name="Storey" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31NyoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31Ny4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31NzIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31NzYPpEe-fl51G3X0t3w" name="InventoryNumber" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31NzoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31Nz4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31N0IPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31N0YPpEe-fl51G3X0t3w" name="RentalCostPerDay" type="_G31OLoPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31N0oPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31N04PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31N1IPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31N1YPpEe-fl51G3X0t3w" name="ValidSmallOutleetModel" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_G31N1oPpEe-fl51G3X0t3w" name="model" type="_G31NdYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31N14PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31N2IPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31N2YPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31N2oPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31N24PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31N3IPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31N3YPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31N3oPpEe-fl51G3X0t3w" name="OutleetSmallModel" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_G31N34PpEe-fl51G3X0t3w" name="List&lt;OutleetModel>">
+      <eAnnotations xmi:id="_G31N4IPpEe-fl51G3X0t3w" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_G31N4YPpEe-fl51G3X0t3w" name="isPrimitive"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_G31N4oPpEe-fl51G3X0t3w" name="OutleetModelParserInterface" isAbstract="true">
+      <ownedAttribute xmi:id="_G31N44PpEe-fl51G3X0t3w" name="outleetModel" visibility="public" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false" aggregation="shared" association="_G31N_YPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G31N5IPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31N5YPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31N5oPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31N54PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31N6IPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31N6YPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31N6oPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_G31N64PpEe-fl51G3X0t3w" name="ParseArray" visibility="public" isAbstract="true">
+        <ownedParameter xmi:id="_G31N7IPpEe-fl51G3X0t3w" name="content" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31N7YPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31N7oPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31N74PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31N8IPpEe-fl51G3X0t3w" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31N8YPpEe-fl51G3X0t3w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31N8oPpEe-fl51G3X0t3w"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31N84PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31N9IPpEe-fl51G3X0t3w" name="ConvertTo" visibility="public">
+        <ownedParameter xmi:id="_G31N9YPpEe-fl51G3X0t3w" name="model" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31N9oPpEe-fl51G3X0t3w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31N94PpEe-fl51G3X0t3w"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31N-IPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31N-YPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31N-oPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31N-4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31N_IPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G31N_YPpEe-fl51G3X0t3w" memberEnd="_G31N44PpEe-fl51G3X0t3w _G31N_oPpEe-fl51G3X0t3w">
+      <ownedEnd xmi:id="_G31N_oPpEe-fl51G3X0t3w" visibility="public" type="_G31N4oPpEe-fl51G3X0t3w" isUnique="false" association="_G31N_YPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G31N_4PpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31OAIPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OAYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31OAoPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OA4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31OBIPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OBYPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G31OBoPpEe-fl51G3X0t3w" name="JsonOutleetModelParser" clientDependency="_G31OB4PpEe-fl51G3X0t3w">
+      <interfaceRealization xmi:id="_G31OB4PpEe-fl51G3X0t3w" name="InterfaceRealization" supplier="_G31N4oPpEe-fl51G3X0t3w" client="_G31OBoPpEe-fl51G3X0t3w" contract="_G31N4oPpEe-fl51G3X0t3w"/>
+      <ownedOperation xmi:id="_G31OCIPpEe-fl51G3X0t3w" name="ParseArray" visibility="public">
+        <ownedParameter xmi:id="_G31OCYPpEe-fl51G3X0t3w" name="content" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OCoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OC4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31ODIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31ODYPpEe-fl51G3X0t3w" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31ODoPpEe-fl51G3X0t3w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OD4PpEe-fl51G3X0t3w"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OEIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OEYPpEe-fl51G3X0t3w" name="ConvertTo" visibility="public">
+        <ownedParameter xmi:id="_G31OEoPpEe-fl51G3X0t3w" name="model" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OE4PpEe-fl51G3X0t3w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OFIPpEe-fl51G3X0t3w"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OFYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OFoPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OF4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OGIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OGYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G31OGoPpEe-fl51G3X0t3w" name="TextOutleetModelParser" clientDependency="_G31OG4PpEe-fl51G3X0t3w">
+      <interfaceRealization xmi:id="_G31OG4PpEe-fl51G3X0t3w" name="InterfaceRealization" supplier="_G31N4oPpEe-fl51G3X0t3w" client="_G31OGoPpEe-fl51G3X0t3w" contract="_G31N4oPpEe-fl51G3X0t3w"/>
+      <ownedOperation xmi:id="_G31OHIPpEe-fl51G3X0t3w" name="ParseArray" visibility="public">
+        <ownedParameter xmi:id="_G31OHYPpEe-fl51G3X0t3w" name="content" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OHoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OH4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OIIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OIYPpEe-fl51G3X0t3w" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OIoPpEe-fl51G3X0t3w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OI4PpEe-fl51G3X0t3w"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OJIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OJYPpEe-fl51G3X0t3w" name="ConvertTo" visibility="public">
+        <ownedParameter xmi:id="_G31OJoPpEe-fl51G3X0t3w" name="model" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OJ4PpEe-fl51G3X0t3w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OKIPpEe-fl51G3X0t3w"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OKYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OKoPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OK4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OLIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OLYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_G31OLoPpEe-fl51G3X0t3w" name="Decimal">
+      <eAnnotations xmi:id="_G31OL4PpEe-fl51G3X0t3w" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_G31OMIPpEe-fl51G3X0t3w" name="isPrimitive"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G31OMYPpEe-fl51G3X0t3w" name="OutleetModel">
+      <generalization xmi:id="_G31OMoPpEe-fl51G3X0t3w" general="_G31NdYPpEe-fl51G3X0t3w"/>
+      <ownedAttribute xmi:id="_G31OM4PpEe-fl51G3X0t3w" name="ID" visibility="public" type="_G31Oz4PpEe-fl51G3X0t3w" isUnique="false">
+        <eAnnotations xmi:id="_G31ONIPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31ONYPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31ONoPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31ON4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OOIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31OOYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OOoPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G31OO4PpEe-fl51G3X0t3w" name="Area" visibility="public" isUnique="false">
+        <eAnnotations xmi:id="_G31OPIPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31OPYPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OPoPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31OP4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OQIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31OQYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OQoPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G31OQ4PpEe-fl51G3X0t3w" name="PresenceOfAirConditioning" visibility="public" isUnique="false">
+        <eAnnotations xmi:id="_G31ORIPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31ORYPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31ORoPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31OR4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OSIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31OSYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OSoPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EShort"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G31OS4PpEe-fl51G3X0t3w" name="AllocatedPowerKilowatts" visibility="public" isUnique="false">
+        <eAnnotations xmi:id="_G31OTIPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31OTYPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OToPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31OT4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OUIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31OUYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OUoPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G31OU4PpEe-fl51G3X0t3w" name="NumberOfWindows" visibility="public" isUnique="false">
+        <eAnnotations xmi:id="_G31OVIPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31OVYPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OVoPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31OV4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OWIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31OWYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OWoPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_G31OW4PpEe-fl51G3X0t3w" name="SetID" visibility="public">
+        <ownedParameter xmi:id="_G31OXIPpEe-fl51G3X0t3w" name="id" type="_G31Oz4PpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OXYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OXoPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OX4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OYIPpEe-fl51G3X0t3w" name="SetArea" visibility="public">
+        <ownedParameter xmi:id="_G31OYYPpEe-fl51G3X0t3w" name="area" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OYoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OY4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OZIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OZYPpEe-fl51G3X0t3w" name="ValidArea" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_G31OZoPpEe-fl51G3X0t3w" name="area" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OZ4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OaIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OaYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OaoPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Oa4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31ObIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31ObYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OboPpEe-fl51G3X0t3w" name="SetPresenceOfAirConditioning" visibility="public">
+        <ownedParameter xmi:id="_G31Ob4PpEe-fl51G3X0t3w" name="POAC" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EShort"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OcIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OcYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OcoPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31Oc4PpEe-fl51G3X0t3w" name="ValidPresenceOfAirConditioning" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_G31OdIPpEe-fl51G3X0t3w" name="POAC" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EShort"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OdYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OdoPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31Od4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OeIPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OeYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OeoPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31Oe4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OfIPpEe-fl51G3X0t3w" name="SetAllocatedPowerKilowatts" visibility="public">
+        <ownedParameter xmi:id="_G31OfYPpEe-fl51G3X0t3w" name="AllocatedPowerKilowatts" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OfoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31Of4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OgIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OgYPpEe-fl51G3X0t3w" name="ValidAllocatedPowerKilowatts" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_G31OgoPpEe-fl51G3X0t3w" name="AllocatedPowerKilowatts" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Og4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OhIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OhYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OhoPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Oh4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OiIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OiYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OioPpEe-fl51G3X0t3w" name="SetNumberOfWindows" visibility="public">
+        <ownedParameter xmi:id="_G31Oi4PpEe-fl51G3X0t3w" name="NOW" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OjIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OjYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OjoPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31Oj4PpEe-fl51G3X0t3w" name="ValidNumberOfWindows" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_G31OkIPpEe-fl51G3X0t3w" name="NumberOfWindows" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OkYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OkoPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31Ok4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OlIPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OlYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OloPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31Ol4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OmIPpEe-fl51G3X0t3w" name="ToString" visibility="public">
+        <ownedParameter xmi:id="_G31OmYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OmoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31Om4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OnIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OnYPpEe-fl51G3X0t3w" name="OutletModel" visibility="public">
+        <ownedParameter xmi:id="_G31OnoPpEe-fl51G3X0t3w" name="Storey" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31On4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OoIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OoYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OooPpEe-fl51G3X0t3w" name="Area" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Oo4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OpIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OpYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OpoPpEe-fl51G3X0t3w" name="PresenceOfAirConditining" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EShort"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Op4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OqIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OqYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OqoPpEe-fl51G3X0t3w" name="RentalCostPerDay" type="_G31OLoPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Oq4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OrIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OrYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OroPpEe-fl51G3X0t3w" name="AllocatedPowerKilowatts_" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Or4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OsIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OsYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OsoPpEe-fl51G3X0t3w" name="NumberOfWindows_" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Os4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OtIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OtYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OtoPpEe-fl51G3X0t3w" name="InventoryNumber" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Ot4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OuIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OuYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31OuoPpEe-fl51G3X0t3w" name="ID" type="_G31Oz4PpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Ou4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OvIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OvYPpEe-fl51G3X0t3w" value="null"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OvoPpEe-fl51G3X0t3w" name="OutleetModel" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_G31Ov4PpEe-fl51G3X0t3w" name="OutleetModelInterface" isAbstract="true">
+      <ownedOperation xmi:id="_G31OwIPpEe-fl51G3X0t3w" name="GetStorey" visibility="public">
+        <ownedParameter xmi:id="_G31OwYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OwoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31Ow4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OxIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OxYPpEe-fl51G3X0t3w" name="GetInventoryNumber" visibility="public">
+        <ownedParameter xmi:id="_G31OxoPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31Ox4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OyIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OyYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31OyoPpEe-fl51G3X0t3w" name="GetRentalCostPerDay" visibility="public">
+        <ownedParameter xmi:id="_G31Oy4PpEe-fl51G3X0t3w" type="_G31OLoPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31OzIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31OzYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31OzoPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_G31Oz4PpEe-fl51G3X0t3w" name="int?">
+      <eAnnotations xmi:id="_G31O0IPpEe-fl51G3X0t3w" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_G31O0YPpEe-fl51G3X0t3w" name="isPrimitive"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G31O0oPpEe-fl51G3X0t3w" name="YamlOutleetModelParser" clientDependency="_G31O04PpEe-fl51G3X0t3w">
+      <interfaceRealization xmi:id="_G31O04PpEe-fl51G3X0t3w" name="InterfaceRealization" supplier="_G31N4oPpEe-fl51G3X0t3w" client="_G31O0oPpEe-fl51G3X0t3w" contract="_G31N4oPpEe-fl51G3X0t3w"/>
+      <ownedOperation xmi:id="_G31O1IPpEe-fl51G3X0t3w" name="ParseArray" visibility="public">
+        <ownedParameter xmi:id="_G31O1YPpEe-fl51G3X0t3w" name="content" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31O1oPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31O14PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31O2IPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31O2YPpEe-fl51G3X0t3w" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31O2oPpEe-fl51G3X0t3w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31O24PpEe-fl51G3X0t3w"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31O3IPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31O3YPpEe-fl51G3X0t3w" name="ConvertTo" visibility="public">
+        <ownedParameter xmi:id="_G31O3oPpEe-fl51G3X0t3w" name="model" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31O34PpEe-fl51G3X0t3w" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31O4IPpEe-fl51G3X0t3w"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31O4YPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31O4oPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31O44PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31O5IPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31O5YPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G31O5oPpEe-fl51G3X0t3w" name="FileStoregeAdapter" isAbstract="true">
+      <ownedAttribute xmi:id="_G31O54PpEe-fl51G3X0t3w" name="outleetModelParserInterface" visibility="public" type="_G31N4oPpEe-fl51G3X0t3w" isUnique="false" aggregation="composite" association="_G3--doPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G31O6IPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31O6YPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31O6oPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31O64PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31O7IPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31O7YPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31O7oPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_G31O74PpEe-fl51G3X0t3w">
+          <eAnnotations xmi:id="_G31O8IPpEe-fl51G3X0t3w" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_G31O8YPpEe-fl51G3X0t3w" name="NoteType_Name">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31O8oPpEe-fl51G3X0t3w" value="description"/>
+            </contents>
+          </eAnnotations>
+          <body>&lt;Enter note text here></body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G31O84PpEe-fl51G3X0t3w" name="FileName" visibility="protected" isUnique="false">
+        <eAnnotations xmi:id="_G31O9IPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31O9YPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31O9oPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31O94PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31O-IPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31O-YPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31O-oPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G31O-4PpEe-fl51G3X0t3w" name="parserInterface" visibility="protected" type="_G31N4oPpEe-fl51G3X0t3w" isUnique="false">
+        <eAnnotations xmi:id="_G31O_IPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31O_YPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31O_oPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31O_4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PAIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31PAYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PAoPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G31PA4PpEe-fl51G3X0t3w" name="cesh" visibility="protected" type="_G31N34PpEe-fl51G3X0t3w" isUnique="false">
+        <eAnnotations xmi:id="_G31PBIPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G31PBYPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PBoPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31PB4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PCIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G31PCYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PCoPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_G31PC4PpEe-fl51G3X0t3w" name="ReadFileContent" visibility="public"/>
+      <ownedOperation xmi:id="_G31PDIPpEe-fl51G3X0t3w" name="WriteFileContent" visibility="public"/>
+      <ownedOperation xmi:id="_G31PDYPpEe-fl51G3X0t3w" name="AddModel" visibility="public">
+        <ownedParameter xmi:id="_G31PDoPpEe-fl51G3X0t3w" name="model" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PD4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PEIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PEYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31PEoPpEe-fl51G3X0t3w" name="AddModelDefault" visibility="protected">
+        <ownedParameter xmi:id="_G31PE4PpEe-fl51G3X0t3w" name="model" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PFIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PFYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PFoPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31PF4PpEe-fl51G3X0t3w" name="GetAllModels" visibility="public">
+        <ownedParameter xmi:id="_G31PGIPpEe-fl51G3X0t3w" type="_G31N34PpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PGYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PGoPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PG4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31PHIPpEe-fl51G3X0t3w" name="GetAllModelsDefault" visibility="protected">
+        <ownedParameter xmi:id="_G31PHYPpEe-fl51G3X0t3w" type="_G31N34PpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PHoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PH4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PIIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31PIYPpEe-fl51G3X0t3w" name="GetModelById" visibility="public">
+        <ownedParameter xmi:id="_G31PIoPpEe-fl51G3X0t3w" name="id" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PI4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PJIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PJYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31PJoPpEe-fl51G3X0t3w" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PJ4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PKIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PKYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31PKoPpEe-fl51G3X0t3w" name="UpdateModelById" visibility="public">
+        <ownedParameter xmi:id="_G31PK4PpEe-fl51G3X0t3w" name="id" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PLIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PLYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PLoPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31PL4PpEe-fl51G3X0t3w" name="model" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PMIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PMYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PMoPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31PM4PpEe-fl51G3X0t3w" name="RemoveModelById" visibility="public">
+        <ownedParameter xmi:id="_G31PNIPpEe-fl51G3X0t3w" name="id" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PNYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PNoPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PN4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31POIPpEe-fl51G3X0t3w" name="get_count" visibility="public">
+        <ownedParameter xmi:id="_G31POYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31POoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PO4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PPIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31PPYPpEe-fl51G3X0t3w" name="get_k_n_short_list" visibility="public">
+        <ownedParameter xmi:id="_G31PPoPpEe-fl51G3X0t3w" name="k" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PP4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PQIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PQYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31PQoPpEe-fl51G3X0t3w" name="n" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PQ4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PRIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PRYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G31PRoPpEe-fl51G3X0t3w" type="_G31N34PpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PR4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PSIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PSYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G31PSoPpEe-fl51G3X0t3w" name="FileStoregeAdapter" visibility="public">
+        <ownedParameter xmi:id="_G31PS4PpEe-fl51G3X0t3w" name="fileName" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G31PTIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G31PTYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G31PToPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G3--cIPpEe-fl51G3X0t3w" name="parserInterface" isUnique="false">
+          <eAnnotations xmi:id="_G3--cYPpEe-fl51G3X0t3w" source="Objing">
+            <contents xmi:type="uml:Property" xmi:id="_G3--coPpEe-fl51G3X0t3w" name="isNoType"/>
+          </eAnnotations>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3--c4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3--dIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--dYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G3--doPpEe-fl51G3X0t3w" memberEnd="_G31O54PpEe-fl51G3X0t3w _G3--d4PpEe-fl51G3X0t3w">
+      <ownedEnd xmi:id="_G3--d4PpEe-fl51G3X0t3w" visibility="public" type="_G31O5oPpEe-fl51G3X0t3w" isUnique="false" association="_G3--doPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3--eIPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3--eYPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--eoPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--e4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--fIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--fYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--foPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G3--f4PpEe-fl51G3X0t3w" name="outleetmodel_fasade_rep_json">
+      <generalization xmi:id="_G3--gIPpEe-fl51G3X0t3w" general="_G31O5oPpEe-fl51G3X0t3w"/>
+      <ownedAttribute xmi:id="_G3--gYPpEe-fl51G3X0t3w" name="jsonOutleetModelParser" visibility="public" type="_G31OBoPpEe-fl51G3X0t3w" isUnique="false" aggregation="composite" association="_G3--joPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3--goPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3--g4PpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--hIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--hYPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--hoPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--h4PpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--iIPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_G3--iYPpEe-fl51G3X0t3w" name="outleetmodel_fasade_rep_json" visibility="public">
+        <ownedParameter xmi:id="_G3--ioPpEe-fl51G3X0t3w" name="file_name" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3--i4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3--jIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--jYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G3--joPpEe-fl51G3X0t3w" memberEnd="_G3--gYPpEe-fl51G3X0t3w _G3--j4PpEe-fl51G3X0t3w">
+      <ownedEnd xmi:id="_G3--j4PpEe-fl51G3X0t3w" visibility="public" type="_G3--f4PpEe-fl51G3X0t3w" isUnique="false" association="_G3--joPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3--kIPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3--kYPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--koPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--k4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--lIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--lYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--loPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G3--l4PpEe-fl51G3X0t3w" name="outleetmodel_fasade_rep_yaml">
+      <generalization xmi:id="_G3--mIPpEe-fl51G3X0t3w" general="_G31O5oPpEe-fl51G3X0t3w"/>
+      <ownedAttribute xmi:id="_G3--mYPpEe-fl51G3X0t3w" name="yamlOutleetModelParser" visibility="public" type="_G31O0oPpEe-fl51G3X0t3w" isUnique="false" aggregation="composite" association="_G3--poPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3--moPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3--m4PpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--nIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--nYPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--noPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--n4PpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--oIPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_G3--oYPpEe-fl51G3X0t3w" name="outleetmodel_fasade_rep_yaml" visibility="public">
+        <ownedParameter xmi:id="_G3--ooPpEe-fl51G3X0t3w" name="f_name" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3--o4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3--pIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--pYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G3--poPpEe-fl51G3X0t3w" memberEnd="_G3--mYPpEe-fl51G3X0t3w _G3--p4PpEe-fl51G3X0t3w">
+      <ownedEnd xmi:id="_G3--p4PpEe-fl51G3X0t3w" visibility="public" type="_G3--l4PpEe-fl51G3X0t3w" isUnique="false" association="_G3--poPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3--qIPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3--qYPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--qoPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--q4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--rIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--rYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--roPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G3--r4PpEe-fl51G3X0t3w" name="outleetmodel_rep_DB" isAbstract="true">
+      <ownedAttribute xmi:id="_G3--sIPpEe-fl51G3X0t3w" name="dbConnection" visibility="public" type="_G3-_FIPpEe-fl51G3X0t3w" isUnique="false" aggregation="shared" association="_G3-_AoPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3--sYPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3--soPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--s4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--tIPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--tYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--toPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--t4PpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G3--uIPpEe-fl51G3X0t3w" name="dbCommand" visibility="public" type="_G3-_F4PpEe-fl51G3X0t3w" isUnique="false" aggregation="shared" association="_G3-_C4PpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3--uYPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3--uoPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--u4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--vIPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--vYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--voPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--v4PpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G3--wIPpEe-fl51G3X0t3w" name="table_name" visibility="protected" isUnique="false">
+        <eAnnotations xmi:id="_G3--wYPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3--woPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--w4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--xIPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--xYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--xoPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--x4PpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G3--yIPpEe-fl51G3X0t3w" name="_connection" visibility="protected" type="_G3-_FIPpEe-fl51G3X0t3w" isUnique="false">
+        <eAnnotations xmi:id="_G3--yYPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3--yoPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--y4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--zIPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--zYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--zoPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--z4PpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G3--0IPpEe-fl51G3X0t3w" name="command" visibility="protected" type="_G3-_F4PpEe-fl51G3X0t3w" isUnique="false">
+        <eAnnotations xmi:id="_G3--0YPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3--0oPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--04PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--1IPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--1YPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3--1oPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--14PpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_G3--2IPpEe-fl51G3X0t3w" name="AddModel" visibility="public">
+        <ownedParameter xmi:id="_G3--2YPpEe-fl51G3X0t3w" name="model" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3--2oPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3--24PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--3IPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G3--3YPpEe-fl51G3X0t3w" name="GetModelById" visibility="public">
+        <ownedParameter xmi:id="_G3--3oPpEe-fl51G3X0t3w" name="id" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3--34PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3--4IPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--4YPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G3--4oPpEe-fl51G3X0t3w" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3--44PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3--5IPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--5YPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G3--5oPpEe-fl51G3X0t3w" name="RemoveById" visibility="public">
+        <ownedParameter xmi:id="_G3--54PpEe-fl51G3X0t3w" name="id" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3--6IPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3--6YPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--6oPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G3--64PpEe-fl51G3X0t3w" name="get_count" visibility="public">
+        <ownedParameter xmi:id="_G3--7IPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3--7YPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3--7oPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--74PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G3--8IPpEe-fl51G3X0t3w" name="UpdateById" visibility="public">
+        <ownedParameter xmi:id="_G3--8YPpEe-fl51G3X0t3w" name="model" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3--8oPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3--84PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--9IPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G3--9YPpEe-fl51G3X0t3w" name="get_k_n_short_list" visibility="public">
+        <ownedParameter xmi:id="_G3--9oPpEe-fl51G3X0t3w" name="k" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3--94PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3---IPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3---YPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G3---oPpEe-fl51G3X0t3w" name="n" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3---4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3--_IPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3--_YPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G3--_oPpEe-fl51G3X0t3w" type="_G3-_GoPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3--_4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_AIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_AYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G3-_AoPpEe-fl51G3X0t3w" memberEnd="_G3--sIPpEe-fl51G3X0t3w _G3-_A4PpEe-fl51G3X0t3w">
+      <ownedEnd xmi:id="_G3-_A4PpEe-fl51G3X0t3w" visibility="public" type="_G3--r4PpEe-fl51G3X0t3w" isUnique="false" association="_G3-_AoPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3-_BIPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3-_BYPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_BoPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_B4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_CIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_CYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_CoPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G3-_C4PpEe-fl51G3X0t3w" memberEnd="_G3--uIPpEe-fl51G3X0t3w _G3-_DIPpEe-fl51G3X0t3w">
+      <ownedEnd xmi:id="_G3-_DIPpEe-fl51G3X0t3w" visibility="public" type="_G3--r4PpEe-fl51G3X0t3w" isUnique="false" association="_G3-_C4PpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3-_DYPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3-_DoPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_D4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_EIPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_EYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_EoPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_E4PpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G3-_FIPpEe-fl51G3X0t3w" name="DbConnection"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G3-_FYPpEe-fl51G3X0t3w" name="MySqlConnection">
+      <generalization xmi:id="_G3-_FoPpEe-fl51G3X0t3w" general="_G3-_FIPpEe-fl51G3X0t3w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G3-_F4PpEe-fl51G3X0t3w" name="DbCommand"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G3-_GIPpEe-fl51G3X0t3w" name="MySqlCommand">
+      <generalization xmi:id="_G3-_GYPpEe-fl51G3X0t3w" general="_G3-_F4PpEe-fl51G3X0t3w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_G3-_GoPpEe-fl51G3X0t3w" name="List&lt;OutleetSmallModel>">
+      <eAnnotations xmi:id="_G3-_G4PpEe-fl51G3X0t3w" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_G3-_HIPpEe-fl51G3X0t3w" name="isPrimitive"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G3-_HYPpEe-fl51G3X0t3w" name="outleetmodel_mysql_db">
+      <generalization xmi:id="_G3-_HoPpEe-fl51G3X0t3w" general="_G3--r4PpEe-fl51G3X0t3w"/>
+      <ownedAttribute xmi:id="_G3-_H4PpEe-fl51G3X0t3w" name="mySqlConnection" visibility="public" type="_G3-_FYPpEe-fl51G3X0t3w" isUnique="false" aggregation="shared" association="_G3-_OIPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3-_IIPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3-_IYPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_IoPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_I4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_JIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_JYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_JoPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G3-_J4PpEe-fl51G3X0t3w" name="mySqlCommand" visibility="public" type="_G3-_GIPpEe-fl51G3X0t3w" isUnique="false" aggregation="composite" association="_G3-_QYPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3-_KIPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3-_KYPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_KoPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_K4PpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_LIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_LYPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_LoPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_G3-_L4PpEe-fl51G3X0t3w" name="outleetmodel_mysql_db" visibility="public">
+        <ownedParameter xmi:id="_G3-_MIPpEe-fl51G3X0t3w" name="mySqlConnection" type="_G3-_FYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3-_MYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_MoPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_M4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G3-_NIPpEe-fl51G3X0t3w" name="table_name" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3-_NYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_NoPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_N4PpEe-fl51G3X0t3w" value="&quot;outleet&quot;"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G3-_OIPpEe-fl51G3X0t3w" memberEnd="_G3-_H4PpEe-fl51G3X0t3w _G3-_OYPpEe-fl51G3X0t3w">
+      <ownedEnd xmi:id="_G3-_OYPpEe-fl51G3X0t3w" visibility="public" type="_G3-_HYPpEe-fl51G3X0t3w" isUnique="false" association="_G3-_OIPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3-_OoPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3-_O4PpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_PIPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_PYPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_PoPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_P4PpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_QIPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G3-_QYPpEe-fl51G3X0t3w" memberEnd="_G3-_J4PpEe-fl51G3X0t3w _G3-_QoPpEe-fl51G3X0t3w">
+      <ownedEnd xmi:id="_G3-_QoPpEe-fl51G3X0t3w" visibility="public" type="_G3-_HYPpEe-fl51G3X0t3w" isUnique="false" association="_G3-_QYPpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3-_Q4PpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3-_RIPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_RYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_RoPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_R4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_SIPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_SYPpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G3-_SoPpEe-fl51G3X0t3w" name="outleetmodel_cesh_rep_db_adapter">
+      <generalization xmi:id="_G3-_S4PpEe-fl51G3X0t3w" general="_G3--r4PpEe-fl51G3X0t3w"/>
+      <ownedAttribute xmi:id="_G3-_TIPpEe-fl51G3X0t3w" name="fileStoregeAdapter" visibility="public" type="_G31O5oPpEe-fl51G3X0t3w" isUnique="false" aggregation="shared" association="_G3-_i4PpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3-_TYPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3-_ToPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_T4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_UIPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_UYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_UoPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_U4PpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_G3-_VIPpEe-fl51G3X0t3w" name="_storegeAdapter" visibility="private" type="_G31O5oPpEe-fl51G3X0t3w" isUnique="false">
+        <eAnnotations xmi:id="_G3-_VYPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3-_VoPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_V4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_WIPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_WYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_WoPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_W4PpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_G3-_XIPpEe-fl51G3X0t3w" name="outleetmodel_cesh_rep_db_adapter" visibility="public">
+        <ownedParameter xmi:id="_G3-_XYPpEe-fl51G3X0t3w" name="storegeAdapter" type="_G31O5oPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3-_XoPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_X4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_YIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G3-_YYPpEe-fl51G3X0t3w" name="AddModel" visibility="public">
+        <ownedParameter xmi:id="_G3-_YoPpEe-fl51G3X0t3w" name="model" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3-_Y4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_ZIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_ZYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G3-_ZoPpEe-fl51G3X0t3w" name="GetModelById" visibility="public">
+        <ownedParameter xmi:id="_G3-_Z4PpEe-fl51G3X0t3w" name="id" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3-_aIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_aYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_aoPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G3-_a4PpEe-fl51G3X0t3w" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3-_bIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_bYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_boPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G3-_b4PpEe-fl51G3X0t3w" name="RemoveById" visibility="public">
+        <ownedParameter xmi:id="_G3-_cIPpEe-fl51G3X0t3w" name="id" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3-_cYPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_coPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_c4PpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G3-_dIPpEe-fl51G3X0t3w" name="get_count" visibility="public">
+        <ownedParameter xmi:id="_G3-_dYPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3-_doPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_d4PpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_eIPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G3-_eYPpEe-fl51G3X0t3w" name="UpdateById" visibility="public">
+        <ownedParameter xmi:id="_G3-_eoPpEe-fl51G3X0t3w" name="model" type="_G31OMYPpEe-fl51G3X0t3w" isUnique="false">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3-_e4PpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_fIPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_fYPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_G3-_foPpEe-fl51G3X0t3w" name="get_k_n_short_list" visibility="public">
+        <ownedParameter xmi:id="_G3-_f4PpEe-fl51G3X0t3w" name="k" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3-_gIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_gYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_goPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G3-_g4PpEe-fl51G3X0t3w" name="n" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3-_hIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_hYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_hoPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_G3-_h4PpEe-fl51G3X0t3w" type="_G3-_GoPpEe-fl51G3X0t3w" isUnique="false" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G3-_iIPpEe-fl51G3X0t3w" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G3-_iYPpEe-fl51G3X0t3w" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_ioPpEe-fl51G3X0t3w" value=""/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G3-_i4PpEe-fl51G3X0t3w" memberEnd="_G3-_TIPpEe-fl51G3X0t3w _G3-_jIPpEe-fl51G3X0t3w">
+      <ownedEnd xmi:id="_G3-_jIPpEe-fl51G3X0t3w" visibility="public" type="_G3-_SoPpEe-fl51G3X0t3w" isUnique="false" association="_G3-_i4PpEe-fl51G3X0t3w">
+        <eAnnotations xmi:id="_G3-_jYPpEe-fl51G3X0t3w" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_G3-_joPpEe-fl51G3X0t3w" name="MultiMin">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_j4PpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_kIPpEe-fl51G3X0t3w" name="MultiMax">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_kYPpEe-fl51G3X0t3w" value="1"/>
+          </contents>
+          <contents xmi:type="uml:Property" xmi:id="_G3-_koPpEe-fl51G3X0t3w" name="AccessMode">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_G3-_k4PpEe-fl51G3X0t3w" value="no_access"/>
+          </contents>
+        </eAnnotations>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:id="_G6qfAIPpEe-fl51G3X0t3w">
+      <eAnnotations xmi:id="_G6qfAYPpEe-fl51G3X0t3w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="default.profile.xmi#_G5eMN4PpEe-fl51G3X0t3w"/>
+      </eAnnotations>
+      <appliedProfile href="default.profile.xmi#_G5eMMIPpEe-fl51G3X0t3w"/>
+    </profileApplication>
+  </uml:Model>
+  <default:create xmi:id="_G6qfAoPpEe-fl51G3X0t3w" base_Operation="_G31NyIPpEe-fl51G3X0t3w"/>
+  <default:create xmi:id="_G6qfA4PpEe-fl51G3X0t3w" base_Operation="_G31N3oPpEe-fl51G3X0t3w"/>
+  <default:create xmi:id="_G6qfBIPpEe-fl51G3X0t3w" base_Operation="_G31OnYPpEe-fl51G3X0t3w"/>
+  <default:create xmi:id="_G6qfBYPpEe-fl51G3X0t3w" base_Operation="_G31OvoPpEe-fl51G3X0t3w"/>
+  <default:create xmi:id="_G6zo8IPpEe-fl51G3X0t3w" base_Operation="_G31PSoPpEe-fl51G3X0t3w"/>
+  <default:create xmi:id="_G6zo8YPpEe-fl51G3X0t3w" base_Operation="_G3--iYPpEe-fl51G3X0t3w"/>
+  <default:create xmi:id="_G6zo8oPpEe-fl51G3X0t3w" base_Operation="_G3--oYPpEe-fl51G3X0t3w"/>
+  <default:create xmi:id="_G6zo84PpEe-fl51G3X0t3w" base_Operation="_G3-_L4PpEe-fl51G3X0t3w"/>
+  <default:create xmi:id="_G6zo9IPpEe-fl51G3X0t3w" base_Operation="_G3-_XIPpEe-fl51G3X0t3w"/>
+</xmi:XMI>
