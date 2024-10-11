@@ -8,7 +8,7 @@ using YamlDotNet.Core;
 
 namespace ApplicationRentalOfPremises.Storeges.Reps
 {
-    public class outleetmodel_fasade_rep_json:FileStoregeAdapter
+    public class outleetmodel_fasade_rep_json:FileStorege
     {
         public outleetmodel_fasade_rep_json(string file_name):base(file_name,new Parsers.JsonOutleetModelParser())
         {

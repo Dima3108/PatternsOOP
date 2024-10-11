@@ -11,7 +11,7 @@ using static ApplicationRentalOfPremises.Parsers.JsonOutleetModelParser;
 
 namespace ApplicationRentalOfPremises.Storeges.DB
 {
-    public abstract class outleetmodel_rep_DB
+    public abstract class outleetmodel_pattern_DB:OutleetStoregeIntrafce
         //:FileStoregeAdapter
     {
         protected DbConnection _connection;
@@ -36,6 +36,15 @@ namespace ApplicationRentalOfPremises.Storeges.DB
                 $"UNIQUE INDEX InventoryNumber_UNIQUE(InventoryNumber ASC) VISIBLE)";
             command.ExecuteNonQuery();
         }*/
+        public outleetmodel_pattern_DB(DbConnection connection,DbCommand dbCommand, string table_name = "outleet")
+        {
+            this.table_name = table_name;
+            this._connection = connection;
+            this.command = dbCommand;
+            this.command.Connection = this._connection;
+            InitTable(this.command, this.table_name);
+        }
+        protected abstract void InitTable(DbCommand dbCommand,string tableName);
         public  void AddModel(OutleetModel outleetModel)
         {
             var dataModelOutleet = outleetModel;

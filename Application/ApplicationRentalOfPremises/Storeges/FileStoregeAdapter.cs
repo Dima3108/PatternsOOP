@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace ApplicationRentalOfPremises.Storeges
 {
-    public abstract class FileStoregeAdapter 
+    public abstract class FileStorege 
         //: StoregeOutleetModelInterface
     {
         protected string FileName { get; private set; }
         protected Infrastructure.OutleetModelParserInterface parserInterface { get; private set; }
         protected List<OutleetModel> cesh { get; set; }
-        public FileStoregeAdapter(string fileName, Infrastructure.OutleetModelParserInterface parserInterface)
+        public FileStorege(string fileName, Infrastructure.OutleetModelParserInterface parserInterface)
         {
             FileName = fileName;
             this.parserInterface = parserInterface;
