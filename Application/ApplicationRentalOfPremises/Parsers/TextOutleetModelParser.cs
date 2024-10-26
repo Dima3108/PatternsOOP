@@ -5,16 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using static ApplicationRentalOfPremises.Parsers.JsonOutleetModelParser;
+//using ApplicationRentalOfPremises.Parsers;
 
 namespace ApplicationRentalOfPremises.Parsers
 {
     public class TextOutleetModelParser:Infrastructure.OutleetModelParserInterface
     {
+ const char r_v = '<';
         public OutleetModel Parse(string content)
         {
+           
             var outlet = new OutleetModel();
-            string[] cont = content.Split("<");
+            string[] cont = content.Split(r_v);
             /*
              * data_ += $"{dataModelOutlet.ID}";
             data_ += $"<{dataModelOutlet.Storey}";
@@ -39,19 +41,19 @@ namespace ApplicationRentalOfPremises.Parsers
         }
         public OutleetModel[] ParseArray(string content)
         {
-            string[]cont_=content.Split("<");
+            string[]cont_=content.Split(r_v);
             const int attribute_count = 8;
             OutleetModel[] o = new OutleetModel[cont_.Length / attribute_count] ;
             for(int i = 0; i < o.Length; i++)
             {
                 string v=cont_[i*attribute_count];
-                if (v.Contains("<") == false)
+                if (v.Contains(r_v) == false)
                     v = "<" + v;
                 for(int j = 1; j < attribute_count; j++)
                 {
                     if (cont_[(i*attribute_count) + j].Contains("<") == false)
                     {
-                        v += "<" + cont_[(i * attribute_count) + j];
+                        v += $"{r_v}" + cont_[(i * attribute_count) + j];
                     }
                     else
                     {
@@ -67,13 +69,13 @@ namespace ApplicationRentalOfPremises.Parsers
             var dataModelOutlet = model;
             string data_ = "";
             data_ += $"{dataModelOutlet.ID}";
-            data_ += $"<{dataModelOutlet.Storey}";
-            data_ += $"<{dataModelOutlet.Area}";
-            data_ += $"<{dataModelOutlet.PresenceOfAirConditioning}";
-            data_ += $"<{dataModelOutlet.RentalCostPerDay}";
-            data_ += $"<{dataModelOutlet.AllocatedPowerKilowatts}";
-            data_ += $"<{dataModelOutlet.NumberOfWindows}";
-            data_ += $"<{dataModelOutlet.InventoryNumber}";
+            data_ += $"{r_v}{dataModelOutlet.Storey}";
+            data_ += $"{r_v}{dataModelOutlet.Area}";
+            data_ += $"{r_v}{dataModelOutlet.PresenceOfAirConditioning}";
+            data_ += $"{r_v}{dataModelOutlet.RentalCostPerDay}";
+            data_ += $"{r_v}{dataModelOutlet.AllocatedPowerKilowatts}";
+            data_ += $"{r_v}{dataModelOutlet.NumberOfWindows}";
+            data_ += $"{r_v}{dataModelOutlet.InventoryNumber}";
             return data_ ;
            // return JsonSerializer.Serialize(dataModelOutlet);
         }
