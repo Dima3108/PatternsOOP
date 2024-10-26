@@ -6,10 +6,10 @@
       "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\controller\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\patterns\\objectstorageobserverinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\realizations\\smalloutleetenumerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\realizations\\smalloutleetenumerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\patterns\\objectstorageobserverinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\patterns\\storageiteratorinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -115,7 +115,7 @@
               "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Controller\\MainController.cs",
               "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Controller\\MainController.cs",
               "RelativeToolTip": "..\\WindowsFormsMVC\\Controller\\MainController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACcAAABqAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAABCwCYAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T17:46:42.473Z",
               "IsPinned": true,
@@ -123,13 +123,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "SmallOutleetEnumerator.cs",
               "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Realizations\\SmallOutleetEnumerator.cs",
               "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Realizations\\SmallOutleetEnumerator.cs",
               "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Realizations\\SmallOutleetEnumerator.cs",
               "RelativeToolTip": "..\\WindowsFormsMVC\\Realizations\\SmallOutleetEnumerator.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAIBBwAkAAABFAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAswAwAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T19:04:03.687Z",
               "EditorCaption": ""
@@ -142,20 +142,20 @@
               "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Patterns\\StorageIteratorInterface.cs",
               "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Patterns\\StorageIteratorInterface.cs",
               "RelativeToolTip": "..\\WindowsFormsMVC\\Patterns\\StorageIteratorInterface.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T18:48:17.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ObjectStorageObserverInterface.cs",
               "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Patterns\\ObjectStorageObserverInterface.cs",
               "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Patterns\\ObjectStorageObserverInterface.cs",
               "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Patterns\\ObjectStorageObserverInterface.cs",
               "RelativeToolTip": "..\\WindowsFormsMVC\\Patterns\\ObjectStorageObserverInterface.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAABMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T18:24:10.696Z",
               "EditorCaption": ""
