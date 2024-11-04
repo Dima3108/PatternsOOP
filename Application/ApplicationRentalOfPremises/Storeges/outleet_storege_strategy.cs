@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationRentalOfPremises.Storeges
 {
-    public class outleet_storege_strategy:OutleetStoregeIntrafce
+    public class outleet_storege_strategy:Converters.ConverterListSmallOutlettModelToTable,OutleetStoregeIntrafce
     {
         private OutleetStoregeIntrafce strategy;
         public outleet_storege_strategy(OutleetStoregeIntrafce strategy)=>this.strategy = strategy;
@@ -15,7 +15,7 @@ namespace ApplicationRentalOfPremises.Storeges
         public OutleetModel GetModelById(int id)=>strategy.GetModelById(id);
         public void RemoveById(int id)=>strategy.RemoveById(id);
         public void UpdateById(OutleetModel outleetModel)=>strategy.UpdateById(outleetModel);
-        public List<OutleetSmallModel> get_k_n_short_list(int k, int n) => strategy.get_k_n_short_list(k, n);
+        public override List<OutleetSmallModel> get_k_n_short_list(int k, int n) => strategy.get_k_n_short_list(k, n);
         public int get_count()=>strategy.get_count();   
     }
 }

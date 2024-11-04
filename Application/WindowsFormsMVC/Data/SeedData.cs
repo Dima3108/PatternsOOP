@@ -12,7 +12,7 @@ namespace WindowsFormsMVC.Data
         public static OutleetStoregeIntrafce outleetStoregeIntrafce { get; private set; } = null;
         public static void SetOutleetStoregeIntrafce(OutleetStoregeIntrafce outleetStoregeIntrafce_)
         {
-            if (outleetStoregeIntrafce != null)
+            if (outleetStoregeIntrafce == null)
             {
                 outleetStoregeIntrafce = outleetStoregeIntrafce_;
             }

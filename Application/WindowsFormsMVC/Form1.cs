@@ -7,16 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsMVC.Controller;
 
 namespace WindowsFormsMVC
 {
     public partial class Form1 : Form
     {
+        private Infrastructure.SmallOutleetControllerInterface _controller = new MainController();
         public Form1()
         {
             InitializeComponent();
-            DataSet dataSet = new DataSet();
-            dataGridView1.DataSource = dataSet;
+            _controller.UpdateTableContent(this.dataGridView1);
         }
     }
 }

@@ -34,6 +34,7 @@ namespace ApplicationRentalOfPremises.Models
         {
             if (!ValidStorey(st))
                 throw new ArgumentException(nameof(Storey));
+            this.Storey = st;
         }
         public int InventoryNumber {  get; set; }    
         public int GetInventoryNumber() => InventoryNumber;

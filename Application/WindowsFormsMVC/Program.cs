@@ -14,9 +14,12 @@ namespace WindowsFormsMVC
         [STAThread]
         static void Main()
         {
-#if DEBUG
+//#if DEBUG
             Data.SeedData.SetOutleetStoregeIntrafce(ApplicationRentalOfPremises.Program.CreateStorege());
+#if DEBUG
+            Console.WriteLine(Data.SeedData.outleetStoregeIntrafce.get_count());
 #endif
+            //#endif
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

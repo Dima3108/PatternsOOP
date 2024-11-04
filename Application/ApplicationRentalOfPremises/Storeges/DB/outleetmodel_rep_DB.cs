@@ -11,7 +11,7 @@ using static ApplicationRentalOfPremises.Parsers.JsonOutleetModelParser;
 
 namespace ApplicationRentalOfPremises.Storeges.DB
 {
-    public abstract class outleetmodel_pattern_DB:OutleetStoregeIntrafce
+    public abstract class outleetmodel_pattern_DB:Converters.ConverterListSmallOutlettModelToTable,OutleetStoregeIntrafce
         //:FileStoregeAdapter
     {
         protected DbConnection _connection;
@@ -117,7 +117,7 @@ namespace ApplicationRentalOfPremises.Storeges.DB
                 $"RentalCostPerDay='{outleetModel.RentalCostPerDay}'" +
                 $" WHERE ID='{outleetModel.ID}'";
         }
-        public List<OutleetSmallModel> get_k_n_short_list(int k,int n)
+        public override List<OutleetSmallModel> get_k_n_short_list(int k,int n)
         {
             List<OutleetSmallModel> models = new List<OutleetSmallModel>();
             //MySqlCommand command = new MySqlCommand();
@@ -140,5 +140,6 @@ namespace ApplicationRentalOfPremises.Storeges.DB
             }
             return models;
         }
+        
     }
 }

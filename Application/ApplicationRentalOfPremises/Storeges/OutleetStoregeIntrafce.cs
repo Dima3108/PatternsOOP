@@ -15,6 +15,9 @@ namespace ApplicationRentalOfPremises.Storeges
         void RemoveById(int id);
         void UpdateById(OutleetModel outleetModel);
         List<OutleetSmallModel> get_k_n_short_list(int k, int n);
+        #region DataTableForMVC
+        System.Data.DataTable get_k_n_short_table(int k,int n);
+        #endregion
         int get_count();
     }
 }

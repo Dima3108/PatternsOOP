@@ -6,37 +6,17 @@ using System.Threading.Tasks;
 using System.Data;
 using ApplicationRentalOfPremises.Models;
 using System.Collections;
+using System.Windows.Forms;
+using ApplicationRentalOfPremises.SeedData;
 
 namespace WindowsFormsMVC.Controller
 {
-    public class MainController:ICollection<OutleetSmallModel>
+    public class MainController:Infrastructure.SmallOutleetControllerInterface
     {
-        private Patterns.ObjectStorageObserverInterface observerInterface;
-        //private Patterns.StorageIteratorInterface iteratorInterface;
-        public bool Remove(OutleetSmallModel outleetSmallModel)
+        public void UpdateTableContent(DataGridView view)
         {
-            return observerInterface.RemoveModel(outleetSmallModel);
+            var table = WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.get_k_n_short_table(0, Data.SeedData.outleetStoregeIntrafce.get_count());
+            view.DataSource = table;
         }
-        public bool IsReadOnly => false;
-        public int Count=>observerInterface.get_count();
-        public void Clear()
-        {
-
-        }
-        public void CopyTo(OutleetSmallModel[]mod,int index)
-        {
-
-        }
-        public MainController(Patterns.ObjectStorageObserverInterface objectStorageObserverInterface)
-        {
-            observerInterface = objectStorageObserverInterface;
-        }
-        public bool Contains(OutleetSmallModel outleetSmallModel) => observerInterface.Contains(outleetSmallModel);
-        public void Add(OutleetSmallModel model)=>observerInterface.AddModel(model);
-        /*
-         * https://learn.microsoft.com/ru-ru/dotnet/api/system.collections.generic.icollection-1?view=net-8.0
-         */
-        public IEnumerator<OutleetSmallModel> GetEnumerator() => new Realizations.SmallOutleetEnumerator(observerInterface);
-        IEnumerator IEnumerable.GetEnumerator()=>new Realizations.SmallOutleetEnumerator(observerInterface);
     }
 }

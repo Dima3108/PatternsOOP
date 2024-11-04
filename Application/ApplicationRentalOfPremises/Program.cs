@@ -22,6 +22,12 @@ namespace ApplicationRentalOfPremises
             {
                 SeedData.SeedData.storegeOutleets.AddModel(model);
             }*/
+#if DEBUG
+            foreach(var item in outleets)
+            {
+                Console.WriteLine(item);
+            }
+#endif
             Storeges.Reps.outleetmodel_fasade_rep_json outleetmodel_Fasade_Rep_Json = new Storeges.Reps.outleetmodel_fasade_rep_json("content.json");
             if (outleetmodel_Fasade_Rep_Json.get_count() <= 0)
             {
