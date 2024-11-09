@@ -13,11 +13,16 @@ namespace WindowsFormsMVC
 {
     public partial class Form1 : Form
     {
-        private Infrastructure.SmallOutleetControllerInterface _controller = new MainController();
+        private MainController _controller = new MainController();
         public Form1()
         {
             InitializeComponent();
             _controller.UpdateTableContent(this.dataGridView1);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            _controller.AddModel(this.dataGridView1);
         }
     }
 }

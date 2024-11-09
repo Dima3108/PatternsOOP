@@ -10,12 +10,34 @@ namespace ApplicationRentalOfPremises.Models
 {
     public class OutletModelErrorStatus
     {
+        /// <summary>
+        /// Этаж (>=-1)
+        /// </summary>
         public bool StoreyStatus { get; set; }
+        /// <summary>
+        /// Площадь помещения (>0)
+        /// </summary>
         public bool AreaStatus { get; set; }
+        /// <summary>
+        /// Наличие кондиционера ( 0 либо 1 )
+        /// </summary>
         public bool PresenceOfAirConditioningStatus { get; set; }
+        /// <summary>
+        ///  Стоимость аренды в день (>0)
+        /// </summary>
         public bool RentalCostPerDayStatus { get; set; }
+        /// <summary>
+        /// Число выделенных киловат (>0)
+        /// </summary>
         public bool AllocatedPowerKilowattsStatus { get; set; }
+        /// <summary>
+        /// Число окон (>=0)
+        /// </summary>
         public bool NumberOfWindowsStatus { get; set; }
+        /// <summary>
+        /// Инвертарный номер (>=0)
+        /// </summary>
+        public bool InventoryNumberStatus { get; set; }
         public void RunExceptionIFNotSUCCESS()
         {
             /*if (!StoreyStatus || !AreaStatus || !PresenceOfAirConditioningStatus || !RentalCostPerDayStatus
@@ -37,6 +59,55 @@ namespace ApplicationRentalOfPremises.Models
                 }
             if (!stats)
                 throw new Exception();
+        }
+        public OutletModelErrorStatus() { }
+        public OutletModelErrorStatus(OutleetModel outleetModel)
+        {
+            StoreyStatus = OutleetModel.ValidStorey(outleetModel.Storey);
+            AreaStatus = OutleetModel.ValidArea(outleetModel.Area);
+            PresenceOfAirConditioningStatus = OutleetModel.ValidPresenceOfAirConditioning(outleetModel.PresenceOfAirConditioning);
+            AllocatedPowerKilowattsStatus = OutleetModel.ValidAllocatedPowerKilowatts(outleetModel.AllocatedPowerKilowatts);
+            NumberOfWindowsStatus=OutleetModel.ValidNumberOfWindows(outleetModel.NumberOfWindows);
+            RentalCostPerDayStatus = OutleetModel.ValidRentalCostPerDay(outleetModel.RentalCostPerDay);
+            InventoryNumberStatus=OutleetModel.ValidInventoryNumber(outleetModel.InventoryNumber);
+        }
+        public List<string> GenerateErros()
+        {
+            List<string> result = new List<string>();
+            if (!StoreyStatus)
+            {
+                result.Add("номер эатажа должен быть больше либо равен -1");
+            }
+            if (!AreaStatus)
+            {
+                result.Add("площадь помещения должна быть больше нуля");
+            }
+            if (!PresenceOfAirConditioningStatus)
+            {
+                result.Add("Поле 'наличие кондиционера ' принимает значение 0 либо 1");
+            }
+            if (!AllocatedPowerKilowattsStatus)
+            {
+                result.Add("Число выделеных киловат должно быть больше нуля");
+            }
+            if (!RentalCostPerDayStatus)
+            {
+                result.Add("Стоимость аредны должна быть больше нуля");
+            }
+            if (!InventoryNumberStatus)
+            {
+                result.Add("инвертарный номер должен быть больше либо равен 0");
+            }
+            if (!NumberOfWindowsStatus)
+            {
+                result.Add("число окон должно быть больше либо равно 0");
+            }
+            return result;
+        }
+        public bool GetIsSUCCES()
+        {
+            return StoreyStatus && AreaStatus && PresenceOfAirConditioningStatus && NumberOfWindowsStatus && InventoryNumberStatus
+                && RentalCostPerDayStatus && AllocatedPowerKilowattsStatus;
         }
     }
     /// <summary>

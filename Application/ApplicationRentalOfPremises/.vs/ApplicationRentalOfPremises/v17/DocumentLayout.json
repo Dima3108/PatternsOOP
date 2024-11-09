@@ -3,16 +3,30 @@
   "WorkspaceRootPath": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|q:\\github_repo\\patternsoop\\application\\applicationrentalofpremises\\storeges\\db\\outleetmodel_rep_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|solutionrelative:storeges\\db\\outleetmodel_rep_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\controller\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|q:\\github_repo\\patternsoop\\application\\applicationrentalofpremises\\converters\\converterlistsmalloutlettmodeltotable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|solutionrelative:converters\\converterlistsmalloutlettmodeltotable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|q:\\github_repo\\patternsoop\\application\\applicationrentalofpremises\\storeges\\outleetstoregeintrafce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|solutionrelative:storeges\\outleetstoregeintrafce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|q:\\github_repo\\patternsoop\\application\\applicationrentalofpremises\\models\\outleetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|solutionrelative:models\\outleetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|q:\\github_repo\\patternsoop\\application\\applicationrentalofpremises\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBCC203F-5B78-4D03-A48D-3E9511AC6E7B}|ApplicationRentalOfPremises.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\addoutleetmodelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\addoutleetmodelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\controller\\addoutleetmodelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +36,109 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OutleetStoregeIntrafce.cs",
-              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Storeges\\OutleetStoregeIntrafce.cs",
-              "RelativeDocumentMoniker": "Storeges\\OutleetStoregeIntrafce.cs",
-              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Storeges\\OutleetStoregeIntrafce.cs",
-              "RelativeToolTip": "Storeges\\OutleetStoregeIntrafce.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAIAAAA",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:59:25.697Z",
+              "WhenOpened": "2024-11-09T18:50:29.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddOutleetModelController.cs",
+              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Controller\\AddOutleetModelController.cs",
+              "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Controller\\AddOutleetModelController.cs",
+              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Controller\\AddOutleetModelController.cs",
+              "RelativeToolTip": "..\\WindowsFormsMVC\\Controller\\AddOutleetModelController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAA3wCIAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T17:31:38.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddOutleetModelForm.cs",
+              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\AddOutleetModelForm.cs",
+              "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\AddOutleetModelForm.cs",
+              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\AddOutleetModelForm.cs",
+              "RelativeToolTip": "..\\WindowsFormsMVC\\AddOutleetModelForm.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAWwBwAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T17:30:32.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OutleetModel.cs",
+              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Models\\OutleetModel.cs",
+              "RelativeDocumentMoniker": "Models\\OutleetModel.cs",
+              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Models\\OutleetModel.cs",
+              "RelativeToolTip": "Models\\OutleetModel.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAWwD4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T17:18:28.985Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "outleetmodel_rep_DB.cs",
-              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Storeges\\DB\\outleetmodel_rep_DB.cs",
-              "RelativeDocumentMoniker": "Storeges\\DB\\outleetmodel_rep_DB.cs",
-              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Storeges\\DB\\outleetmodel_rep_DB.cs",
-              "RelativeToolTip": "Storeges\\DB\\outleetmodel_rep_DB.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "MainController.cs",
+              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Controller\\MainController.cs",
+              "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Controller\\MainController.cs",
+              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Controller\\MainController.cs",
+              "RelativeToolTip": "..\\WindowsFormsMVC\\Controller\\MainController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAhwBwAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:58:38.639Z",
+              "WhenOpened": "2024-11-09T17:09:17.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConverterListSmallOutlettModelToTable.cs",
-              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Converters\\ConverterListSmallOutlettModelToTable.cs",
-              "RelativeDocumentMoniker": "Converters\\ConverterListSmallOutlettModelToTable.cs",
-              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\Converters\\ConverterListSmallOutlettModelToTable.cs",
-              "RelativeToolTip": "Converters\\ConverterListSmallOutlettModelToTable.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAywB4AAAAkAAAA",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Form1.cs",
+              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Form1.cs",
+              "RelativeToolTip": "..\\WindowsFormsMVC\\Form1.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAWwBgAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:57:48.667Z",
+              "WhenOpened": "2024-11-09T17:09:06.485Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Form1.cs",
+              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "..\\WindowsFormsMVC\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T17:08:21.98Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddOutleetModelForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\AddOutleetModelForm.cs",
+              "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\AddOutleetModelForm.cs",
+              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\AddOutleetModelForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "..\\WindowsFormsMVC\\AddOutleetModelForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T17:08:06.266Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             }
           ]
         }

@@ -22,3 +22,4 @@ Q:\github_repo\PatternsOOP\Application\WindowsFormsMVC\obj\Debug\WindowsFormsMVC
 Q:\github_repo\PatternsOOP\Application\WindowsFormsMVC\obj\Debug\WindowsF.8C0A2650.Up2Date
 Q:\github_repo\PatternsOOP\Application\WindowsFormsMVC\obj\Debug\WindowsFormsMVC.exe
 Q:\github_repo\PatternsOOP\Application\WindowsFormsMVC\obj\Debug\WindowsFormsMVC.pdb
+Q:\github_repo\PatternsOOP\Application\WindowsFormsMVC\obj\Debug\WindowsFormsMVC.AddOutleetModelForm.resources
