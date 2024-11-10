@@ -12,7 +12,7 @@ using System.Threading;
 
 namespace WindowsFormsMVC.Controller
 {
-    public class MainController:Infrastructure.SmallOutleetControllerInterface
+    public class MainController//:Infrastructure.SmallOutleetControllerInterface
     {
         public void UpdateTableContent(DataGridView view)
         {
