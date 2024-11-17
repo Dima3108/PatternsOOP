@@ -12,17 +12,26 @@ using WindowsFormsMVC.Controller;
 namespace WindowsFormsMVC
 {
     public partial class Form1 : Form
+        //Infrastructure.FabricForm
     {
         private MainController _controller = new MainController();
-        public Form1()
+        internal Form1()//:base(_controllerInterface)
         {
             InitializeComponent();
-            _controller.UpdateTableContent(this.dataGridView1);
+            
+          _controller.UpdateTableContent(this.dataGridView1);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             _controller.AddModel(this.dataGridView1);
+        }
+
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+          
+            //dataGridView1.SelectedColumns
+           _controller.UpdateModel(this.dataGridView1); 
         }
     }
 }

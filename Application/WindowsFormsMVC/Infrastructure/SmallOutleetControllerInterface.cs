@@ -9,7 +9,7 @@ namespace WindowsFormsMVC.Infrastructure
 {
     public interface SmallOutleetControllerInterface
     {
-        void UpdateTableContent(DataGridView view);
+        //void UpdateTableContent(DataGridView view);
         
     }
 }

@@ -22,7 +22,8 @@ namespace WindowsFormsMVC
             //#endif
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            // Application.Run(new Form1());
+            Application.Run(Fabric.FabricCreaterForm.CreateForm(Fabric.FabricType.Main));
         }
     }
 }

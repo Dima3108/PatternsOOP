@@ -60,7 +60,8 @@ namespace ApplicationRentalOfPremises.Storeges
         {
             lock (cesh)
             {
-                cesh.Remove(cesh.Find(t => t.ID == id));
+                //cesh.Remove(cesh.Find(t => t.ID == id));
+                cesh.RemoveAt(id);
                 model.SetID(id);
                 AddModelDefault(model);
             }

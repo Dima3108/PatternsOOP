@@ -104,6 +104,22 @@ namespace ApplicationRentalOfPremises.Models
             }
             return result;
         }
+       /* public void PrintErrorMessages()
+        {
+            if (!outletModelError.GetIsSUCCES())
+            {
+                Task.Run(async delegate
+                {
+                    foreach (string val in outletModelError.GenerateErros())
+                    {
+                        await Task.Run(delegate
+                        {
+                            MessageBox.Show(val, "ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        });
+                    }
+                }).Wait();
+            }
+        }*/
         public bool GetIsSUCCES()
         {
             return StoreyStatus && AreaStatus && PresenceOfAirConditioningStatus && NumberOfWindowsStatus && InventoryNumberStatus

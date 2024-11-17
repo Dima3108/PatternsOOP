@@ -12,7 +12,7 @@ using System.Threading;
 
 namespace WindowsFormsMVC.Controller
 {
-    public class MainController//:Infrastructure.SmallOutleetControllerInterface
+    public class MainController:Infrastructure.SmallOutleetControllerInterface
     {
         public void UpdateTableContent(DataGridView view)
         {
@@ -23,8 +23,25 @@ namespace WindowsFormsMVC.Controller
        // private Thread backgroundThreadAddModel;
         public void AddModel(DataGridView view)
         {
-          var  modelForm = new AddOutleetModelForm();
+          var  modelForm =Fabric.FabricCreaterForm.CreateForm(Fabric.FabricType.CreateOutleetModel)
+                //new AddOutleetModelForm(null)
+                ;
             
+            //modelForm.Deactivate +=new EventHandler(()=>UpdateTableContent(view));
+            Thread thread = new Thread(() => { modelForm.ShowDialog(); });
+            thread.IsBackground = true;
+            thread.Start();
+            thread.Join();
+            UpdateTableContent(view);
+        }
+        public void UpdateModel(DataGridView view)
+        {
+            var id = view.SelectedRows[0].Cells[0].Value;
+            var model = WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.GetModelById(Convert.ToInt32(id));
+            var modelForm = Fabric.FabricCreaterForm.CreateForm(Fabric.FabricType.UpdateOutleetModel,model)
+                //new AddOutleetModelForm(null)
+                ;
+
             //modelForm.Deactivate +=new EventHandler(()=>UpdateTableContent(view));
             Thread thread = new Thread(() => { modelForm.ShowDialog(); });
             thread.IsBackground = true;

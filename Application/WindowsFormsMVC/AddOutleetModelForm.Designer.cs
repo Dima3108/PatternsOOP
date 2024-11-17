@@ -42,6 +42,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.numericInventoryNumber = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericAllocatedPowerKilowatts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericNumberOfWindows)).BeginInit();
@@ -172,11 +173,21 @@
             this.numericInventoryNumber.Size = new System.Drawing.Size(120, 26);
             this.numericInventoryNumber.TabIndex = 13;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(39, 296);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(163, 20);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Инвертарный номер";
+            // 
             // AddOutleetModelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.numericInventoryNumber);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -220,5 +231,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.NumericUpDown numericInventoryNumber;
+        private System.Windows.Forms.Label label5;
     }
 }
