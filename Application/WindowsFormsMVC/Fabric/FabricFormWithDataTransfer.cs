@@ -26,6 +26,10 @@ namespace WindowsFormsMVC.Fabric
                 
                 return new AddOutleetModelForm(updateOutleetModelController);
             }
+            else if (_type == FabricType.DeleteOutleetModel)
+            {
+                return new DeleteModelForm(new Controller.DeleteOutleetModelController((OutleetModel) _object));    
+            }
             else
             {
                 return null;

@@ -56,9 +56,16 @@
       <DependentUpon>AddOutleetModelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\AddOutleetModelController.cs" />
+    <Compile Include="Controller\DeleteOutleetModelController.cs" />
     <Compile Include="Controller\MainController.cs" />
     <Compile Include="Controller\UpdateOutleetModelController.cs" />
     <Compile Include="Data\SeedData.cs" />
+    <Compile Include="DeleteModelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteModelForm.Designer.cs">
+      <DependentUpon>DeleteModelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fabric\AbstarctFabricCreater.cs" />
     <Compile Include="Fabric\FabricCreaterForm.cs" />
     <Compile Include="Fabric\FabricFormWithDataTransfer.cs" />
@@ -83,6 +90,9 @@
     <Compile Include="Shared\SharedFormErrorWriter.cs" />
     <EmbeddedResource Include="AddOutleetModelForm.resx">
       <DependentUpon>AddOutleetModelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteModelForm.resx">
+      <DependentUpon>DeleteModelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

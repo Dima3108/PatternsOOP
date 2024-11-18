@@ -49,5 +49,16 @@ namespace WindowsFormsMVC.Controller
             thread.Join();
             UpdateTableContent(view);
         }
+        public void DeleteModel(DataGridView view)
+        {
+            var id = view.SelectedRows[0].Cells[0].Value;
+            var model = WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.GetModelById(Convert.ToInt32(id));
+            var modelForm = Fabric.FabricCreaterForm.CreateForm(Fabric.FabricType.DeleteOutleetModel, model);
+            Thread thread = new Thread(() => { modelForm.ShowDialog(); });
+            thread.IsBackground = true;
+            thread.Start();
+            thread.Join();
+            UpdateTableContent(view);
+        }
     }
 }

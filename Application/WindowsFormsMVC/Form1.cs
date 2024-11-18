@@ -31,7 +31,24 @@ namespace WindowsFormsMVC
         {
           
             //dataGridView1.SelectedColumns
-           _controller.UpdateModel(this.dataGridView1); 
+          
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //update model
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+  _controller.UpdateModel(this.dataGridView1);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                _controller.DeleteModel(this.dataGridView1);
+            }
         }
     }
 }

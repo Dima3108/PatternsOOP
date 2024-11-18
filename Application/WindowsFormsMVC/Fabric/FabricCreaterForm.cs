@@ -12,7 +12,8 @@ public enum FabricType
         {
             Main=0,
             CreateOutleetModel=1,
-            UpdateOutleetModel=2
+            UpdateOutleetModel=2,
+            DeleteOutleetModel=3
         }
     public class FabricCreaterForm
     {
