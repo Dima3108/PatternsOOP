@@ -117,6 +117,34 @@ namespace ApplicationRentalOfPremises.Storeges.DB
                 $"RentalCostPerDay='{outleetModel.RentalCostPerDay}'" +
                 $" WHERE ID='{outleetModel.ID}'";
         }
+        public OutleetModel GetModelByInventoryNumber(int invnumb)
+        {
+            command.Connection = _connection;
+            command.CommandText = $"SELECT * FROM {table_name} WHERE InventoryNumber={invnumb}";
+            using (var reader = command.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        int id_ = reader.GetInt32(0);
+                        int storey_ = (int)reader.GetInt32(1);
+                        int area_ = (int)reader.GetInt32(2);
+                        short PresenceOfAirConditioning_ = (short)reader.GetInt16(3);
+                        decimal RentalCostPerDay_ = reader.GetDecimal(4);
+                        double AllocatedPowerKilowatts_ = reader.GetDouble(5);
+                        int NumberOfWindows_ = (int)reader.GetInt32(6);
+                        int InventoryNumber_ = (int)reader.GetInt32(7);
+                        var model = new OutleetModel(storey_, area_, PresenceOfAirConditioning_,
+                            RentalCostPerDay_, AllocatedPowerKilowatts_, NumberOfWindows_, InventoryNumber_
+                            , id_);
+                        return model;
+
+                    }
+                }
+            }
+            return null;
+        }
         public override List<OutleetSmallModel> get_k_n_short_list(int k,int n)
         {
             List<OutleetSmallModel> models = new List<OutleetSmallModel>();

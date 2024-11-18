@@ -16,6 +16,7 @@ namespace ApplicationRentalOfPremises.Storeges
         public void RemoveById(int id)=>strategy.RemoveById(id);
         public void UpdateById(OutleetModel outleetModel)=>strategy.UpdateById(outleetModel);
         public override List<OutleetSmallModel> get_k_n_short_list(int k, int n) => strategy.get_k_n_short_list(k, n);
-        public int get_count()=>strategy.get_count();   
+        public int get_count()=>strategy.get_count();
+        public OutleetModel GetModelByInventoryNumber(int invnumb) => strategy.GetModelByInventoryNumber(invnumb);
     }
 }

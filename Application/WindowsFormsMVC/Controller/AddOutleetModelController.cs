@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsMVC.Data;
 using WindowsFormsMVC.Infrastructure;
 
 namespace WindowsFormsMVC.Controller
@@ -46,10 +47,18 @@ namespace WindowsFormsMVC.Controller
                 }).Wait();
             }*/
             //else
+           
             if(!(outleetModel is null))
             {
-                Data.SeedData.outleetStoregeIntrafce.AddModel(outleetModel);
+                if(SeedData.outleetStoregeIntrafce.GetModelByInventoryNumber(outleetModel.InventoryNumber)is null)
+                {
+ Data.SeedData.outleetStoregeIntrafce.AddModel(outleetModel);
                 form.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Нарушена уникальность инвертарного номера");
+                }
             }
         }
     }

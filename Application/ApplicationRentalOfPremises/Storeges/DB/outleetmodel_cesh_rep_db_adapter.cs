@@ -21,20 +21,21 @@ namespace ApplicationRentalOfPremises.Storeges.DB
         public int get_count()=>_storegeAdapter.get_count();
         public void UpdateById(OutleetModel outleetModel) => _storegeAdapter.UpdateModelById((int)outleetModel.ID, outleetModel);
         public override List<OutleetSmallModel> get_k_n_short_list(int k, int n)=>_storegeAdapter.get_k_n_short_list((int)k, (int)n);
-       // public System.Data.DataTable get_k_n_short_table(int k, int n)
+        // public System.Data.DataTable get_k_n_short_table(int k, int n)
         //{
-           // return ConvertListSmallOutleetToTable(get_k_n_short_list(k, n));    
-           /* System.Data.DataTable table = new System.Data.DataTable();
-            var obj = get_k_n_short_list(n,k);
-            table.Columns.Add(nameof(OutleetSmallModel.ID));
-            table.Columns.Add(nameof(OutleetSmallModel.InventoryNumber));
-            table.Columns.Add(nameof(OutleetSmallModel.RentalCostPerDay));
-            table.Columns.Add(nameof(OutleetSmallModel.Storey));
-            foreach(var item in obj)
-            {
-                table.Rows.Add(new object[] {item.ID,item.InventoryNumber,item.RentalCostPerDay,item.Storey });
-            }
-            return table;*/
-       // }
+        // return ConvertListSmallOutleetToTable(get_k_n_short_list(k, n));    
+        /* System.Data.DataTable table = new System.Data.DataTable();
+         var obj = get_k_n_short_list(n,k);
+         table.Columns.Add(nameof(OutleetSmallModel.ID));
+         table.Columns.Add(nameof(OutleetSmallModel.InventoryNumber));
+         table.Columns.Add(nameof(OutleetSmallModel.RentalCostPerDay));
+         table.Columns.Add(nameof(OutleetSmallModel.Storey));
+         foreach(var item in obj)
+         {
+             table.Rows.Add(new object[] {item.ID,item.InventoryNumber,item.RentalCostPerDay,item.Storey });
+         }
+         return table;*/
+        // }
+        public OutleetModel GetModelByInventoryNumber(int invnumb)=>_storegeAdapter.GetModelByInventoryNumber((int)invnumb);
     }
 }

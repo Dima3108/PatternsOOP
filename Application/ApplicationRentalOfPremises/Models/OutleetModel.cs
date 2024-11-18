@@ -279,10 +279,10 @@ namespace ApplicationRentalOfPremises.Models
                 $"{nameof(NumberOfWindows)}:{NumberOfWindows}"
                 ;
         }
-        public static bool operator ==(OutleetModel lhs, OutleetModel rhs) =>  lhs.Storey == lhs.Storey
+        public static bool operator ==(OutleetModel lhs, OutleetModel rhs) => lhs.InventoryNumber == rhs.InventoryNumber;  /*lhs.Storey == lhs.Storey
             && lhs.Area == rhs.Area && lhs.RentalCostPerDay == rhs.RentalCostPerDay && lhs.PresenceOfAirConditioning == rhs.PresenceOfAirConditioning
             && lhs.AllocatedPowerKilowatts == rhs.AllocatedPowerKilowatts && lhs.NumberOfWindows == rhs.NumberOfWindows&&rhs.InventoryNumber == rhs.InventoryNumber
-            ;
+            ;*/
         public static bool operator !=(OutleetModel lhs, OutleetModel rhs) => !(lhs == rhs);
         public static bool ValidOutleetModel(OutleetModel outleetModel)
         {

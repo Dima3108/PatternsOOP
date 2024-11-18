@@ -48,9 +48,20 @@ namespace ApplicationRentalOfPremises.Storeges
             lock (cesh)
             {
                 OutleetModel m = model;
-                m.SetID(cesh.Count);
+                bool s = false;
+                foreach(var h in cesh)
+                    if (h == model)
+                    {
+                        s = true;
+                        break;
+                    }
+                if (!s)
+                {
+m.SetID(cesh.Count);
                 cesh.Add(m);
                 WriteFileContent();
+                }
+                
             }
         }
         public List<OutleetModel> GetAllModels() => GetAllModelsDefault();
@@ -84,5 +95,6 @@ namespace ApplicationRentalOfPremises.Storeges
                 l.Add(cesh[offset]);
             return l;
         }
+        public OutleetModel GetModelByInventoryNumber(int invnumb)=>cesh.Find(t=>t.InventoryNumber == invnumb);    
     }
 }

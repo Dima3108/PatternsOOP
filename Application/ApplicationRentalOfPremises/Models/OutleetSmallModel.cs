@@ -40,6 +40,7 @@ namespace ApplicationRentalOfPremises.Models
         public int GetInventoryNumber() => InventoryNumber;
         public static bool ValidInventoryNumber(int numb)
         {
+           
             return numb >= 0;
         } 
         public  void SetInventoryNumber(int numb)
