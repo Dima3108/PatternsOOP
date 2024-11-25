@@ -37,7 +37,7 @@ namespace WindowsFormsMVC.Controller
         public void UpdateModel(DataGridView view)
         {
             var id = view.SelectedRows[0].Cells[0].Value;
-            var model = WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.GetModelById(Convert.ToInt32(id));
+            var model = WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.GetModelByInventoryNumber(Convert.ToInt32(id));
             var modelForm = Fabric.FabricCreaterForm.CreateForm(Fabric.FabricType.UpdateOutleetModel,model)
                 //new AddOutleetModelForm(null)
                 ;
@@ -52,7 +52,7 @@ namespace WindowsFormsMVC.Controller
         public void DeleteModel(DataGridView view)
         {
             var id = view.SelectedRows[0].Cells[0].Value;
-            var model = WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.GetModelById(Convert.ToInt32(id));
+            var model = WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.GetModelByInventoryNumber(Convert.ToInt32(id));
             var modelForm = Fabric.FabricCreaterForm.CreateForm(Fabric.FabricType.DeleteOutleetModel, model);
             Thread thread = new Thread(() => { modelForm.ShowDialog(); });
             thread.IsBackground = true;

@@ -32,7 +32,7 @@ namespace ApplicationRentalOfPremises.Converters
             System.Data.DataTable table = new System.Data.DataTable();
             var obj = get_k_n_short_list(k,n);
             table.BeginInit();
-            table.Columns.Add(nameof(OutleetSmallModel.ID));
+            //table.Columns.Add(nameof(OutleetSmallModel.ID));
             table.Columns.Add(nameof(OutleetSmallModel.InventoryNumber));
             table.Columns.Add(nameof(OutleetSmallModel.RentalCostPerDay));
             table.Columns.Add(nameof(OutleetSmallModel.Storey));
@@ -41,7 +41,7 @@ namespace ApplicationRentalOfPremises.Converters
 #if DEBUG
                 Console.WriteLine(item.ToString());
 #endif
-                table.Rows.Add(new object[] { item.ID, item.InventoryNumber, item.RentalCostPerDay, item.Storey });
+                table.Rows.Add(new object[] { /*item.ID,*/ item.InventoryNumber, item.RentalCostPerDay, item.Storey });
             }
 #if DEBUG
             Console.WriteLine(obj.Count);

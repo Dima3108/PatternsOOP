@@ -72,7 +72,8 @@ m.SetID(cesh.Count);
             lock (cesh)
             {
                 //cesh.Remove(cesh.Find(t => t.ID == id));
-                cesh.RemoveAt(id);
+                //cesh.RemoveAt(id);
+                RemoveModelById(id);
                 model.SetID(id);
                 AddModelDefault(model);
             }
