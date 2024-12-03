@@ -16,11 +16,42 @@ namespace WindowsFormsMVC.Controller
     {
         public void UpdateTableContent(DataGridView view)
         {
-            var table = WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.get_k_n_short_table(0, Data.SeedData.outleetStoregeIntrafce.get_count());
+            var table = WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.get_k_n_short_table(offset, count);
             view.DataSource = table;
         }
+        private int count = 5;
+        private int offset = 0;
+        private List<int> pred_oosets=new List<int>();
+        /// <summary>
+        /// Увеличить смещение
+        /// </summary>
+        /// <param name="view"></param>
+        public void IncreaseOffset(DataGridView view)
+        {
+            if (count == 5)
+            {
+ //pred_offset = offset;
+ pred_oosets.Add(offset);
+            offset = Math.Min(Data.SeedData.outleetStoregeIntrafce.get_count() - 1, offset + count);
+            count = Math.Min(Data.SeedData.outleetStoregeIntrafce.get_count() - offset, 5);
+            UpdateTableContent(view);
+            }
+           
+        }
+        public void ReduceOffset(DataGridView view)
+        {
+            //offset = Math.Max(0, offset - count);
+            if (pred_oosets.Count>0)
+            {
+   offset = pred_oosets[pred_oosets.Count-1];
+            pred_oosets.RemoveAt(pred_oosets.Count-1);
+            count = 5;
+            UpdateTableContent(view);
+            }
+         
+        }
         //private AddOutleetModelForm modelForm;
-       // private Thread backgroundThreadAddModel;
+        // private Thread backgroundThreadAddModel;
         public void AddModel(DataGridView view)
         {
           var  modelForm =Fabric.FabricCreaterForm.CreateForm(Fabric.FabricType.CreateOutleetModel)

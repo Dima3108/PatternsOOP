@@ -33,15 +33,17 @@ namespace ApplicationRentalOfPremises.Converters
             var obj = get_k_n_short_list(k,n);
             table.BeginInit();
             //table.Columns.Add(nameof(OutleetSmallModel.ID));
+            table.Columns.Add("Порядковый номер");
             table.Columns.Add(nameof(OutleetSmallModel.InventoryNumber));
             table.Columns.Add(nameof(OutleetSmallModel.RentalCostPerDay));
             table.Columns.Add(nameof(OutleetSmallModel.Storey));
+            int off = 0;
             foreach (var item in obj)
             {
 #if DEBUG
                 Console.WriteLine(item.ToString());
 #endif
-                table.Rows.Add(new object[] { /*item.ID,*/ item.InventoryNumber, item.RentalCostPerDay, item.Storey });
+                table.Rows.Add(new object[] { /*item.ID,*/k+off++, item.InventoryNumber, item.RentalCostPerDay, item.Storey });
             }
 #if DEBUG
             Console.WriteLine(obj.Count);

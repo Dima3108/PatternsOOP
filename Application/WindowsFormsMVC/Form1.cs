@@ -50,5 +50,15 @@ namespace WindowsFormsMVC
                 _controller.DeleteModel(this.dataGridView1);
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            _controller.IncreaseOffset(this.dataGridView1);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            _controller.ReduceOffset(this.dataGridView1);
+        }
     }
 }
