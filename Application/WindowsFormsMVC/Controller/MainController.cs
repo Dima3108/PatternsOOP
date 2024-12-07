@@ -19,6 +19,17 @@ namespace WindowsFormsMVC.Controller
             var table = WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.get_k_n_short_table(offset, count);
             view.DataSource = table;
         }
+        public List<object[]> GetModels()
+        {
+            var data=WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.get_k_n_short_list(offset, count);
+            List<object[]> models = new List<object[]>();
+            models.Add(new object[] { $"ID", $"InventoryNumber", $"Storey",$"RentalCostPerDay"});
+            foreach (var model in data)
+            {
+                models.Add(new object[] {model.ID.ToString(),model.InventoryNumber.ToString(),model.Storey.ToString(),model.RentalCostPerDay.ToString() });
+            }
+            return models;
+        }
         private int count = 5;
         private int offset = 0;
         private List<int> pred_oosets=new List<int>();
