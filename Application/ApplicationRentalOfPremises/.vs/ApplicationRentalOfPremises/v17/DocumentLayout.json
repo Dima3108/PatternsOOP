@@ -3,31 +3,13 @@
   "WorkspaceRootPath": "Q:\\github_repo\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\web\\deputies\\chiefdeputy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\web\\deputies\\deputymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\web\\deputies\\abstracttemplatedeputy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\web\\guardianofdeputies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\myhttprouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\controller\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AB61374C-47F1-4D55-BFF0-E08E099114F2}|..\\WindowsFormsMVC\\WindowsFormsMVC.csproj|q:\\github_repo\\patternsoop\\application\\windowsformsmvc\\web\\deputies\\deputymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,120 +19,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GuardianOfDeputies.cs",
-              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Web\\GuardianOfDeputies.cs",
-              "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Web\\GuardianOfDeputies.cs",
-              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Web\\GuardianOfDeputies.cs",
-              "RelativeToolTip": "..\\WindowsFormsMVC\\Web\\GuardianOfDeputies.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA1wBUAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T19:28:18.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AbstractTemplateDeputy.cs",
-              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Web\\Deputies\\AbstractTemplateDeputy.cs",
-              "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Web\\Deputies\\AbstractTemplateDeputy.cs",
-              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Web\\Deputies\\AbstractTemplateDeputy.cs",
-              "RelativeToolTip": "..\\WindowsFormsMVC\\Web\\Deputies\\AbstractTemplateDeputy.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAQwA4AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T19:24:07.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "DeputyModels.cs",
               "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Web\\Deputies\\DeputyModels.cs",
               "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Web\\Deputies\\DeputyModels.cs",
               "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Web\\Deputies\\DeputyModels.cs",
               "RelativeToolTip": "..\\WindowsFormsMVC\\Web\\Deputies\\DeputyModels.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAIwDkAAAATAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwD0AAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T19:07:00.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Program.cs",
               "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Program.cs",
               "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Program.cs",
               "RelativeToolTip": "..\\WindowsFormsMVC\\Program.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAA4wF4AAAAqAAAA",
+              "ViewState": "AQIAAFMAAAAAAAAAAAA4wF4AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T18:40:57.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainController.cs",
-              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Controller\\MainController.cs",
-              "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Controller\\MainController.cs",
-              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Controller\\MainController.cs",
-              "RelativeToolTip": "..\\WindowsFormsMVC\\Controller\\MainController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAgwBwAAACXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:35:57.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Form1.cs",
-              "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Form1.cs",
-              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Form1.cs",
-              "RelativeToolTip": "..\\WindowsFormsMVC\\Form1.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAywBUAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:31:19.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Form1.cs",
-              "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Form1.cs",
-              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "..\\WindowsFormsMVC\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:31:16.099Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChiefDeputy.cs",
-              "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Web\\Deputies\\ChiefDeputy.cs",
-              "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\Web\\Deputies\\ChiefDeputy.cs",
-              "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\Web\\Deputies\\ChiefDeputy.cs",
-              "RelativeToolTip": "..\\WindowsFormsMVC\\Web\\Deputies\\ChiefDeputy.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAywC4AAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:23:59.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "MyHttpRouter.cs",
               "DocumentMoniker": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\MyHttpRouter.cs",
               "RelativeDocumentMoniker": "..\\WindowsFormsMVC\\MyHttpRouter.cs",
               "ToolTip": "Q:\\github_repo\\PatternsOOP\\Application\\WindowsFormsMVC\\MyHttpRouter.cs",
               "RelativeToolTip": "..\\WindowsFormsMVC\\MyHttpRouter.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAcwBQAAABgAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAcwA8AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T17:17:28.297Z",
               "EditorCaption": ""

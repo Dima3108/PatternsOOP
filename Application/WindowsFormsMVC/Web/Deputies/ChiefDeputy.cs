@@ -12,7 +12,7 @@ namespace WindowsFormsMVC.Web.Deputies
     public class ChiefDeputy : AbstractTemplateDeputy
     {
         Controller.MainController controller = new Controller.MainController();
-        public override void AttemptToProcess(string url,ref HttpListenerRequest req,ref HttpListenerResponse resp)
+        /*public  void AttemptToProcess(string url,ref HttpListenerRequest req,ref HttpListenerResponse resp)
         {
             var models = controller.GetModels();
 
@@ -59,6 +59,45 @@ namespace WindowsFormsMVC.Web.Deputies
             resp.ContentLength64 = data.LongLength;
             resp.OutputStream.Write(data, 0, data.Length);
             resp.Close();
+        }*/
+        public override bool ComplianceCheck(string url, ref HttpListenerRequest req, ref HttpListenerResponse resp)
+        {
+            return true;
+        }
+        public override string RenderBody(string url, ref HttpListenerRequest req, ref HttpListenerResponse resp)
+        {
+            var models = controller.GetModels();
+            string content = ""+
+            "                          <div>" +
+                "                              <table>";
+            Console.WriteLine($"{nameof(ChiefDeputy)}-count_rows:{models.Count}");
+
+            for (int i = 0; i < models.Count; i++)
+            {
+
+                content += "<tr>\n";
+                foreach (var column in models[i])
+                {
+                    if (i != 0)
+                    {
+                        content += $"<td>{column.ToString()}</td>\n";
+                    }
+                    else
+                    {
+                        content += $"<th>{column.ToString()}</th>\n";
+                    }
+                }
+                if (i > 0)
+                {
+                    content += $"<td>" +
+                        $"           <a href={'"'}/models/openbyid?inv={models[i][1]}{'"'}>Открыть</a>" +
+                        $"       </td>";
+                }
+                content += "</tr>\n";
+            }
+            content += "                        </table>" +
+                "                          </div>";
+            return content;
         }
     }
 }
