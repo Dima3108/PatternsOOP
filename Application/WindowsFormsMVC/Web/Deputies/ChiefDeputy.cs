@@ -11,6 +11,11 @@ namespace WindowsFormsMVC.Web.Deputies
 {
     public class ChiefDeputy : AbstractTemplateDeputy
     {
+        public HomePageScrollingSubstitute scrollingSubstitute { get; }
+        public ChiefDeputy()
+        {
+            scrollingSubstitute = new HomePageScrollingSubstitute(controller);
+        }
         Controller.MainController controller = new Controller.MainController();
         /*public  void AttemptToProcess(string url,ref HttpListenerRequest req,ref HttpListenerResponse resp)
         {

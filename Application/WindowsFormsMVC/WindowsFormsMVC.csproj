@@ -57,6 +57,7 @@
       <DependentUpon>AddOutleetModelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\AddOutleetModelController.cs" />
+    <Compile Include="Controller\ControllerOutleetModelGettrs.cs" />
     <Compile Include="Controller\DeleteOutleetModelController.cs" />
     <Compile Include="Controller\MainController.cs" />
     <Compile Include="Controller\UpdateOutleetModelController.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Web\Deputies\AbstractTemplateDeputy.cs" />
     <Compile Include="Web\Deputies\ChiefDeputy.cs" />
     <Compile Include="Web\Deputies\DeputyModels.cs" />
+    <Compile Include="Web\Deputies\HomePageScrollingSubstitute.cs" />
     <Compile Include="Web\GuardianOfDeputies.cs" />
     <Compile Include="Web\RequestHandlerDeputyInterface.cs" />
     <EmbeddedResource Include="AddOutleetModelForm.resx">

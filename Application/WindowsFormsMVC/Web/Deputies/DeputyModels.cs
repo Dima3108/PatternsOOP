@@ -11,6 +11,7 @@ namespace WindowsFormsMVC.Web.Deputies
     {
         //Controller.MainController controller = new Controller.MainController();
         const string url_pattern = "/models";
+        private Controller.ControllerOutleetModelGettrs controller=new Controller.ControllerOutleetModelGettrs();
         public override bool ComplianceCheck(string url, ref HttpListenerRequest req, ref HttpListenerResponse resp)
         {
             return url.Contains(url_pattern);
@@ -73,16 +74,23 @@ namespace WindowsFormsMVC.Web.Deputies
                 }
             }
             var id = req.QueryString.GetValues("inv")[0];
-            var model = Data.SeedData.outleetStoregeIntrafce.GetModelByInventoryNumber(int.Parse(id));
-            string content = $"           <div>{model.ID}</div>" +
-                $"                        <div>{model.NumberOfWindows}</div>" +
-                $"                        <div>{model.Area}</div>" +
-                $"                        <div>{model.AllocatedPowerKilowatts}</div>" +
-                $"                        <div>{model.InventoryNumber}</div>" +
-                $"                        <div>{model.PresenceOfAirConditioning}</div>" +
-                $"                        <div>{model.RentalCostPerDay}</div>" +
-                $"                        <div>{model.Storey}</div>";
-            return content;
+            var model =controller.GetModelByInventoryNumber(id);
+            if (model == null) {
+                return $"<strong>Отсутствует сущность с указанным инвертарным номером!({id})</strong>";
+            }
+            else
+            {
+                // Data.SeedData.outleetStoregeIntrafce.GetModelByInventoryNumber(int.Parse(id));
+                string content = $"           <div>{model.ID}</div>" +
+                    $"                        <div>{model.NumberOfWindows}</div>" +
+                    $"                        <div>{model.Area}</div>" +
+                    $"                        <div>{model.AllocatedPowerKilowatts}</div>" +
+                    $"                        <div>{model.InventoryNumber}</div>" +
+                    $"                        <div>{model.PresenceOfAirConditioning}</div>" +
+                    $"                        <div>{model.RentalCostPerDay}</div>" +
+                    $"                        <div>{model.Storey}</div>";
+                return content;
+            }
         }
     }
 }

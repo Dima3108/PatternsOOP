@@ -9,11 +9,13 @@ using System.Collections;
 using System.Windows.Forms;
 using ApplicationRentalOfPremises.SeedData;
 using System.Threading;
+using WindowsFormsMVC.Web.Deputies;
 
 namespace WindowsFormsMVC.Controller
 {
     public class MainController:Infrastructure.SmallOutleetControllerInterface
     {
+        
         public void UpdateTableContent(DataGridView view)
         {
             var table = WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.get_k_n_short_table(offset, count);
@@ -45,7 +47,10 @@ namespace WindowsFormsMVC.Controller
  pred_oosets.Add(offset);
             offset = Math.Min(Data.SeedData.outleetStoregeIntrafce.get_count() - 1, offset + count);
             count = Math.Min(Data.SeedData.outleetStoregeIntrafce.get_count() - offset, 5);
-            UpdateTableContent(view);
+                if (view != null)
+                {
+                    UpdateTableContent(view);
+                }
             }
            
         }
@@ -57,7 +62,10 @@ namespace WindowsFormsMVC.Controller
    offset = pred_oosets[pred_oosets.Count-1];
             pred_oosets.RemoveAt(pred_oosets.Count-1);
             count = 5;
-            UpdateTableContent(view);
+                if (view != null)
+                {
+                    UpdateTableContent(view);
+                }
             }
          
         }

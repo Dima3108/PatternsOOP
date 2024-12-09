@@ -93,7 +93,9 @@ namespace WindowsFormsMVC
             {
                 #region НазначениеЗамов
                 Web.GuardianOfDeputies.AddDeputy(new Web.Deputies.DeputyModels());
-                Web.GuardianOfDeputies.AddDeputy(new Web.Deputies.ChiefDeputy());
+                var m = new Web.Deputies.ChiefDeputy();
+                Web.GuardianOfDeputies.AddDeputy(m.scrollingSubstitute);
+                Web.GuardianOfDeputies.AddDeputy(m);
                 #endregion
                 string url = "http://localhost:4444/";
                 //System.Net.HttpListener 

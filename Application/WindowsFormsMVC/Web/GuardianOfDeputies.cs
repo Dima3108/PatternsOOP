@@ -9,8 +9,8 @@ namespace WindowsFormsMVC.Web
 {
     public static class GuardianOfDeputies
     {
-        public static AbstractTemplateDeputy RequestHandlerDeputy { get; private set; } = null;
-        public static void AddDeputy(AbstractTemplateDeputy requestHandlerDeputy)
+        public static RequestHandlerDeputyInterface RequestHandlerDeputy { get; private set; } = null;
+        public static void AddDeputy(RequestHandlerDeputyInterface requestHandlerDeputy)
         {
 
             if (RequestHandlerDeputy is null)
