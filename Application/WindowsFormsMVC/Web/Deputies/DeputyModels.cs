@@ -75,20 +75,20 @@ namespace WindowsFormsMVC.Web.Deputies
             }
             var id = req.QueryString.GetValues("inv")[0];
             var model =controller.GetModelByInventoryNumber(id);
-            if (model == null) {
+            if (model is null) {
                 return $"<strong>Отсутствует сущность с указанным инвертарным номером!({id})</strong>";
             }
             else
             {
                 // Data.SeedData.outleetStoregeIntrafce.GetModelByInventoryNumber(int.Parse(id));
-                string content = $"           <div>{model.ID}</div>" +
-                    $"                        <div>{model.NumberOfWindows}</div>" +
-                    $"                        <div>{model.Area}</div>" +
-                    $"                        <div>{model.AllocatedPowerKilowatts}</div>" +
-                    $"                        <div>{model.InventoryNumber}</div>" +
-                    $"                        <div>{model.PresenceOfAirConditioning}</div>" +
-                    $"                        <div>{model.RentalCostPerDay}</div>" +
-                    $"                        <div>{model.Storey}</div>";
+                string content = $"           <div>{/*model.ID*/""}</div>" +
+                    $"                        <div><i>Инвертарный номер:</i>{model.InventoryNumber}</div>" +
+                    $"                        <div>Площадь помещения:{model.Area}</div>" +
+                    $"                        <div>Число выделенных киловат:{model.AllocatedPowerKilowatts}</div>" +
+                    $"                        <div>Число окно:{model.NumberOfWindows}</div>" +
+                    $"                        <div>Наличие кондиционера:{((model.PresenceOfAirConditioning==1)?"Присутвует":"Нет")}</div>" +
+                    $"                        <div>Стоимость аренды в день:{model.RentalCostPerDay}</div>" +
+                    $"                        <div>Этаж:<strong>{model.Storey}</strong></div>";
                 return content;
             }
         }

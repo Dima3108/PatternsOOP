@@ -25,10 +25,16 @@ namespace WindowsFormsMVC.Controller
         {
             var data=WindowsFormsMVC.Data.SeedData.outleetStoregeIntrafce.get_k_n_short_list(offset, count);
             List<object[]> models = new List<object[]>();
-            models.Add(new object[] { $"ID", $"InventoryNumber", $"Storey",$"RentalCostPerDay"});
+            models.Add(new object[] {
+                //$"ID", 
+                $"InventoryNumber", $"Storey",$"RentalCostPerDay"
+            });
             foreach (var model in data)
             {
-                models.Add(new object[] {model.ID.ToString(),model.InventoryNumber.ToString(),model.Storey.ToString(),model.RentalCostPerDay.ToString() });
+                models.Add(new object[] {
+                    //model.ID.ToString(),
+                    model.InventoryNumber.ToString(),model.Storey.ToString(),model.RentalCostPerDay.ToString() 
+                });
             }
             return models;
         }

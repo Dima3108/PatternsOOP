@@ -10,7 +10,7 @@ namespace WindowsFormsMVC.Web.Deputies
     public class HomePageScrollingSubstitute:AbstractTemplateDeputy
     {
         private string[] url_patterns = { "ReduceOffset", "IncreaseOffset" };
-        private int status;
+        //private int status;
         private Controller.MainController controller;
         internal HomePageScrollingSubstitute(Controller.MainController controller)
         {

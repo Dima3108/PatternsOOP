@@ -9,6 +9,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsMVC.Web.Deputies
 {
+    /// <summary>
+    /// Заместитель главной страницы
+    /// </summary>
     public class ChiefDeputy : AbstractTemplateDeputy
     {
         public HomePageScrollingSubstitute scrollingSubstitute { get; }
@@ -95,14 +98,25 @@ namespace WindowsFormsMVC.Web.Deputies
                 if (i > 0)
                 {
                     content += $"<td>" +
-                        $"           <a href={'"'}/models/openbyid?inv={models[i][1]}{'"'}>Открыть</a>" +
+                        $"           <a href={'"'}/models/openbyid?inv={models[i][0]}{'"'}>Открыть</a>" +
                         $"       </td>";
                 }
                 content += "</tr>\n";
             }
             content += "                        </table>" +
                 "                          </div>";
-            return content;
+            content += "<div>";
+            content += "  <form action='/ReduceOffset' method='post'>";
+            content += "<button type='submit'>Назад</button>";
+            content += "  </form>";
+            content += "</div>";
+
+			content += "<div>";
+			content += "  <form action='/IncreaseOffset' method='post'>";
+			content += "<button type='submit'>Вперед</button>";
+			content += "  </form>";
+			content += "</div>";
+			return content;
         }
     }
 }
