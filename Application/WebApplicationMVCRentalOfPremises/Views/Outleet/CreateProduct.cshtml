@@ -1,0 +1,92 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using WebApplicationMVCRentalOfPremises.Models;
+@model OutleetModel
+<div class="text-center">
+    <h1 class="display-2">Внесение данных о торговой точке</h1>
+</div>
+<form asp-controller="Outleet" method="post" asp-action="CreateProduct">
+    <div class="form-control">
+        <input type="hidden" asp-for="ID" value="@Model.ID" />
+    </div>
+    <div class="form-control">
+        <label asp-for="Storey" class="form-text">Этаж:</label>
+        <input type="number" asp-for="Storey" value="@Model.Storey" class="input-group"/>
+        <span asp-validation-for="Storey" class="text-danger"></span>
+    </div>
+    <div class="form-control">
+        <label asp-for="Area" class="form-text">Площадь помещения:</label>
+        <input type="number" asp-for="Area" value="@Model.Area" class="input-group" />
+        <span asp-validation-for="Area" class="text-danger"></span>
+    </div>
+    <div class="form-control">
+        <label asp-for="NumberOfWindows" class="form-text">Число окон:</label>
+        <input type="number" asp-for="NumberOfWindows" class="input-group" value="@Model.NumberOfWindows" />
+        <span asp-validation-for="NumberOfWindows" class="text-danger"></span>
+    </div>
+    <div class="form-control">
+        <label asp-for="PresenceOfAirConditioning" class="form-text">Кондиционер присутвует?</label>
+        <input type="hidden" asp-for="PresenceOfAirConditioning" value="@Model.PresenceOfAirConditioning"  id="valpac"/>
+        <span asp-validation-for="PresenceOfAirConditioning" class="text-danger"></span>
+        @{
+            bool stat = Model.PresenceOfAirConditioning == 1;
+        }
+        @{
+            if (!stat)
+            {
+                <input type="checkbox" class="form-check"  id="inpchec" />
+            }
+            else
+            {
+                <input type="checkbox" class="form-check" id="inpchec" checked />
+            }
+        }
+       
+        <script>
+            var chec=document.getElementById("inpchec");
+            var pac = document.getElementById("valpac");
+            chec.onchange = () => {
+                if (chec.checked) {
+                    pac.value = "1";
+                } else {
+                    pac.value = "0";
+                }
+            }
+        </script>
+
+    </div>
+    <div class="form-control">
+        <label asp-for="AllocatedPowerKilowatts" class="form-text">
+            Число выделенных киловат:
+        </label>
+        <input type="number" asp-for="AllocatedPowerKilowatts" value="@Model.AllocatedPowerKilowatts" class="input-group" />
+        <span asp-validation-for="AllocatedPowerKilowatts" class="text-danger"></span>
+    </div>
+    <div class="form-control">
+        <label asp-for="InventoryNumber" class="form-text">
+            Инвертарный номер
+        </label>
+        <input type="number" asp-for="InventoryNumber" value="@Model.InventoryNumber" class="input-group" />
+        <span asp-validation-for="InventoryNumber" class="text-danger"></span>
+    </div>
+    <div class="form-control">
+        <label asp-for="RentalCostPerDay" class="form-text">Стоимость аренды в день</label>
+        <input type="number" asp-for="RentalCostPerDay" value="@Model.RentalCostPerDay" class="input-group" />
+        <span asp-validation-for="RentalCostPerDay" class="text-danger"></span>
+    </div>
+
+    <div class="form-control">
+        <button type="submit" class="btn btn-info">Сохранить</button>
+    </div>
+   
+
+</form>
+<!--
+/*
+https://learn.microsoft.com/ru-ru/aspnet/core/tutorials/first-mvc-app/validation?view=aspnetcore-9.0
+https://learn.microsoft.com/ru-ru/aspnet/core/mvc/models/validation?view=aspnetcore-9.0
+*/
+-->

@@ -1,0 +1,46 @@
+﻿@using WebApplicationMVCRentalOfPremises.Models;
+@model List<OutleetSmallModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+   <!-- <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    -->
+    <h1 class="display-2">Главная страница</h1>
+</div>
+<table>
+    @{
+       int pos=Convert.ToInt32( ViewData["offset"]);
+    }
+    <tr>
+        <th>Позиция</th>
+        <th>Инвертарный номер</th>
+        <th>Этаж</th>
+        <th>Стоимость аренды в день</th>
+        <th></th>
+    </tr>
+    @foreach(var mod in Model)
+    {
+        <tr>
+            <td>@pos</td>
+            @{
+                pos++;
+            }
+            <td>@mod.InventoryNumber</td>
+            <td>@mod.Storey</td>
+            <td>@mod.RentalCostPerDay</td>
+            <td>
+                @{
+                    string url = $"/outleet/CreateProduct/?id={mod.ID}";
+                }
+                <a href="@url" class="btn btn-info">Изменить</a>
+            </td>
+        </tr>
+        
+    }
+</table>
+<div>
+    <a href="/outleet/CreateProduct/?id=-1" class="btn btn-success">Создать торговое помещение</a>
+</div>
