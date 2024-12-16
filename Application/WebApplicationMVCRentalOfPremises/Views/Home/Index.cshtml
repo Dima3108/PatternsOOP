@@ -49,10 +49,35 @@
                     </div>
                 </form>
             </td>
+            <td>
+                <a href="/Outleet/GetProduct?id=@mod.ID" class="btn btn-info">Подробнее</a>
+            </td>
         </tr>
         
     }
 </table>
+<div class="container">
+    <div class="row">
+		@{
+			int _pos = (int)ViewData["offset"];
+		//	List<int> preds = (List<int>)ViewData["preds"];
+		}
+        <div class="col">
+            <form asp-controller="Home" method="post" asp-action="Pred">
+				<!-- <input type="hidden" name="preds" value="preds" />-->
+                <button type="submit" class="btn btn-success">Назад</button>
+            </form>
+        </div>
+       
+        <div class="col">
+            <form asp-controller="Home" method="post" asp-action="Next">
+                <input type="hidden" name="pos" value="@_pos" />
+				<!--<input type="hidden" name="preds" value="preds" />-->
+                <button type="submit" class="btn btn-success">Вперед</button>
+            </form>
+        </div>
+    </div>
+</div>
 <div>
     <a href="/outleet/CreateProduct/?id=-1" class="btn btn-success">Создать торговое помещение</a>
 </div>

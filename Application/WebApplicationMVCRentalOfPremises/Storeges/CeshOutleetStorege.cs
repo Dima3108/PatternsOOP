@@ -37,7 +37,12 @@ namespace WebApplicationMVCRentalOfPremises.Storeges
         public List<OutleetSmallModel> get_k_n_short_list(int k, int n)
         {
             var modesl=new List<OutleetSmallModel>();
-            for(int offset = k; offset < Math.Min(n, models.Count - k); offset++)
+            if (k >= models.Count)
+                return modesl;
+            int end = Math.Min(k+n, models.Count);  
+            /*if(end>models.Count)
+                end=modesl.Count;*/
+            for(int offset = k; offset < end; offset++)
             {
                 var sm=new OutleetSmallModel { ID = models[offset].ID, InventoryNumber = models[offset].InventoryNumber,
                     RentalCostPerDay = models[offset].RentalCostPerDay,Storey=models[offset].Storey,
