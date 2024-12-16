@@ -3,19 +3,25 @@
   "WorkspaceRootPath": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\ApplicationRentalOfPremises\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83CD0EFC-75D3-441F-901C-B0BE21D7ACD3}|..\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\patternsoop\\application\\webapplicationmvcrentalofpremises\\storeges\\ceshoutleetstorege.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83CD0EFC-75D3-441F-901C-B0BE21D7ACD3}|..\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\patternsoop\\application\\webapplicationmvcrentalofpremises\\controllers\\outleetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83CD0EFC-75D3-441F-901C-B0BE21D7ACD3}|..\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\patternsoop\\application\\webapplicationmvcrentalofpremises\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83CD0EFC-75D3-441F-901C-B0BE21D7ACD3}|..\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\patternsoop\\application\\webapplicationmvcrentalofpremises\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83CD0EFC-75D3-441F-901C-B0BE21D7ACD3}|..\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\patternsoop\\application\\webapplicationmvcrentalofpremises\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83CD0EFC-75D3-441F-901C-B0BE21D7ACD3}|..\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\patternsoop\\application\\webapplicationmvcrentalofpremises\\storeges\\ceshoutleetstorege.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83CD0EFC-75D3-441F-901C-B0BE21D7ACD3}|..\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\patternsoop\\application\\webapplicationmvcrentalofpremises\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83CD0EFC-75D3-441F-901C-B0BE21D7ACD3}|..\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\patternsoop\\application\\webapplicationmvcrentalofpremises\\views\\outleet\\getproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83CD0EFC-75D3-441F-901C-B0BE21D7ACD3}|..\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\patternsoop\\application\\webapplicationmvcrentalofpremises\\models\\outleetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83CD0EFC-75D3-441F-901C-B0BE21D7ACD3}|..\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj|c:\\users\\\u0434\u043C\u0438\u0442\u0440\u0438\u0439\\github\\patternsoop\\application\\webapplicationmvcrentalofpremises\\models\\outleetsmallmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -28,37 +34,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\WebApplicationMVCRentalOfPremises\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\WebApplicationMVCRentalOfPremises\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T12:51:47.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Program.cs",
+              "RelativeDocumentMoniker": "..\\WebApplicationMVCRentalOfPremises\\Program.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Program.cs",
+              "RelativeToolTip": "..\\WebApplicationMVCRentalOfPremises\\Program.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowDUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T12:49:16.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OutleetController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Controllers\\OutleetController.cs",
+              "RelativeDocumentMoniker": "..\\WebApplicationMVCRentalOfPremises\\Controllers\\OutleetController.cs",
+              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Controllers\\OutleetController.cs",
+              "RelativeToolTip": "..\\WebApplicationMVCRentalOfPremises\\Controllers\\OutleetController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowC8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T12:48:30.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CeshOutleetStorege.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Storeges\\CeshOutleetStorege.cs",
               "RelativeDocumentMoniker": "..\\WebApplicationMVCRentalOfPremises\\Storeges\\CeshOutleetStorege.cs",
               "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Storeges\\CeshOutleetStorege.cs",
               "RelativeToolTip": "..\\WebApplicationMVCRentalOfPremises\\Storeges\\CeshOutleetStorege.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAcwCkAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T12:04:49.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "..\\WebApplicationMVCRentalOfPremises\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Controllers\\HomeController.cs",
               "RelativeToolTip": "..\\WebApplicationMVCRentalOfPremises\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAQwC0AAAAzAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowC8AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T11:27:12.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "GetProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Views\\Outleet\\GetProduct.cshtml",
               "RelativeDocumentMoniker": "..\\WebApplicationMVCRentalOfPremises\\Views\\Outleet\\GetProduct.cshtml",
@@ -66,12 +111,11 @@
               "RelativeToolTip": "..\\WebApplicationMVCRentalOfPremises\\Views\\Outleet\\GetProduct.cshtml",
               "ViewState": "AQIAABsAAAAAAAAAAAAYwCsAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-16T07:47:31.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T07:47:31.317Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "OutleetSmallModel.cs",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Models\\OutleetSmallModel.cs",
               "RelativeDocumentMoniker": "..\\WebApplicationMVCRentalOfPremises\\Models\\OutleetSmallModel.cs",
@@ -83,19 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OutleetModel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Models\\OutleetModel.cs",
-              "RelativeDocumentMoniker": "..\\WebApplicationMVCRentalOfPremises\\Models\\OutleetModel.cs",
-              "ToolTip": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Models\\OutleetModel.cs",
-              "RelativeToolTip": "..\\WebApplicationMVCRentalOfPremises\\Models\\OutleetModel.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAvwGwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T07:23:12.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\\u0414\u043C\u0438\u0442\u0440\u0438\u0439\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "..\\WebApplicationMVCRentalOfPremises\\Views\\Home\\Index.cshtml",
@@ -103,8 +135,7 @@
               "RelativeToolTip": "..\\WebApplicationMVCRentalOfPremises\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAD0AAAAAAAAAAAApwEoAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-16T07:04:24.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T07:04:24.945Z"
             }
           ]
         }
