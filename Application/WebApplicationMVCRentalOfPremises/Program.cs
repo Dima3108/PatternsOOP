@@ -18,7 +18,9 @@ namespace WebApplicationMVCRentalOfPremises
                     new OutleetModel(1,1,1,23.3m,3,2,5),
                     new OutleetModel(2,2,0,1.2m,2,1,6),
                     new OutleetModel(5,1,0,4.5m,4,3,3),
-                    new OutleetModel(4,3,1,12m,4,0,11)
+                    new OutleetModel(4,3,1,12m,4,0,11),
+                    new OutleetModel(5,5,0,10m,3,0,32),
+                    new OutleetModel(7,2,0,2m,5,4,21)
                 };
                 foreach (var mode in modesl)
                 {
