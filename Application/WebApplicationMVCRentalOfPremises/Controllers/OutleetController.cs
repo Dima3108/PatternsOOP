@@ -41,6 +41,19 @@ namespace WebApplicationMVCRentalOfPremises.Controllers
                     View( model);
            
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteProduct(int id)
+        {
+            storegeIntrafce.RemoveById(id);
+            return Redirect("/Home/Index");
+        }
+        [HttpGet]
+        public IActionResult GetProduct(int id)
+        {
+            var mod=storegeIntrafce.GetModelById(id);
+            return View(mod);
+        }
         [AcceptVerbs("GET", "POST")]
         public IActionResult VerifyInventoryNumber(int InventoryNumber,int ?id)
         {
@@ -51,6 +64,11 @@ namespace WebApplicationMVCRentalOfPremises.Controllers
                 return Json(false);
             }
             else return Json(true);
+        }
+        [AcceptVerbs("GET", "POST")]
+        public IActionResult VerifyRentalCostPerDay(decimal RentalCostPerDay)
+        {
+            return Json(RentalCostPerDay > 0);
         }
     }
 }

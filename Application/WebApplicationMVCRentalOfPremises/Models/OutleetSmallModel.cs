@@ -4,6 +4,7 @@ namespace WebApplicationMVCRentalOfPremises.Models
 {
     public class OutleetSmallModel
     {
+        public int GetID() => (int)ID;
         public int? ID { get; set; }
         public void SetID(int? id) => this.ID = id;
         public OutleetSmallModel(int Storey, int InventoryNumber, decimal RentalCostPerDay, int? id = null)

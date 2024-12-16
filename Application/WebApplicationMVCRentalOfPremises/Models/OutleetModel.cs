@@ -1,12 +1,14 @@
 ﻿using System.Data;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection.Metadata.Ecma335;
 namespace WebApplicationMVCRentalOfPremises.Models
 {
-    public class OutleetModel : OutleetSmallModel
+    public class OutleetModel //: OutleetSmallModel
     {
         [Display(Name ="ID")]
         public new int? ID { get; set; }
+        
         [Required]
         [Range(-1, int.MaxValue, ErrorMessage = "Значение должно быть больше >=-1")]
         public new int Storey { get; set; }
@@ -102,6 +104,10 @@ namespace WebApplicationMVCRentalOfPremises.Models
             //this.NumberOfWindows = NumberOfWindows;
             return true;
         }
+        [Required]
+        //[Range(0.000000000000000000001, double.)]    
+        [Remote(action: "VerifyRentalCostPerDay", controller: "Outleet", AdditionalFields = nameof(ID), ErrorMessage = "Стоимость должна быть больше нуля")]
+        public new decimal RentalCostPerDay { get; set; }
         public OutleetModel() { }
         /// <summary>
         /// 
@@ -118,15 +124,18 @@ namespace WebApplicationMVCRentalOfPremises.Models
             double AllocatedPowerKilowatts_, int NumberOfWindows_
             , int InventoryNumber,
             //out OutletModelErrorStatus errors, 
-            int? ID = null) : base(Storey, InventoryNumber, RentalCostPerDay, ID)
+            int? ID = null) //: base(Storey, InventoryNumber, RentalCostPerDay, ID)
         {
 
 
             //SetID(ID);
+            this.ID = ID;
             //SetStorey(Storey);
+            this.Storey = Storey;
             SetArea(Area);
             SetPresenceOfAirConditioning(PresenceOfAirConditining);
-            //SetRentalCostPerDay(RentalCostPerDay);
+            this.RentalCostPerDay = RentalCostPerDay;
+            this.InventoryNumber = InventoryNumber;
             SetAllocatedPowerKilowatts(AllocatedPowerKilowatts_);
             SetNumberOfWindows(NumberOfWindows_);
         }
@@ -150,7 +159,7 @@ namespace WebApplicationMVCRentalOfPremises.Models
         public static bool operator !=(OutleetModel lhs, OutleetModel rhs) => !(lhs == rhs);
         public static bool ValidOutleetModel(OutleetModel outleetModel)
         {
-            if (!ValidSmallOutleetModel(outleetModel)) return false;
+            //if (!ValidSmallOutleetModel(outleetModel)) return false;
             if (!ValidPresenceOfAirConditioning(outleetModel.PresenceOfAirConditioning)) return false;
             if (!ValidNumberOfWindows(outleetModel.NumberOfWindows)) return false;
             if (!ValidAllocatedPowerKilowatts(outleetModel.AllocatedPowerKilowatts)) return false;

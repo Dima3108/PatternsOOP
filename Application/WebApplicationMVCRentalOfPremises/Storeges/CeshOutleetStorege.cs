@@ -19,7 +19,7 @@ namespace WebApplicationMVCRentalOfPremises.Storeges
                 {
                     // outleetModel.ID=models.Count;
                     var _mod = outleetModel;
-                    _mod.ID = models.Count;
+                    _mod.ID =(int) models.Count;
                     Console.WriteLine($"add model:#\n{_mod.ToString()}\n");
                     models.Add(_mod);
                     Console.WriteLine($"saving model#{models[models.Count-1].ToString()}#");
@@ -37,8 +37,14 @@ namespace WebApplicationMVCRentalOfPremises.Storeges
         public List<OutleetSmallModel> get_k_n_short_list(int k, int n)
         {
             var modesl=new List<OutleetSmallModel>();
-            for(int offset=k;offset<Math.Min(n,models.Count-k);offset++)
-                modesl.Add(models[offset]);
+            for(int offset = k; offset < Math.Min(n, models.Count - k); offset++)
+            {
+                var sm=new OutleetSmallModel { ID = models[offset].ID, InventoryNumber = models[offset].InventoryNumber,
+                    RentalCostPerDay = models[offset].RentalCostPerDay,Storey=models[offset].Storey,
+                };
+                modesl.Add(sm);
+            }
+                //modesl.Add(new OutleetSmallModel(models[offset].Storey, models[offset].InventoryNumber, models[offset].RentalCostPerDay, models[offset].ID));
             return modesl;
         }
         public void UpdateById(OutleetModel outleetModel)

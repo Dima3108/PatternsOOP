@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model OutleetModel?
+@{
+    if(Model is null)
+    {
+        <strong>Отсутвует указааная позиция</strong>
+        return;
+    }
+}
+<h2 class="display-3">Подробная информация</h2>
