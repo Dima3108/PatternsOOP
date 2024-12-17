@@ -19,6 +19,15 @@ namespace WebApplicationMVCRentalOfPremises.Models
         /// Контактное лицо
         /// </summary>
         public string ContactPerson {  get; set; }    
-        
+        public ClientsModel()
+        {
+
+        }
+        public ClientsModel(string name, string phone, string contactPerson)
+        {
+            this.Name = name;
+            this.Phone = phone;
+            this.ContactPerson = contactPerson;
+        }
     }
 }

@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using WebApplicationMVCRentalOfPremises.Models;
+@model ClientsModel[]
+<table class="table table-bordered">
+    <tr>
+        <th scope="col">Название</th>
+        <th scope="col">Контактное лицо</th>
+        <th scope="col">Телефон</th>
+        <th scope="col"></th>
+    </tr>
+    @foreach(var mod in Model)
+    {
+        <tr>
+
+            <td >
+                @mod.Name
+            </td>
+            <td >
+                @mod.ContactPerson
+            </td>
+            <td>
+                @mod.Phone
+            </td>
+            <td>
+                <a href="/Client/ClientPage?client_id=@mod.ID" class="btn btn-info">Подробнее</a>
+            </td>
+        </tr>
+    }
+</table>

@@ -2,17 +2,27 @@
 using WebApplicationMVCRentalOfPremises.Infrastructure;
 namespace WebApplicationMVCRentalOfPremises.Storeges
 {
-    public class CsehClientStorege:ClientStoregeInterface
+    public class CeshClientStorege:ClientStoregeInterface
     {
         private List<ClientsModel> _clients = new List<ClientsModel>(); 
         private List<CustomerDetailsModel> _customerDetails = new List<CustomerDetailsModel>();
         public  void AddClient(Models.ClientsModel client)
         {
-            _clients.Add(client);
+            lock (_clients)
+            {
+                client.ID=_clients.Count;
+ _clients.Add(client);
+            }
+           
         }
         public void AddClientDetails(Models.CustomerDetailsModel customerDetails)
         {
-            _customerDetails.Add(customerDetails);
+            lock (_customerDetails)
+            {
+                customerDetails.ID=_customerDetails.Count;
+_customerDetails.Add(customerDetails);
+            }
+            
         }
         public Models.ClientsModel GetClientModelById(int id)
         {
@@ -45,6 +55,17 @@ namespace WebApplicationMVCRentalOfPremises.Storeges
                 res.Add((det_, cl_));
             }
             return res;
+        }
+        public int get_clients_count()=>_clients.Count;
+        public List<Models.CustomerDetailsModel> get_details_by_client_id(int client_id)
+        {
+            List<Models.CustomerDetailsModel>mod=new List<Models.CustomerDetailsModel>();
+            foreach(var m_ in _customerDetails)
+            {
+                if(m_.client_id==client_id)
+                    mod.Add(m_);
+            }
+            return mod;
         }
     }
 }

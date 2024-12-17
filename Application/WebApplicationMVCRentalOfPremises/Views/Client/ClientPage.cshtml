@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using WebApplicationMVCRentalOfPremises.Models;
+@using System.Collections.Generic;
+@model (List<CustomerDetailsModel>?,List<OutleetModel>?)
+@if (Model.Item2 is null && Model.Item1 is null)
+{
+    <h2 class="display-2">Данные отсутвуют</h2>
+}
+else
+{
+    <table class="table table-bordered">
+        <tr>
+            <th scope="col">Тип документа</th>
+            <th scope="col">Значение документа</th>
+        </tr>
+        @if (Model.Item1 is null == false)
+        {
+            foreach (var det_ in Model.Item1)
+            {
+                <tr>
+                    <td>@det_.TYPE</td>
+                    <td>@det_.MeaningOfThePropsNAME</td>
+                </tr>
+            }
+        }
+    </table>
+    <table class="table table-bordered">
+        <tr>
+            <th scope="col">Инвертарный номер</th>
+            <th scope="col">Площадь помещения</th>
+        </tr>
+        @if (Model.Item2 is null == false)
+        {
+
+
+            foreach (var out_ in Model.Item2)
+            {
+                <tr>
+                    @out_.InventoryNumber
+                </tr>
+                <tr>
+                    @out_.Area
+                </tr>
+
+            }
+        }
+    </table>
+}

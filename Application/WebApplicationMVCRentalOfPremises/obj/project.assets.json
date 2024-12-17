@@ -9,19 +9,21 @@
   },
   "packageFolders": {
     "C:\\Users\\Дмитрий\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Дмитрий\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj",
+      "projectUniqueName": "Q:\\github_repo\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj",
       "projectName": "WebApplicationMVCRentalOfPremises",
-      "projectPath": "C:\\Users\\Дмитрий\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj",
+      "projectPath": "Q:\\github_repo\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\WebApplicationMVCRentalOfPremises.csproj",
       "packagesPath": "C:\\Users\\Дмитрий\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Дмитрий\\Github\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\obj\\",
+      "outputPath": "Q:\\github_repo\\PatternsOOP\\Application\\WebApplicationMVCRentalOfPremises\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\Дмитрий\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +36,8 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {},
+        "Q:\\GITHub\\ironpython3\\bin\\Release": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -75,7 +79,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
