@@ -61,5 +61,26 @@ namespace WebApplicationMVCRentalOfPremises.Storeges
             }
         }
         public int get_count() => models.Count;
+        public List<OutleetSmallModel> get_short_models_by_ids(List<AgreementModel> ids)
+        {
+            List<OutleetSmallModel>modelss=new List<OutleetSmallModel>();
+            foreach (var model in models)
+            {
+                bool s = false;
+                foreach (var id in ids)
+                {
+                    if (id.OUTLEET_ID == model.ID)
+                    {
+                        s = true;
+                        break;
+                    }
+                }
+                if (s)
+                {
+                    modelss.Add(new OutleetSmallModel { ID=model.ID,Storey=model.Storey,InventoryNumber=model.InventoryNumber,RentalCostPerDay=model.RentalCostPerDay});
+                }
+            }
+            return modelss;
+        }
     }
 }

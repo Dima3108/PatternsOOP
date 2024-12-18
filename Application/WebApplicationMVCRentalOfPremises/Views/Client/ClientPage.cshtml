@@ -5,7 +5,7 @@
 }
 @using WebApplicationMVCRentalOfPremises.Models;
 @using System.Collections.Generic;
-@model (List<CustomerDetailsModel>?,List<OutleetModel>?)
+@model (List<CustomerDetailsModel>,List<AgreementModel>,int)
 @if (Model.Item2 is null && Model.Item1 is null)
 {
     <h2 class="display-2">Данные отсутвуют</h2>
@@ -31,22 +31,42 @@ else
     <table class="table table-bordered">
         <tr>
             <th scope="col">Инвертарный номер</th>
-            <th scope="col">Площадь помещения</th>
+            <th scope="col">Этаж</th>
+            <th scope="col">Стоимость аренды в день</th>
+            <th scope="col">Дата заезда</th>
+            <th scope="col">Дата выезда</th>
         </tr>
         @if (Model.Item2 is null == false)
         {
 
 
-            foreach (var out_ in Model.Item2)
+            foreach (var ar in Model.Item2)
             {
-                <tr>
+                var out_ = WebApplicationMVCRentalOfPremises.Data.SeedData.OutleetStoregeIntrafce.GetModelById(ar.OUTLEET_ID);
+               <tr>
+                <td>
                     @out_.InventoryNumber
-                </tr>
-                <tr>
-                    @out_.Area
-                </tr>
-
+                </td>
+                <td>
+                    @out_.Storey
+                </td>
+                <td>
+                    @out_.RentalCostPerDay
+                </td>
+                <td>
+                    @ar.DateStart
+                </td>
+                <td>
+                    @ar.DateStop
+					</td>
+				</tr>
             }
         }
     </table>
 }
+<form method="post" asp-controller="Client" asp-action="SelectOutleet">
+    <input type="hidden" name="client_id" value="@Model.Item3" />
+    <div class="form-control">
+        <button type="submit" class="btn btn-info">Перейти к выбору помещения для аренды</button>
+    </div>
+</form>

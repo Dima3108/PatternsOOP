@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using WebApplicationMVCRentalOfPremises.Models;
+@using System.Collections.Generic;
+@model (List<OutleetSmallModel>,int)
+<table class="table table-bordered">
+    @{
+        int pos = Convert.ToInt32(ViewData["offset"]);
+    }
+    <tr>
+        <th scope="col">Позиция</th>
+        <th scope="col">Инвертарный номер</th>
+        <th scope="col">Этаж</th>
+        <th scope="col">Стоимость аренды в день</th>
+        <th colspan="2" scope="col"></th>
+    </tr>
+    @for (int i = 0; i < Model.Item1.Count; i++)
+    {
+        OutleetSmallModel mod = (OutleetSmallModel)Model.Item1[i];
+        Console.WriteLine(mod.ToString());
+        <tr>
+            <th scope="row">@pos</th>
+            @{
+                pos++;
+            }
+            <td>@mod.InventoryNumber</td>
+            <td>@mod.Storey</td>
+            <td>@mod.RentalCostPerDay</td>
+           
+            <td>
+                <a href="/Outleet/GetProduct?id=@mod.ID" class="btn btn-info">Подробнее</a>
+            </td>
+            <td>
+                <form method="post" asp-controller="Client" asp-action="GoToArend">
+                    <input type="hidden" name="client_id" value="@Model.Item2" />
+                    <input type="hidden" name="outleet_id" value="@mod.ID" />
+                    <div class="form-control">
+                        <button type="submit" class="btn btn-info">
+                            Перейти к заполнению сведение аренды
+                        </button>
+                    </div>
+                </form>
+            </td>
+        </tr>
+
+    }
+</table>
