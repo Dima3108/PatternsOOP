@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApplicationMVCRentalOfPremises")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a6d6e192ee715cfc3d23c30df7ebfe50581267b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ffb4d40e4898dac37057abdf1a87a6775f62482")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApplicationMVCRentalOfPremises")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApplicationMVCRentalOfPremises")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

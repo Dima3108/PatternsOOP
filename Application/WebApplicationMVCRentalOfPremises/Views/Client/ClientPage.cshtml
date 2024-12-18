@@ -70,3 +70,9 @@ else
         <button type="submit" class="btn btn-info">Перейти к выбору помещения для аренды</button>
     </div>
 </form>
+<form method="post" asp-controller="Client" asp-action="GetDocumentPage">
+    <input type="hidden" name="client_id" value="@Model.Item3" />
+    <div class="form-control">
+        <button type="submit" class="btn btn-info">Перейти к добавлению документа</button>
+    </div>
+</form>

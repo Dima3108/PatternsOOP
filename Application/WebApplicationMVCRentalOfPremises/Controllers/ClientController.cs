@@ -69,6 +69,37 @@ namespace WebApplicationMVCRentalOfPremises.Controllers
 				   View("GoToArend", model);
 			}
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult GetDocumentPage(int client_id)
+        {
+            CustomerDetailsModel customerDetailsModel = new CustomerDetailsModel()
+            {
+                client_id = client_id,
+            };
+            return View(customerDetailsModel);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult AddDocument(CustomerDetailsModel model)
+        {
+            _storege.AddClientDetails(model);
+            int client_id=model.client_id;
+            (List<Models.CustomerDetailsModel>, List<AgreementModel>, int) details_ = (_storege.get_details_by_client_id(client_id),
+               _agreement.get_agreement_by_client_id(client_id), client_id);
 
+            return View("ClientPage", (object)(details_));
+        }
+        [HttpGet]
+        public IActionResult AddClientPage()
+        {
+            return View();  
+        }
+        [HttpPost]
+        public IActionResult AddClientModel(ClientsModel model)
+        {
+            _storege.AddClient(model);
+            return Redirect("/Client/Index");
+        }
 	}
 }

@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Дмитрий\Github\PatternsOOP\Application\WebApplicationMVCRentalOfPremises
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Дмитрий/Github/PatternsOOP/Application/WebApplicationMVCRentalOfPremises/Views/Client/AddClientPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEFkZENsaWVudFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Дмитрий/Github/PatternsOOP/Application/WebApplicationMVCRentalOfPremises/Views/Client/ClientPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENsaWVudFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Дмитрий/Github/PatternsOOP/Application/WebApplicationMVCRentalOfPremises/Views/Client/GetDocumentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEdldERvY3VtZW50UGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Дмитрий/Github/PatternsOOP/Application/WebApplicationMVCRentalOfPremises/Views/Client/GoToArend.cshtml]

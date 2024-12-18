@@ -24,5 +24,6 @@
             this.TYPE = type;
             this.MeaningOfThePropsNAME = meaningOfThePropsNAME;
         }
+        public CustomerDetailsModel() { }
     }
 }

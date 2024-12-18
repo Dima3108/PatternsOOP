@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using WebApplicationMVCRentalOfPremises.Models;
+@model ClientsModel
+<div class="text-center">
+    <h1 class="display-2">
+        Добавление клиента
+    </h1>
+</div>
+<form method="post" asp-controller="Client" asp-action="AddClientModel">
+    <div class="form-control">
+        <label asp-for="Name">Название:</label>
+        <input type="text" asp-for="Name" />
+    </div>
+    <div class="form-control">
+        <label asp-for="ContactPerson">Контактное лицо:</label>
+        <input type="text" asp-for="ContactPerson" />
+    </div>
+    <div class="form-control">
+        <label asp-for="Phone">Телефон:</label>
+        <input type="text" asp-for="Phone" />
+    </div>
+    <div class="form-control">
+        <button type="submit" class="btn btn-success">
+            Сохранить
+        </button>
+    </div>
+</form>
